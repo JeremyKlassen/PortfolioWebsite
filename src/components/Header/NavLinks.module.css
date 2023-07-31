@@ -1,0 +1,17 @@
+.navLinks {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  padding: 0;
+  margin: 0;
+}
+
+.link {
+  padding: 2em;
+  flex: 1;
+  white-space: nowrap;
+  cursor: default;
+}
+
+ul {
+  list-style-type: none;
+}
