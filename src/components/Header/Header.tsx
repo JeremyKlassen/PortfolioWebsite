@@ -16,7 +16,7 @@ const Header = ({ updatePage }: Props) => {
         </div>
         <NavLinks updatePage={updatePage} />
       </div>
-      <img src={headBanner} alt="Head Banner" />
+      <img className={styles.banner} src={headBanner} alt="Head Banner" />
     </div>
   );
 };

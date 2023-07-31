@@ -1,0 +1,13 @@
+.imageGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  grid-gap: 10px; /* Adjust the gap between images as needed */
+}
+
+/* Individual Grid Item (Image) */
+.gridItem {
+  width: 20em;
+  height: 20em;
+  object-fit: cover;
+  cursor: pointer;
+}
