@@ -1,8 +1,10 @@
+import styles from "./Home.module.css";
+
 const Home = () => {
   return (
     <>
       <h1>Home</h1>
-      <p>
+      <p className={styles.paragraph}>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem
         mollitia nisi qui obcaecati suscipit ex atque nostrum quo quod quos
         tempora sunt dolore earum enim inventore asperiores accusantium,

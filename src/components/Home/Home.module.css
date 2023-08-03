@@ -1,11 +1,7 @@
-.main {
-  background: #d0e8f2;
-}
-
 p {
   color: #456268;
   font-size: 20px;
-  line-height: 1.6;
+  line-height: 1.6rem;
   margin: 0;
 }
 
