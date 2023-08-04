@@ -1,0 +1,11 @@
+.socialMediaContainer {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  padding: 1rem;
+}
+
+.socialMediaItem {
+  flex: 0 0 auto;
+  margin-right: 10px;
+}

@@ -9,15 +9,16 @@ interface Props {
 
 const Header = ({ updatePage }: Props) => {
   return (
-    <div className={styles.main}>
-      <div className={styles.selectable}>
+    <>
+      <section className={styles.headContainer}>
         <div className={styles.logo}>
           <Logo onClick={updatePage} name="home" />
         </div>
+
         <NavLinks updatePage={updatePage} />
-      </div>
+      </section>
       <img className={styles.banner} src={headBanner} alt="Head Banner" />
-    </div>
+    </>
   );
 };
 

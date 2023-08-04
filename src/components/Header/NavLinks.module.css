@@ -1,12 +1,14 @@
 .navLinks {
-  display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  padding: 0;
-  margin: 0;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  width: max-content;
+  justify-items: center;
+  gap: 20px;
 }
 
 .link {
-  padding: 2em;
+  /* padding: 1em; */
   flex: 1;
   white-space: nowrap;
   cursor: default;
@@ -14,4 +16,5 @@
 
 ul {
   list-style-type: none;
+  padding: 0px;
 }

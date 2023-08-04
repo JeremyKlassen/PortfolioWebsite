@@ -3,7 +3,6 @@ import Home from "../Home/Home";
 import styles from "./Body.module.css";
 import About from "../About/About";
 import Services from "../Services/Services";
-import Contact from "../Connect/Connect";
 import Portfolio from "../Portfolio/Portfolio";
 import Connect from "../Connect/Connect";
 

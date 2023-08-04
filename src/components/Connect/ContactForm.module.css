@@ -1,17 +1,40 @@
-.contactForm {
-  display: flex;
-  flex-direction: column;
+.contactFormContainer {
+  justify-content: center;
 }
 
 .contactItem {
   display: flex;
   flex-direction: column;
-  margin: 1em 0;
-  padding: 0.3em 1.25em;
+  margin: 0;
+  padding: 0;
 }
 
 .formLabel {
   color: #456268;
+}
+
+.small {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 1em;
+}
+
+.smallItem {
+  flex: 0 0 auto;
+  min-width: 200px;
+  max-width: 400px;
+}
+
+.socialMediaConnections {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.socialMediaConnection {
+  margin-right: 0.5rem;
 }
 
 .submitButton {
@@ -32,7 +55,7 @@
   background-color: #0056b3;
 }
 
-.submitButton:focus {
+.soci .submitButton:focus {
   outline: none;
-  box-shadow: 0 0 0.3125em #007bff; /* Equivalent to 5px, adjust as needed */
+  box-shadow: 0 0 0.3125em #007bff;
 }

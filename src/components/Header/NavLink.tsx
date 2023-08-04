@@ -10,9 +10,9 @@ const NavLink = ({ name, onClick }: Props) => {
     onClick(name);
   };
   return (
-    <li className={styles.link}>
+    <div className={styles.link}>
       <a onClick={handleClick}>{name}</a>
-    </li>
+    </div>
   );
 };
 
