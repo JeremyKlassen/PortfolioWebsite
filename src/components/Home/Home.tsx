@@ -3,42 +3,75 @@ import styles from "./Home.module.css";
 const Home = () => {
   return (
     <>
-      <h1>Home</h1>
-      <p className={styles.paragraph}>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem
-        mollitia nisi qui obcaecati suscipit ex atque nostrum quo quod quos
-        tempora sunt dolore earum enim inventore asperiores accusantium,
-        blanditiis magni! Esse asperiores quisquam harum, ullam eveniet aperiam
-        enim aut odit sequi? Ipsam sit vero velit repellat in aliquid ut commodi
-        modi quam quasi nisi rem porro et maxime, deleniti sed. Optio facere
-        quasi voluptatibus qui pariatur odio quae ab error iusto! Rem iusto ex
-        labore porro autem quidem recusandae consequuntur! Fuga veniam doloribus
-        odit, quasi itaque maiores facere est incidunt? Nobis at ex harum
-        distinctio molestias animi doloribus repudiandae aliquid veritatis
-        ducimus nihil eum, placeat provident! Amet sint necessitatibus
-        inventore, impedit earum ad praesentium consequuntur cupiditate adipisci
-        ipsam deserunt nemo. Laudantium blanditiis dicta exercitationem incidunt
-        ducimus, repudiandae recusandae, saepe optio iure magni veniam
-        repellendus itaque! Sed dolores facilis veritatis quos, dignissimos eos
-        ullam maiores fugiat consequatur quaerat voluptas necessitatibus magni.
-        In ex voluptate quisquam recusandae, non magni doloremque voluptatibus
-        expedita eum totam minus iste laudantium soluta porro quaerat
-        dignissimos obcaecati! Dignissimos hic perspiciatis perferendis enim
-        corporis, accusantium veritatis quae aut. Aliquid natus non perferendis
-        consequatur nemo nulla dolorum earum impedit, libero iste error eveniet
-        quis autem soluta numquam nam ullam ab minus voluptatem enim iure sint
-        excepturi commodi. Perspiciatis, quis. Qui praesentium neque, tempore
-        adipisci doloremque temporibus sunt et optio alias, rerum maiores
-        veritatis perspiciatis est, inventore magni explicabo illum autem
-        doloribus corporis voluptate pariatur! Voluptatibus sit impedit
-        praesentium fuga? Vitae tenetur itaque exercitationem similique
-        asperiores tempore. Ipsam laboriosam sed iusto iste dolore quibusdam
-        similique modi iure deserunt commodi, alias quisquam quo beatae et
-        laborum in, sit non voluptates velit. Pariatur neque numquam minus
-        laborum quisquam nisi sapiente voluptatibus esse quod! Ab voluptate quae
-        modi ex eius, optio nulla laudantium exercitationem nostrum cumque nisi
-        iure deserunt nemo dolores quia voluptates.
-      </p>
+      <section className={styles.shining}>
+        <h1>
+          Shining Light on Pathways for Disadvantaged Youth, One Byte at a Time
+        </h1>
+        <p className={styles.paragraph}>
+          In the realm of data, mine is an important mission – to empower and
+          uplift disadvantaged youth. I'm Jeremy, a Youth Worker, Programmer,
+          and Data Enthusiast, and this website is where my passion for positive
+          change takes center stage.
+        </p>
+      </section>
+      <section className={styles.guided}>
+        <h1>Guided by Compassionate Data Exploration</h1>
+        <p>
+          Amidst the vast expanse of data, my compass is pointed towards a
+          profound purpose – to uncover stories of transformation and translate
+          them into opportunities. Each dataset holds a potential chapter of
+          change, and I am committed to scripting those narratives.
+        </p>
+      </section>
+      <section className={styles.bridge}>
+        <h1>Coding a Bridge to Possibility</h1>
+        <p>
+          My journey through Applied Computer Science at The University of
+          Winnipeg has led me to a crossroads of innovation and empathy. The
+          code I write isn't just a sequence of instructions; it's a bridge to a
+          stronger future. It's a testament of my dedication to solutions that
+          create a lasting impact.
+        </p>
+      </section>
+      <section className={styles.empower}>
+        <h1>Empowering Youth with Insights</h1>
+        <p>
+          With 17 years as a Youth Worker, I've witnessed firsthand the
+          incredible potential within every young individual. Now, armed with
+          data-driven insights, I'm on a mission to magnify these potentials.
+          The patterns within data are threads of change, and I'm here to weave
+          a tapestry of growth and opportunities for disadvantaged youth.
+        </p>
+      </section>
+      <section className={styles.difference}>
+        <h1>Together, Let's Make a Difference</h1>
+        <p>
+          Thank you for joining me on this profound journey. Whether you share
+          my passion for data's transformative power or simply wish to explore,
+          I invite you to connect. Together, we can amplify the voices of
+          disadvantaged youth, turning raw data into a chorus of positive
+          change. Begin your exploration of my projects, delve into my story,
+          and let's pave a brighter future together.
+        </p>
+      </section>
+      <section className={styles.collaborate}>
+        <h1>Connect and Collaborate</h1>
+        <p>
+          I invite you to reach out, whether you're a fellow enthusiast, a
+          potential collaborator, or an employer seeking a unique blend of
+          skills. Let's connect the dots and create new possibilities together.
+          Your insights and ideas are invaluable as we strive to amplify the
+          voices of disadvantaged youth.
+        </p>
+      </section>
+      <section className={styles.forgeAhead}>
+        <h1>Forge Ahead, Illuminate Tomorrow</h1>
+        <p>
+          As you navigate this site, remember that it's not just about pages and
+          pixels – it's about the impact we can create together. Explore,
+          engage, and envision a future where data becomes a force for good.
+        </p>
+      </section>
     </>
   );
 };
