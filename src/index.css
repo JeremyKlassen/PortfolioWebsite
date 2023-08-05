@@ -1,9 +1,12 @@
 :root {
   --base-font-size: 16px;
-  --background-color: #000000;
-  --header-footer: #2680ca;
+  --background-color: #19270d;
+  --header-footer: var(--theme-color-2);
+  --alternate-color-1: #2680ca;
   --base-color: #ffffff;
-  --theme-color-1: #e3c050;
+  --theme-color-1: #85680a;
+  --theme-color-2: #164d20;
+  --theme-color-3: #3a2f08;
   font-size: var(--base-font-size);
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 
@@ -19,6 +22,8 @@
 body {
   padding: 0px;
   margin: 0px;
+  display: flex;
+  justify-content: center;
 }
 
 h1 {

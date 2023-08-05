@@ -10,6 +10,8 @@ interface Props {
 const Header = ({ updatePage }: Props) => {
   return (
     <>
+    <div className={styles.headBannerContainer}>
+
       <section className={styles.headContainer}>
         <div className={styles.logo}>
           <Logo onClick={updatePage} name="home" />
@@ -18,6 +20,7 @@ const Header = ({ updatePage }: Props) => {
         <NavLinks updatePage={updatePage} />
       </section>
       <img className={styles.banner} src={headBanner} alt="Head Banner" />
+    </div>
     </>
   );
 };

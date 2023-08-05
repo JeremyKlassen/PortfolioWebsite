@@ -5,6 +5,11 @@
   width: max-content;
   justify-items: center;
   gap: 20px;
+
+}
+
+.navLinks a {
+  font-size: 2rem;
 }
 
 .link {

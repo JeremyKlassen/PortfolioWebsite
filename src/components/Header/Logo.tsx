@@ -12,7 +12,7 @@ const Logo = ({ onClick, name }: Props) => {
 
   return (
     <a onClick={handleClick}>
-      <GiBeard size={35} color="#E3C050" />
+      <GiBeard size={35} color="#85680a" />
     </a>
   );
 };
