@@ -7,12 +7,22 @@ interface Props {
 
 const NavLinks = ({ updatePage }: Props) => {
   return (
-    <div className={styles.navLinks}>
-      <NavLink onClick={updatePage} name="Services" />
-      <NavLink onClick={updatePage} name="About Me" />
-      <NavLink onClick={updatePage} name="Portfolio" />
-      <NavLink onClick={updatePage} name="Contact" />
-    </div>
+    <nav className={styles.navLinks}>
+      <ul className={styles.navList}>
+        <li>
+          <NavLink onClick={updatePage} name="Services" />
+        </li>
+        <li>
+          <NavLink onClick={updatePage} name="About Me" />
+        </li>
+        <li>
+          <NavLink onClick={updatePage} name="Portfolio" />
+        </li>
+        <li>
+          <NavLink onClick={updatePage} name="Contact" />
+        </li>
+      </ul>
+    </nav>
   );
 };
 

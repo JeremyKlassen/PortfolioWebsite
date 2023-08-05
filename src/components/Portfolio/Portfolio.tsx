@@ -13,7 +13,7 @@ const Portfolio = () => {
         highlight my expertise:
       </p>
 
-      <div className="githubContainer">
+      <div id="githubPortfolio" className="githubContainer">
         <p>
           Feel free to explore my Github Profile to view some of my projects.
           I've developed a range of data-centric repositories, showcasing my
@@ -23,7 +23,7 @@ const Portfolio = () => {
         <Github size={3} />
       </div>
 
-      <div className="tableauContainer">
+      <div id="tableauPortfolio" className="tableauContainer">
         <p>
           Discover my Tableau profile where I've crafted interactive data
           visualizations that bring data stories to life. From dashboards to
@@ -32,7 +32,8 @@ const Portfolio = () => {
         </p>
         <Tableau size={3} />
       </div>
-      <div className="byllyContainer">
+
+      <div id="bullyPortfolio" className="bullyContainer">
         <p>
           One of my proud accomplishments is my comprehensive data analysis
           project that delves into a bullying dataset. In this project, I
