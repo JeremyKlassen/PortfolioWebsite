@@ -1,6 +1,6 @@
 .headContainer {
-  background: #fcf8ec;
-  color: #79a3b1;
+  background: var(--header-footer);
+  color: #a0c0ca;
   width: auto;
   height: 5rem;
   display: flex;

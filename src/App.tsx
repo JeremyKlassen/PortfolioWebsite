@@ -3,7 +3,7 @@ import "./App.css";
 import Body from "./components/Body/Body";
 import styles from "./App.module.css";
 import { useState } from "react";
-import SocialMedia from "./components/SocialMedia/SocialMedia";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const [currentPage, updatePage] = useState("nothing");
@@ -20,7 +20,7 @@ function App() {
       <div className={styles.appContainer}>
         <Header updatePage={handlePage} />
         <Body page={currentPage} />
-        <SocialMedia />
+        <Footer />
       </div>
     </>
   );

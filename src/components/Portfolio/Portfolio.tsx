@@ -53,7 +53,7 @@ const Portfolio = () => {
         Thank you for taking the time to explore my Data Specialist portfolio.
         If you're interested in collaborating, have any questions, or want to
         learn more about my projects, please don't hesitate to{" "}
-        <a href="mailto:jeremy@laklassen.com">get in touch.</a>
+        <a href="mailto:test@test.com">get in touch.</a>
       </p>
     </>
   );

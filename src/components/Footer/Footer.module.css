@@ -1,0 +1,13 @@
+.footContainer {
+  display: flex;
+
+  background: var(--header-footer);
+  height: 5em;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.footContent {
+  margin: 0.25em;
+  float: right;
+}
