@@ -1,19 +1,11 @@
 import { GiBeard } from "react-icons/gi";
+import { Link } from "react-router-dom";
 
-interface Props {
-  name: string;
-  onClick: (page: string) => void;
-}
-
-const Logo = ({ onClick, name }: Props) => {
-  const handleClick = () => {
-    onClick(name);
-  };
-
+const Logo = () => {
   return (
-    <a onClick={handleClick}>
+    <Link to="/Home">
       <GiBeard size={35} color="#85680a" />
-    </a>
+    </Link>
   );
 };
 

@@ -13,12 +13,17 @@
   gap: 20px;
 }
 
-.navLinks a {
-  font-size: 2rem;
+.navLinks {
   margin: 1em;
 }
 
 .link {
+  font-size: 2rem;
+  color: var(--alternate-color-1);
+  text-decoration: none;
+}
+
+.linkContainer {
   /* padding: 1em; */
   flex: 1;
   white-space: nowrap;

@@ -17,7 +17,7 @@ const Body: React.FC<Props> = ({ page }) => {
     case "home":
       toRender = <Home />;
       break;
-    case "About Me":
+    case "About":
       toRender = <About />;
       break;
     case "Services":

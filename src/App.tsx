@@ -2,24 +2,22 @@ import Header from "./components/Header/Header";
 import "./App.css";
 import Body from "./components/Body/Body";
 import styles from "./App.module.css";
-import { useState } from "react";
 import Footer from "./components/Footer/Footer";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
-  const [currentPage, updatePage] = useState("nothing");
-
-  const test = (word: string) => console.log(word);
-
-  const handlePage = (page: string) => {
-    updatePage(page);
-    test(page);
-  };
-
   return (
     <>
       <div className={styles.appContainer}>
-        <Header updatePage={handlePage} />
-        <Body page={currentPage} />
+        <Header />
+        <Routes>
+          <Route path="/" element={<Body page="Home" />} />
+          <Route path="/Home" element={<Body page="Home" />} />
+          <Route path="/Services" element={<Body page="Services" />} />
+          <Route path="/About" element={<Body page="About" />} />
+          <Route path="/Portfolio" element={<Body page="Portfolio" />} />
+          <Route path="/Contact" element={<Body page="Contact" />} />
+        </Routes>
         <Footer />
       </div>
     </>

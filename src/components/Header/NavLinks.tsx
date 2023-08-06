@@ -1,25 +1,21 @@
 import NavLink from "./NavLink";
 import styles from "./NavLinks.module.css";
 
-interface Props {
-  updatePage: (page: string) => void;
-}
-
-const NavLinks = ({ updatePage }: Props) => {
+const NavLinks = () => {
   return (
     <nav className={styles.navLinks}>
       <ul className={styles.navList}>
         <li>
-          <NavLink onClick={updatePage} name="Services" />
+          <NavLink name="Services" />
         </li>
         <li>
-          <NavLink onClick={updatePage} name="About Me" />
+          <NavLink name="About" />
         </li>
         <li>
-          <NavLink onClick={updatePage} name="Portfolio" />
+          <NavLink name="Portfolio" />
         </li>
         <li>
-          <NavLink onClick={updatePage} name="Contact" />
+          <NavLink name="Contact" />
         </li>
       </ul>
     </nav>

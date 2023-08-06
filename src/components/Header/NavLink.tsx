@@ -1,17 +1,16 @@
+import { Link } from "react-router-dom";
 import styles from "./NavLinks.module.css";
 
 interface Props {
   name: string;
-  onClick: (page: string) => void;
 }
 
-const NavLink = ({ name, onClick }: Props) => {
-  const handleClick = () => {
-    onClick(name);
-  };
+const NavLink = ({ name }: Props) => {
   return (
-    <li className={styles.link}>
-      <a onClick={handleClick}>{name}</a>
+    <li className={styles.linkContainer}>
+      <Link className={styles.link} to={"/" + name}>
+        {name}
+      </Link>
     </li>
   );
 };
