@@ -19,8 +19,9 @@
 
 .link {
   font-size: 2rem;
-  color: var(--alternate-color-1);
+  color: var(--base-color);
   text-decoration: none;
+  font-weight: 600;
 }
 
 .linkContainer {
