@@ -1,0 +1,78 @@
+.lBackground1 {
+  position: relative;
+}
+
+.lBackground1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  background-color: var(--theme-color-3);
+  transform: skewY(-5deg);
+  z-index: -1;
+}
+
+.rBackground1 {
+  position: relative;
+}
+
+.rBackground1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  background-color: var(--theme-color-2);
+  transform: skewY(5deg);
+  z-index: -1;
+}
+
+.Background2 {
+  background-color: var(--theme-color-3);
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
+.lBackground3 {
+  position: relative;
+}
+
+.lBackground3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  background-color: var(--theme-color-2);
+  transform: skewY(-5deg);
+  z-index: -1;
+}
+
+.rBackground3 {
+  position: relative;
+}
+
+.rBackground3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  background-color: var(--theme-color-3);
+  transform: skewY(5deg);
+  z-index: -1;
+}
+
+.section1 {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.sectionCollab {
+  margin-top: 2rem;
+}

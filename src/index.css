@@ -1,5 +1,6 @@
 :root {
-  --base-font-size: 16px;
+  --base-font-size-desktop: 16px;
+  --base-font-size-mobile: 12px;
   --background-color: #19270d;
   --header-footer: var(--theme-color-2);
   --alternate-color-1: #2680ca;
@@ -17,6 +18,20 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+  :root {
+    --base-font-size: var(--base-font-size-mobile);
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 768px) {
+  :root {
+    --base-font-size: var(--base-font-size-desktop);
+  }
 }
 
 body {

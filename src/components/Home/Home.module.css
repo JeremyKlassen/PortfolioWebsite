@@ -10,10 +10,6 @@ h1 {
   padding: 0.6em;
 }
 
-.shining {
-  padding: 2em;
-}
-
 .tiltedBackground {
   position: relative;
 }
@@ -32,6 +28,9 @@ h1 {
 
 .tiltedBackground2 {
   background-color: var(--theme-color-2);
+  padding-bottom: 2rem;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .tiltedBackground3 {
@@ -72,4 +71,20 @@ h1 {
 
 .forgeAhead {
   padding: 2em;
+}
+
+.shining {
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../assets/charts/lineChart1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding-bottom: 64.2857%;
+}
+
+.shiningText {
+  text-align: center;
 }

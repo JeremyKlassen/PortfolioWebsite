@@ -1,7 +1,7 @@
 import ImageGrid from "./ImageGrid";
 import styles from "./About.module.css";
-import pic7 from "../../assets/pics/jeremy7.jpg";
-import pic2 from "../../assets/pics/jeremy2.jpeg";
+import pic7 from "../../assets/selfies/jeremy7.jpg";
+import pic2 from "../../assets/selfies/jeremy2.jpeg";
 import lake from "../../assets/lake.jpg";
 
 const About = () => {

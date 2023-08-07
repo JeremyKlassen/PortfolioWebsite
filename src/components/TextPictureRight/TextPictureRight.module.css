@@ -1,0 +1,9 @@
+.section {
+  display: flex;
+}
+
+.pic {
+  max-width: 20rem;
+  object-fit: scale-down;
+  margin: 1rem;
+}

@@ -13,7 +13,13 @@ const Header = () => {
           </div>
           <NavLinks />
         </section>
-        <img className={styles.banner} src={headBanner} alt="Head Banner" />
+        <div className={styles.banner + " " + styles.bannerContainer}>
+          <div className={styles.centeredText}>
+            <h1>Jeremy Klassen</h1>
+            <h2>Portfolio Website</h2>
+          </div>
+          <img className={styles.banner} src={headBanner} alt="Head Banner" />
+        </div>
       </div>
     </>
   );

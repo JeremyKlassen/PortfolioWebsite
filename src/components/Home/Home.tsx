@@ -1,19 +1,22 @@
 import styles from "./Home.module.css";
+import lineChart from "../../assets/charts/lineChart1.png";
+import TextPictureLeft from "../TextPictureLeft/TextPictureLeft";
+import TextPictureRight from "../TextPictureRight/TextPictureRight";
+import bridge from "../../assets/bridge.jpg";
+import jeremy5 from "../../assets/selfies/jeremy5.jpeg";
 
 const Home = () => {
   return (
     <>
-      <section className={styles.shining}>
-        <h1>
-          Shining Light on Pathways for Disadvantaged Youth, One Byte at a Time
-        </h1>
-        <p className={styles.paragraph}>
-          In the realm of data, mine is an important mission – to empower and
-          uplift disadvantaged youth. I'm Jeremy, a Youth Worker, Programmer,
-          and Data Enthusiast, and this website is where my passion for positive
-          change takes center stage.
-        </p>
-      </section>
+      <TextPictureLeft
+        heading="Shining Light on Pathways for Disadvantaged Youth, One Byte at a
+            Time"
+        textBlock="In the realm of data, mine is an important mission – to empower and
+            uplift disadvantaged youth. I'm Jeremy, a Youth Worker, Programmer,
+            and Data Enthusiast, and this website is where my passion for
+            positive change takes center stage."
+        picUrl={lineChart}
+      />
       <section className={styles.guided}>
         <div className={styles.tiltedBackground}>
           <h1>Guided by Compassionate Data Exploration</h1>
@@ -25,16 +28,15 @@ const Home = () => {
           </p>
         </div>
       </section>
-      <section className={styles.bridge}>
-        <h1>Coding a Bridge to Possibility</h1>
-        <p>
-          My journey through Applied Computer Science at The University of
+      <TextPictureRight
+        heading="Coding a Bridge to Possibility"
+        textBlock="My journey through Applied Computer Science at The University of
           Winnipeg has led me to a crossroads of innovation and empathy. The
           code I write isn't just a sequence of instructions; it's a bridge to a
           stronger future. It's a testament of my dedication to solutions that
-          create a lasting impact.
-        </p>
-      </section>
+          create a lasting impact."
+        picUrl={bridge}
+      />
       <section className={styles.empower}>
         <div className={styles.tiltedBackground2}>
           <h1>Empowering Youth with Insights</h1>
@@ -48,17 +50,16 @@ const Home = () => {
           </p>
         </div>
       </section>
-      <section className={styles.difference}>
-        <h1>Together, Let's Make a Difference</h1>
-        <p>
-          Thank you for joining me on this profound journey. Whether you share
+      <TextPictureLeft
+        heading="Together, Let's Make a Difference"
+        textBlock="Thank you for joining me on this profound journey. Whether you share
           my passion for data's transformative power or simply wish to explore,
           I invite you to connect. Together, we can amplify the voices of
           disadvantaged youth, turning raw data into a chorus of positive
           change. Begin your exploration of my projects, delve into my story,
-          and let's pave a brighter future together.
-        </p>
-      </section>
+          and let's pave a brighter future together."
+        picUrl={jeremy5}
+      />
       <section className={styles.collaborate}>
         <div className={styles.tiltedBackground3}>
           <h1>Connect and Collaborate</h1>
