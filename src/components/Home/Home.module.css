@@ -7,7 +7,23 @@ p {
 
 h1 {
   color: var(--base-color);
+  font-size: 2rem;
   padding: 0.6em;
+}
+
+.collaborate {
+  padding: 2em;
+  margin-bottom: var(--margin-b);
+}
+
+.empower {
+  padding: 2em;
+  margin-bottom: var(--margin-b);
+}
+
+.guided {
+  padding: 2em;
+  margin-bottom: var(--margin-b);
 }
 
 .tiltedBackground {
@@ -17,7 +33,9 @@ h1 {
 .tiltedBackground::before {
   content: "";
   position: absolute;
-  top: 0;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  top: -3rem;
   left: 0;
   width: 100%;
   height: 120%;
@@ -40,8 +58,10 @@ h1 {
 .tiltedBackground3::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: -3rem;
   left: 0;
+  padding-top: 1.5rem;
+  padding-bottom: 3rem;
   width: 100%;
   height: 120%;
   background-color: var(--theme-color-3);
@@ -49,23 +69,11 @@ h1 {
   z-index: -1;
 }
 
-.guided {
-  padding: 2em;
-}
-
 .bridge {
   padding: 2em;
 }
 
-.empower {
-  padding: 2em;
-}
-
 .difference {
-  padding: 2em;
-}
-
-.collaborate {
   padding: 2em;
 }
 

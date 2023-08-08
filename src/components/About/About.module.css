@@ -28,6 +28,8 @@ section {
 
 .Background1 {
   position: relative;
+  margin-top: calc(var(--margin-b) + 5rem);
+  margin-bottom: calc(var(--margin-b) + 5rem);
 }
 
 .Background1::before {
@@ -44,10 +46,14 @@ section {
 
 .Background2 {
   background-color: var(--theme-color-2);
+  margin-top: calc(var(--margin-b) + 5rem);
+  margin-bottom: calc(var(--margin-b) + 5rem);
 }
 
 .Background3 {
   position: relative;
+  margin-top: calc(var(--margin-b));
+  margin-bottom: calc(var(--margin-b) + 5rem);
 }
 
 .Background3::before {

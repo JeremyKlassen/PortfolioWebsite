@@ -1,3 +1,37 @@
 h1 {
   color: brown;
 }
+
+.githubContainer {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  background-color: var(--theme-color-3);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.gitLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tableauContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.tableauLogo {
+  align-items: center;
+  margin: 1em;
+}
+
+.bullyContainer {
+  display: flex;
+}
+
+.bullyAnalysis {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

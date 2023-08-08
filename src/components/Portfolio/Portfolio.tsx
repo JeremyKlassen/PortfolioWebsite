@@ -1,39 +1,47 @@
 import Github from "../SocialMedia/Github";
-import bully from "../../assets/BullyingPrediction.pdf";
 import Tableau from "../SocialMedia/Tableau";
+import styles from "./Portfolio.module.css";
+import { Link } from "react-router-dom";
+import { BsFillFileBarGraphFill } from "react-icons/bs";
 
 const Portfolio = () => {
   return (
     <>
       <h1>Jeremy's Portfolio Projects</h1>
-      <p>
-        Welcome to my Data Specialist portfolio! I'm passionate about harnessing
-        the power of data to extract valuable insights and make informed
-        decisions. Below, you'll find a glimpse of my skills and projects that
-        highlight my expertise:
-      </p>
+      <section className="portfolioHeading">
+        <p>
+          Welcome to my Data Specialist portfolio! I'm passionate about
+          harnessing the power of data to extract valuable insights and make
+          informed decisions. Below, you'll find a glimpse of my skills and
+          projects that highlight my expertise:
+        </p>
+      </section>
 
-      <div id="githubPortfolio" className="githubContainer">
+      <section id="githubPortfolio" className={styles.githubContainer}>
+        <div className={styles.gitLogo}>
+          <Github size={5} />
+        </div>
         <p>
           Feel free to explore my Github Profile to view some of my projects.
           I've developed a range of data-centric repositories, showcasing my
           ability to clean, analyze, and visualize data effectively. Most are
           written in Python, and some are written in Javascript or Typescript.
         </p>
-        <Github size={3} />
-      </div>
+      </section>
 
-      <div id="tableauPortfolio" className="tableauContainer">
+      <section id="tableauPortfolio" className={styles.tableauContainer}>
         <p>
           Discover my Tableau profile where I've crafted interactive data
           visualizations that bring data stories to life. From dashboards to
           exploratory analyses, my Tableau projects demonstrate my proficiency
           in creating engaging and informative visualizations.
         </p>
-        <Tableau size={3} />
-      </div>
+        <div className={styles.tableauLogo}>
+          <Tableau size={3} />
+        </div>
+      </section>
 
-      <div id="bullyPortfolio" className="bullyContainer">
+      <section id="bullyPortfolio" className={styles.bullyContainer}>
         <p>
           One of my proud accomplishments is my comprehensive data analysis
           project that delves into a bullying dataset. In this project, I
@@ -42,8 +50,10 @@ const Portfolio = () => {
           manipulation and visualization, showcasing my skills in tools like
           Pandas, Matplotlib, and Seaborn.
         </p>
-        <iframe src={bully}></iframe>
-      </div>
+        <Link className={styles.bullyAnalysis} to={"/Bully"}>
+          <BsFillFileBarGraphFill size={80} color={"white"} />
+        </Link>
+      </section>
       <p>
         You're currently on my portfolio website, which serves as a testament to
         my technical abilities. I've built this website using modern web

@@ -8,6 +8,7 @@
   --theme-color-1: #85680a;
   --theme-color-2: #164d20;
   --theme-color-3: #3a2f08;
+  --margin-b: 6rem;
   font-size: var(--base-font-size);
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 

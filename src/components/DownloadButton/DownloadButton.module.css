@@ -1,0 +1,17 @@
+.buttonWrapper {
+  display: inline-block;
+  background-color: var(--theme-color-1);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  transition: background-color 0.3s ease;
+  margin: 1rem;
+}
+
+.buttonWrapper:hover {
+  background-color: var(--theme-color-3);
+}

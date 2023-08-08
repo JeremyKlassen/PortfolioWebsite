@@ -5,6 +5,7 @@ import About from "../About/About";
 import Services from "../Services/Services";
 import Portfolio from "../Portfolio/Portfolio";
 import Connect from "../Connect/Connect";
+import BullyAnalysis from "../BullyAnalysis/BullyAnalysis";
 
 interface Props {
   page: string;
@@ -28,6 +29,9 @@ const Body: React.FC<Props> = ({ page }) => {
       break;
     case "Portfolio":
       toRender = <Portfolio />;
+      break;
+    case "Bully":
+      toRender = <BullyAnalysis />;
       break;
     default:
       toRender = <Home />;

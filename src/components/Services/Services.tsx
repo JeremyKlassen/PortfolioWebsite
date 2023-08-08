@@ -42,7 +42,7 @@ const Services = () => {
         picUrl={chi}
       />
 
-      <section>
+      <section className={styles.section3}>
         <div className={styles.Background2}>
           <h1>3. Ethical Data Strategy</h1>
           <p>
@@ -63,7 +63,7 @@ const Services = () => {
           understanding and driving informed decision-making."
         picUrl={features}
       />
-      <section>
+      <section className={styles.background3}>
         <div className={styles.lBackground3}>
           <div className={styles.rBackground3}>
             <h1>5. Ongoing Collaboration and Support</h1>
