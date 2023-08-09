@@ -2,12 +2,28 @@ h1 {
   color: brown;
 }
 
+.bullyAnalysis {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bullyContainer {
+  display: flex;
+  margin-top: calc(var(--margin-b) + 2rem);
+  margin-bottom: calc(var(--margin-b) + 2rem);
+  background-color: var(--theme-color-2);
+}
+
+.getInTouch {
+  margin-bottom: 2rem;
+}
+
 .githubContainer {
   display: grid;
   grid-template-columns: 1fr 5fr;
-  background-color: var(--theme-color-3);
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: calc(var(--margin-b) + 2rem);
+  margin-bottom: calc(var(--margin-b) + 2rem);
 }
 
 .gitLogo {
@@ -19,6 +35,9 @@ h1 {
 .tableauContainer {
   display: flex;
   flex-direction: column;
+  background-color: var(--theme-color-3);
+  margin-bottom: calc(var(--margin-b) + 2rem);
+  padding-top: 2rem;
 }
 
 .tableauLogo {
@@ -26,12 +45,14 @@ h1 {
   margin: 1em;
 }
 
-.bullyContainer {
+.youtubeContainer {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.bullyAnalysis {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.youtubeVideo {
+  height: 315px;
+  width: 560px;
 }

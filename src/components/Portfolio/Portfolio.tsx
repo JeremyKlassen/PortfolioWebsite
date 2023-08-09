@@ -7,40 +7,16 @@ import { BsFillFileBarGraphFill } from "react-icons/bs";
 const Portfolio = () => {
   return (
     <>
-      <h1>Jeremy's Portfolio Projects</h1>
       <section className="portfolioHeading">
+        <h1>Jeremy's Portfolio Projects</h1>
         <p>
-          Welcome to my Data Specialist portfolio! I'm passionate about
-          harnessing the power of data to extract valuable insights and make
-          informed decisions. Below, you'll find a glimpse of my skills and
-          projects that highlight my expertise:
+          Welcome to my Data Specialist portfolio! Every section below has a
+          clickable icon or picture that will take you to a different section of
+          my portfolio. In addition to these sections I also wrote this entire
+          website. It was written in using React, the library Facebook created
+          for making highly interactive websites.
         </p>
       </section>
-
-      <section id="githubPortfolio" className={styles.githubContainer}>
-        <div className={styles.gitLogo}>
-          <Github size={5} />
-        </div>
-        <p>
-          Feel free to explore my Github Profile to view some of my projects.
-          I've developed a range of data-centric repositories, showcasing my
-          ability to clean, analyze, and visualize data effectively. Most are
-          written in Python, and some are written in Javascript or Typescript.
-        </p>
-      </section>
-
-      <section id="tableauPortfolio" className={styles.tableauContainer}>
-        <p>
-          Discover my Tableau profile where I've crafted interactive data
-          visualizations that bring data stories to life. From dashboards to
-          exploratory analyses, my Tableau projects demonstrate my proficiency
-          in creating engaging and informative visualizations.
-        </p>
-        <div className={styles.tableauLogo}>
-          <Tableau size={3} />
-        </div>
-      </section>
-
       <section id="bullyPortfolio" className={styles.bullyContainer}>
         <p>
           One of my proud accomplishments is my comprehensive data analysis
@@ -54,18 +30,88 @@ const Portfolio = () => {
           <BsFillFileBarGraphFill size={80} color={"white"} />
         </Link>
       </section>
-      <p>
-        You're currently on my portfolio website, which serves as a testament to
-        my technical abilities. I've built this website using modern web
-        technologies like React, showcasing my capability to combine data with
-        front-end development for a seamless user experience.
-      </p>
-      <p>
-        Thank you for taking the time to explore my Data Specialist portfolio.
-        If you're interested in collaborating, have any questions, or want to
-        learn more about my projects, please don't hesitate to{" "}
-        <a href="mailto:test@test.com">get in touch.</a>
-      </p>
+      <section className={styles.youtubeContainer}>
+        <div className={styles.youtubeVideo}>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/C2pgh6bj2Nc"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          ></iframe>
+        </div>
+        <h2>
+          Here is a youtube video that goes over several parts of my portfolio{" "}
+        </h2>
+        <ol>
+          <li>
+            I completed a Group Home Log Submission app. It was coded with
+            Python, and the contents of this can be iterated upon in
+            near-limitless ways. I will upload the code to a private GitHub
+            repository in the next few days. I can provide the link if there are
+            people interested in looking through the code.{" "}
+          </li>
+          <li>
+            I did a data analysis of a Bullying dataset that was put together by
+            the World Health Organization (through their GSHS program). The
+            attachments provided are outputs of the Notebooks. I go through it
+            in detail in the youtube video.
+            <ol>
+              <li>
+                This showcases the use of Jupyter Notebooks which is the
+                Industry Standard for Academic programming.
+              </li>
+              <li>
+                Showcases how data can be worked with in a safer, and more
+                transparent way than with spreadsheets.
+              </li>
+              <li>
+                Use of Artificial Intelligence to discover insights into data
+              </li>
+              <li>
+                Showcases the use of Python, Markdown, and HTML
+                programming/markup languages.
+              </li>
+            </ol>
+          </li>
+          <li>
+            I go through some of last year's Tableau dashboards that I made.
+            They show how data visualization in action.
+          </li>
+        </ol>
+      </section>
+      <section id="githubPortfolio" className={styles.githubContainer}>
+        <div className={styles.gitLogo}>
+          <Github size={5} />
+        </div>
+        <p>
+          Feel free to explore my Github Profile to view some of my projects.
+          I've developed a range of data-centric repositories, showcasing my
+          ability to clean, analyze, and visualize data effectively. Most are
+          written in Python, and some are written in Javascript or Typescript.
+        </p>
+      </section>
+      <section id="tableauPortfolio" className={styles.tableauContainer}>
+        <p>
+          Discover my Tableau profile where I've crafted interactive data
+          visualizations that bring data stories to life. From dashboards to
+          exploratory analyses, my Tableau projects demonstrate my proficiency
+          in creating engaging and informative visualizations.
+        </p>
+        <div className={styles.tableauLogo}>
+          <Tableau size={3} />
+        </div>
+      </section>
+      <section className={styles.getInTouch}>
+        <p>
+          Thank you for taking the time to explore my Data Specialist portfolio.
+          If you're interested in collaborating, have any questions, or want to
+          learn more about my projects, please don't hesitate to{" "}
+          <a href="mailto:test@test.com">get in touch.</a>
+        </p>
+      </section>
     </>
   );
 };
