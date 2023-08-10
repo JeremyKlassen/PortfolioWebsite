@@ -13,7 +13,7 @@ const Header = () => {
           </div>
           <NavLinks />
         </section>
-        <div className={styles.banner + " " + styles.bannerContainer}>
+        <div className={styles.banner}>
           <div className={styles.centeredText}>
             <h1>Jeremy Klassen</h1>
             <h2>Portfolio Website</h2>

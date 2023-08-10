@@ -39,9 +39,6 @@ h1 {
   object-fit: cover;
   padding: 0;
   z-index: -1;
-}
-
-.bannerContainer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,6 +48,7 @@ h1 {
   position: absolute;
   padding: 0;
   text-align: center;
+
   width: 100%;
 }
 
@@ -67,4 +65,23 @@ h1 {
   font-size: 2.5rem;
   padding: 0px;
   margin: 0px;
+}
+
+@media (max-width: 480px) {
+  .banner {
+    padding-top: 0;
+  }
+
+  .centeredText {
+    top: 2rem;
+  }
+
+  .headContainer {
+    padding-bottom: 11rem;
+  }
+
+  .logo {
+    margin-top: 3rem;
+    margin-left: 15rem;
+  }
 }
