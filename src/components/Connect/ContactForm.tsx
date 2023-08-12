@@ -35,7 +35,7 @@ const ContactForm = ({ onSubmit, changeContact }: Props) => {
           <label htmlFor="contactMessage" className={styles.formLabel}>
             Message:
           </label>
-          <textarea className="contactMessage" rows={4} />
+          <textarea className={styles.contactMessage} rows={4} />
         </div>
       </form>
       <div className="buttonDiv">

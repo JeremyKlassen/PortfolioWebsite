@@ -1,9 +1,24 @@
 import styles from "./Header.module.css";
-import headBanner from "../../assets/header.jpg";
 import NavLinks from "./NavLinks";
 import Logo from "./Logo";
+import Banner from "./Banner";
+import { useEffect, useState } from "react";
 
 const Header = () => {
+  const [showBanner, setShowBanner] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setShowBanner(window.innerWidth > 700);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <>
       <div className={styles.headBannerContainer}>
@@ -13,13 +28,7 @@ const Header = () => {
           </div>
           <NavLinks />
         </section>
-        <div className={styles.banner}>
-          <div className={styles.centeredText}>
-            <h1>Jeremy Klassen</h1>
-            <h2>Portfolio Website</h2>
-          </div>
-          <img className={styles.banner} src={headBanner} alt="Head Banner" />
-        </div>
+        {showBanner && <Banner />}
       </div>
     </>
   );

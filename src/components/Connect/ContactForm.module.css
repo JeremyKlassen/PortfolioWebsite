@@ -9,6 +9,16 @@
   padding: 0;
 }
 
+@media (max-width: 700px) {
+  .contactMessage {
+    width: 35rem;
+  }
+
+  .smallItem {
+    min-width: 15rem;
+  }
+}
+
 .formLabel {
   color: #456268;
 }
@@ -24,8 +34,6 @@
 
 .smallItem {
   flex: 0 0 auto;
-  min-width: 200px;
-  max-width: 400px;
 }
 
 .socialMediaConnections {

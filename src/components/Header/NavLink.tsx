@@ -7,11 +7,9 @@ interface Props {
 
 const NavLink = ({ name }: Props) => {
   return (
-    <li className={styles.linkContainer}>
-      <Link className={styles.link} to={"/" + name}>
-        {name}
-      </Link>
-    </li>
+    <Link className={styles.link} to={"/" + name}>
+      {name}
+    </Link>
   );
 };
 

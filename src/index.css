@@ -1,15 +1,16 @@
 :root {
   --base-font-size-desktop: 16px;
-  --base-font-size-mobile: 12px;
-  --background-color: #19270d;
-  --header-footer: var(--theme-color-2);
-  --alternate-color-1: #2680ca;
-  --base-color: #d1edd2;
-  --theme-color-1: #85680a;
-  --theme-color-2: #164d20;
-  --theme-color-3: #3a2f08;
+  --base-font-size-mobile: 10px;
+  --background-color: var(--theme-color-1);
+  --header-footer: var(--theme-color-5);
+  --base-color: #000000;
+  --theme-color-1: #26a9ca;
+  --theme-color-2: #0b8985;
+  --theme-color-3: #000000;
+  --theme-color-4: #000088;
+  --theme-color-5: #dddddd;
   --margin-b: 6rem;
-  font-size: var(--base-font-size);
+  font-size: var(--base-font-size-desktop);
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 
   color: var(--base-color);
@@ -21,17 +22,9 @@
   -webkit-text-size-adjust: 100%;
 }
 
-/* Mobile Styles */
-@media (max-width: 767px) {
+@media (max-width: 800px) {
   :root {
-    --base-font-size: var(--base-font-size-mobile);
-  }
-}
-
-/* Desktop Styles */
-@media (min-width: 768px) {
-  :root {
-    --base-font-size: var(--base-font-size-desktop);
+    font-size: var(--base-font-size-mobile);
   }
 }
 

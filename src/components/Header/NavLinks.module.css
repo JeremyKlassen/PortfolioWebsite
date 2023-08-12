@@ -22,12 +22,21 @@
   color: var(--base-color);
   text-decoration: none;
   font-weight: 600;
+  display: inline-block;
+  background-color: var(--theme-color-1);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  transition: background-color 0.3s ease;
+  margin: 1rem;
 }
 
-.linkContainer {
-  flex: 1;
-  white-space: nowrap;
-  cursor: default;
+.link:hover {
+  background-color: var(--theme-color-3);
 }
 
 ul {
@@ -35,12 +44,19 @@ ul {
   padding: 0px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 700px) {
   .navList {
     display: flex;
     flex-direction: column;
-    margin-top: 12rem;
     margin-left: 0;
     align-items: flex-start;
+    width: 5rem;
+    flex-grow: 0;
+  }
+
+  .navLinks {
+    margin: 0;
+    width: 10rem;
+    flex-grow: 0;
   }
 }

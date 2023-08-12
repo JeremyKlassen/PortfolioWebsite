@@ -1,0 +1,34 @@
+.banner {
+  position: relative;
+  width: 100%;
+  height: 12.5em;
+  object-fit: cover;
+  padding: 0;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centeredText {
+  position: absolute;
+  padding: 0;
+  text-align: center;
+
+  width: 100%;
+}
+
+.centeredText h1 {
+  color: var(--theme-color-1);
+  -webkit-text-stroke: 2px #000000;
+  font-size: 4.5rem;
+  padding: 0px;
+}
+
+.centeredText h2 {
+  color: var(--theme-color-1);
+  -webkit-text-stroke: 2px #000000;
+  font-size: 3rem;
+  padding: 0px;
+  margin: 0px;
+}
