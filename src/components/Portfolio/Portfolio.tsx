@@ -16,7 +16,7 @@ const Portfolio = () => {
         <p>
           Welcome to my Data Specialist portfolio! Every section below has a
           clickable icon or picture that will take you to a different section of
-          my portfolio. In addition to these sections I also wrote this entire
+          my portfolio. In addition to these sections, I also wrote this entire
           website. It was written in using React, the library Facebook created
           for making highly interactive websites.
         </p>
@@ -32,7 +32,7 @@ const Portfolio = () => {
           Pandas, Matplotlib, and Seaborn.
         </p>
         <Link className={styles.bullyAnalysis} to={"/Bully"}>
-          <BsFillFileBarGraphFill size={80} color={"white"} />
+          <BsFillFileBarGraphFill size={100} color={"white"} />
         </Link>
       </section>
       <section className={styles.youtubeContainer}>

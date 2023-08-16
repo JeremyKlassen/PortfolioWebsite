@@ -6,13 +6,13 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  grid-column: 4/5;
-  grid-row: 2/4;
+  grid-column: 6/7;
+  grid-row: 1/4;
 }
 
 .bullyContainer {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(3, 1fr);
   margin-top: calc(var(--margin-b) + 2rem);
   margin-bottom: calc(var(--margin-b) + 2rem);
@@ -21,12 +21,12 @@ h1 {
 }
 
 .bullyContainer h2 {
-  grid-column: 1/5;
+  grid-column: 1/6;
   grid-row: 1/2;
 }
 
 .bullyContainer p {
-  grid-column: 1/4;
+  grid-column: 1/6;
   grid-row: 2/4;
 }
 
@@ -36,7 +36,7 @@ h1 {
 
 .githubContainer {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(3, 1fr);
   margin-top: calc(var(--margin-b) + 2rem);
   margin-bottom: calc(var(--margin-b) + 2rem);
@@ -45,12 +45,12 @@ h1 {
 }
 
 .githubContainer h2 {
-  grid-column: 1/5;
+  grid-column: 1/7;
   grid-row: 1/2;
 }
 
 .githubContainer p {
-  grid-column: 1/4;
+  grid-column: 1/6;
   grid-row: 2/4;
 }
 
@@ -58,6 +58,8 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  grid-column: 6/7;
+  grid-row: 1/4;
 }
 
 .tableauContainer {
