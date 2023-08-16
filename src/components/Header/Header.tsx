@@ -24,7 +24,7 @@ const Header = () => {
       <div className={styles.headBannerContainer}>
         <section className={styles.headContainer}>
           <div className={styles.logo}>
-            <Logo />
+            <Logo isMobile={showBanner} />
           </div>
           <NavLinks />
         </section>

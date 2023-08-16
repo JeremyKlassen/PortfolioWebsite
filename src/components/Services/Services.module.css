@@ -60,6 +60,8 @@
 
 .rBackground3 {
   position: relative;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
 }
 
 .rBackground3::before {
@@ -86,4 +88,12 @@
 
 .sectionCollab {
   margin-top: calc(var(--margin-b) + 5rem);
+}
+
+.dsList {
+  list-style-type: disc;
+}
+
+.dsListItem {
+  text-align: left;
 }

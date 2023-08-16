@@ -2,7 +2,7 @@ import styles from "./TextPictureLeft.module.css";
 
 interface Props {
   picUrl: string;
-  textBlock: string;
+  textBlock: React.ReactNode;
   heading: string;
 }
 

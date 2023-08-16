@@ -1,0 +1,20 @@
+.navList {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.navTag {
+  justify-content: left;
+}
+
+@media (max-width: 600px) {
+  .navList {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .navList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

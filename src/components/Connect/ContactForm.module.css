@@ -2,25 +2,37 @@
   justify-content: center;
 }
 
+.contactFormContainer h1 {
+  margin-bottom: 3rem;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .contactItem {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   margin: 0;
   padding: 0;
 }
 
-@media (max-width: 700px) {
-  .contactMessage {
-    width: 35rem;
-  }
+.contactMessageDiv {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
 
-  .smallItem {
-    min-width: 15rem;
-  }
+.contactMessage {
+  flex-grow: 1;
 }
 
 .formLabel {
-  color: #456268;
+  color: #000000;
+  font-size: 1.5rem;
 }
 
 .small {
@@ -33,7 +45,7 @@
 }
 
 .smallItem {
-  flex: 0 0 auto;
+  width: 30rem;
 }
 
 .socialMediaConnections {
@@ -47,24 +59,57 @@
 }
 
 .submitButton {
-  background-color: #007bff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--theme-color-2);
   color: #fff;
-  padding: 0.625em 1.25em;
-  margin: 1em 0;
-  border: 1px solid #007bff;
+  padding: 1em;
+  margin: 1em;
+  border: 1px solid var(--theme-color-2);
   border-radius: 0.25em;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
   width: 9.375rem;
   height: 2.5rem;
-  align-self: flex-start;
 }
 
 .submitButton:hover {
-  background-color: #0056b3;
+  background-color: var(--theme-color-3);
 }
 
 .soci .submitButton:focus {
   outline: none;
   box-shadow: 0 0 0.3125em #007bff;
+}
+
+.buttonDiv {
+  justify-content: center;
+}
+
+@media (max-width: 700px) {
+  .contactMessage {
+    width: 50rem;
+    justify-content: center;
+  }
+
+  .contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .smallItem {
+    width: 25rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .smallItem {
+    width: 15rem;
+  }
+
+  .contactMessage {
+    width: 35rem;
+  }
 }

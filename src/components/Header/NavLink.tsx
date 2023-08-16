@@ -6,11 +6,21 @@ interface Props {
 }
 
 const NavLink = ({ name }: Props) => {
-  return (
-    <Link className={styles.link} to={"/" + name}>
-      {name}
-    </Link>
-  );
+  if (name === "Contact")
+    return (
+      <Link
+        className={styles.link + " " + styles.connectButton}
+        to={"/" + name}
+      >
+        Connect With Me
+      </Link>
+    );
+  else
+    return (
+      <Link className={styles.link} to={"/" + name}>
+        {name}
+      </Link>
+    );
 };
 
 export default NavLink;

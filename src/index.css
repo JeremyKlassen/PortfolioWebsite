@@ -9,6 +9,7 @@
   --theme-color-3: #000000;
   --theme-color-4: #000088;
   --theme-color-5: #dddddd;
+  --theme-color-6: #85680a;
   --margin-b: 6rem;
   font-size: var(--base-font-size-desktop);
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -25,7 +26,13 @@
 @media (max-width: 800px) {
   :root {
     font-size: var(--base-font-size-mobile);
+    width: 100%;
   }
+}
+
+p {
+  line-height: 1.15;
+  font-size: 1.5rem;
 }
 
 body {
@@ -37,4 +44,5 @@ body {
 
 h1 {
   line-height: 1.1;
+  font-size: 3rem;
 }

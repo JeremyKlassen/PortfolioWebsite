@@ -9,53 +9,87 @@ const Services = () => {
   return (
     <>
       <TextPictureLeft
-        heading="Empowering Change Through Full Stack Data Services"
-        textBlock="In the realm of data empowerment, I offer a comprehensive suite of
-          services that bridge the gap between raw information and meaningful
-          impact. As a dedicated Youth Worker, Programmer, and Data Enthusiast,
-          I bring a unique perspective to the table – one that combines
-          technical prowess with a heart for positive change."
+        heading="Data Strategy Analysis"
+        textBlock={
+          <div>
+            The first step for a project is often figuring out a Data Strategy.
+            Important questions need to be answered:
+            <ul className={styles.dsList}>
+              <li className={styles.dsListItem}>
+                What is the problem or question that needs to be worked on?
+              </li>
+              <li className={styles.dsListItem}>
+                What Metrics (stuff we can measure) can be tracked?
+              </li>
+              <li className={styles.dsListItem}>
+                Which of these are the best options to spend time and money
+                tracking?
+              </li>
+              <li className={styles.dsListItem}>
+                What are the Key Performance Indicators that should be used to
+                gauge progress?
+              </li>
+            </ul>
+            To put together a Data Strategy many methods can be employed, from
+            connecting with Managers and Frontline Staff, to going over program
+            schedules and documents.
+          </div>
+        }
         picUrl={jeremy8}
       />
       <section className={styles.section1}>
         <div className={styles.lBackground1}>
           <div className={styles.rBackground1}>
-            <h1>1. Data Insight Collaboration</h1>
+            <h1>Data Driven Storytelling</h1>
             <p>
-              I collaborate closely with front-line workers to ethically
-              identify and understand the data that holds the potential to
-              transform your initiatives. By working hand in hand, we can
-              navigate the ethical landscape of data tracking, ensuring that
-              every data point collected serves a purpose, respects privacy, and
-              drives progress.
+              A positive recent trend in the data world has been on translating
+              raw data into compelling narratives that drive change. In Social
+              Services we deal with people, communities and organizations that
+              have stories. Using data we can better communicate the components
+              of their stories like plots, settings, characters, conflicts, and
+              actions.
             </p>
           </div>
         </div>
       </section>
       <TextPictureRight
-        heading="2. Full Stack Data Solutions"
-        textBlock="From inception to implementation, I offer end-to-end data solutions
-          that encompass the full data stack. Whether it's data collection,
-          processing, analysis, or visualization, my expertise spans the
-          spectrum. I harness the power of Python, JavaScript, and more to craft
-          systems that not only streamline data but also amplify its impact."
+        heading="Full Stack Data Solutions"
+        textBlock="When it comes to the software needed to meet your data needs, 
+        a variety of tools can be leveraged that encompass the full data stack. 
+        Whether it's data collection, processing, analysis, or visualization, my 
+        expertise spans the spectrum. I typically harness the power of Python, 
+        and JavaScript in order to craft customized systems to meet your unique 
+        needs."
         picUrl={chi}
       />
 
       <section className={styles.section3}>
         <div className={styles.Background2}>
-          <h1>3. Ethical Data Strategy</h1>
+          <h1>Data Consolidation</h1>
           <p>
-            Ethics are the cornerstone of every data-driven endeavor. I provide
-            guidance in developing robust ethical data strategies that
-            prioritize transparency, consent, and responsible use. Together,
-            we'll build a framework that not only adheres to ethical standards
-            but also sets an example for others in the industry.
+            Centralizing an organizations data is a good idea. Having more of it
+            in one spot reduces security threats, reduces costs, allows for more
+            accurate analysis, and data can be produced quickly when needed.
+            Sadly there are usually practical hurdles. Social Service
+            organizations can have a lot of indepently operating programs, with
+            their own systems and methods to track data. Sometimes programs are
+            brought into the organization with different systems. Efforts to
+            centralize their data and processes can result in significant
+            friction between people. A solution the data community has developed
+            for this type of problem is called:
+          </p>
+          <h2>Data Pipelines!</h2>
+          <p>
+            The idea is to look at the independent program’s systems, and find a
+            way to pipe the data in it into the central system of your
+            organization. This strategy allows the program to operate how it’s
+            used to with minimal change, and it allows the larger organization
+            access to the data it needs to support it’s programs.
           </p>
         </div>
       </section>
       <TextPictureLeft
-        heading="4. Impactful Data Visualization"
+        heading="Impactful Data Visualization"
         textBlock="Numbers come to life through visualization. I create engaging and
           informative visualizations that narrate your data stories. From
           interactive Tableau dashboards to custom JavaScript visualizations, I
@@ -66,7 +100,7 @@ const Services = () => {
       <section className={styles.background3}>
         <div className={styles.lBackground3}>
           <div className={styles.rBackground3}>
-            <h1>5. Ongoing Collaboration and Support</h1>
+            <h1>Ongoing Collaboration and Support</h1>
             <p>
               Data's impact is an ongoing journey. I'm here to provide continued
               support, helping you adapt and evolve as your data needs grow.

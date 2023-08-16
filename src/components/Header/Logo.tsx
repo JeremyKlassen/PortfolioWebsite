@@ -1,10 +1,15 @@
 import { GiBeard } from "react-icons/gi";
 import { Link } from "react-router-dom";
 
-const Logo = () => {
+interface Props {
+  isMobile: boolean;
+}
+
+const Logo = ({ isMobile }: Props) => {
+  const iconSize = isMobile ? 50 : 100;
   return (
     <Link to="/Home">
-      <GiBeard size={50} color="#85680a" />
+      <GiBeard size={iconSize} color="#85680a" />
     </Link>
   );
 };

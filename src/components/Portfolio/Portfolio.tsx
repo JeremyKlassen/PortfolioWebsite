@@ -9,6 +9,10 @@ const Portfolio = () => {
     <>
       <section className="portfolioHeading">
         <h1>Jeremy's Portfolio Projects</h1>
+        <h2>
+          All logos on this page are clickable links that lead you to different
+          parts of my portfolio.
+        </h2>
         <p>
           Welcome to my Data Specialist portfolio! Every section below has a
           clickable icon or picture that will take you to a different section of
@@ -18,6 +22,7 @@ const Portfolio = () => {
         </p>
       </section>
       <section id="bullyPortfolio" className={styles.bullyContainer}>
+        <h2>Bully Dataset Machine Learning Analysis</h2>
         <p>
           One of my proud accomplishments is my comprehensive data analysis
           project that delves into a bullying dataset. In this project, I
@@ -31,6 +36,9 @@ const Portfolio = () => {
         </Link>
       </section>
       <section className={styles.youtubeContainer}>
+        <h2>
+          Here is a youtube video that goes over several parts of my portfolio{" "}
+        </h2>
         <div className={styles.youtubeVideo}>
           <iframe
             width="560"
@@ -42,10 +50,8 @@ const Portfolio = () => {
             allowFullScreen
           ></iframe>
         </div>
-        <h2>
-          Here is a youtube video that goes over several parts of my portfolio{" "}
-        </h2>
-        <ol>
+
+        <ul>
           <li>
             I completed a Group Home Log Submission app. It was coded with
             Python, and the contents of this can be iterated upon in
@@ -80,13 +86,15 @@ const Portfolio = () => {
             I go through some of last year's Tableau dashboards that I made.
             They show how data visualization in action.
           </li>
-        </ol>
+        </ul>
       </section>
       <section id="githubPortfolio" className={styles.githubContainer}>
+        <h2>Github Profile</h2>
         <div className={styles.gitLogo}>
           <Github size={5} />
         </div>
         <p>
+          Github is where I keep the code I write that I want to show to others.
           Feel free to explore my Github Profile to view some of my projects.
           I've developed a range of data-centric repositories, showcasing my
           ability to clean, analyze, and visualize data effectively. Most are
@@ -109,7 +117,7 @@ const Portfolio = () => {
           Thank you for taking the time to explore my Data Specialist portfolio.
           If you're interested in collaborating, have any questions, or want to
           learn more about my projects, please don't hesitate to{" "}
-          <a href="mailto:test@test.com">get in touch.</a>
+          <Link to="/Contact">get in touch.</Link>
         </p>
       </section>
     </>

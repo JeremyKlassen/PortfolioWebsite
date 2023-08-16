@@ -18,6 +18,7 @@ function App() {
           <Route path="/Portfolio" element={<Body page="Portfolio" />} />
           <Route path="/Contact" element={<Body page="Contact" />} />
           <Route path="/Bully" element={<Body page="Bully" />} />
+          <Route path="/Thanks" element={<Body page="Thanks" />} />
         </Routes>
         <Footer />
       </div>

@@ -9,3 +9,9 @@
   object-fit: scale-down;
   margin: 1rem;
 }
+
+@media (max-width: 480px) {
+  .section {
+    flex-direction: column;
+  }
+}

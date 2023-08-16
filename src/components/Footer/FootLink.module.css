@@ -1,0 +1,19 @@
+.footLink {
+  color: var(--base-color);
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  background-color: var(--theme-color-1);
+  color: white;
+  padding: 5px 10px;
+  font-size: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  transition: background-color 0.3s ease;
+  margin: 0.5em;
+}
+
+.footLink:hover {
+  background-color: var(--theme-color-3);
+}
