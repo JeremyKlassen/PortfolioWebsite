@@ -1,9 +1,12 @@
-import Submitted from "./Submitted";
+import styles from "./Thanks.module.css";
 
 const Thanks = () => {
   return (
     <>
-      <Submitted />
+      <section className={styles.thanks}>
+        <h1>Thank you for your message.</h1>
+        <p>A response will be sent shortly</p>
+      </section>
     </>
   );
 };

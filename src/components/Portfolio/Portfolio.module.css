@@ -21,7 +21,7 @@ h1 {
 }
 
 .bullyContainer h2 {
-  grid-column: 1/6;
+  grid-column: 1/7;
   grid-row: 1/2;
 }
 
@@ -74,6 +74,34 @@ h1 {
 .tableauLogo {
   align-items: center;
   margin: 1em;
+}
+
+.reactLogoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: 6/7;
+  grid-row: 1/4;
+}
+
+.thisWebsiteContainer {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  margin-top: calc(var(--margin-b) + 2rem);
+  margin-bottom: calc(var(--margin-b) + 2rem);
+  background-color: var(--theme-color-5);
+  border-radius: 20px;
+}
+
+.thisWebsiteContainer h2 {
+  grid-column: 1/7;
+  grid-row: 1/2;
+}
+
+.thisWebsiteContainer p {
+  grid-column: 1/6;
+  grid-row: 2/4;
 }
 
 .youtubeContainer {

@@ -3,6 +3,7 @@ import Tableau from "../SocialMedia/Tableau";
 import styles from "./Portfolio.module.css";
 import { Link } from "react-router-dom";
 import { BsFillFileBarGraphFill } from "react-icons/bs";
+import ReactLogo from "../SocialMedia/ReactLogo";
 
 const Portfolio = () => {
   return (
@@ -35,9 +36,28 @@ const Portfolio = () => {
           <BsFillFileBarGraphFill size={100} color={"white"} />
         </Link>
       </section>
+      <section className={styles.thisWebsiteContainer}>
+        <h2>This Website!</h2>
+        <p>
+          This website isn’t some template I found off Wordpress, it is a
+          project crafted from the ground up. It was{" "}
+          <strong>developed using React</strong>, the premiere coding library
+          developed by Facebook, for creating highly advanced web platforms.{" "}
+          <strong>
+            These platforms include Facebook, Instagram, Airbnb, Netflix,
+            WhatsApp, Twitter, Uber, Hulu… and many many more.
+          </strong>
+          It is also an excellent platform for building custom data web app
+          solutions.
+        </p>
+        <div className={styles.reactLogoContainer}>
+          <ReactLogo size={5} />
+        </div>
+      </section>
+
       <section className={styles.youtubeContainer}>
         <h2>
-          Here is a youtube video that goes over several parts of my portfolio{" "}
+          Here is a youtube video that goes over several parts of my portfolio
         </h2>
         <div className={styles.youtubeVideo}>
           <iframe

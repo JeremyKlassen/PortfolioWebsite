@@ -1,0 +1,9 @@
+.reactLogoLink {
+  background-color: var(--theme-color-6);
+  border-radius: 20px;
+  padding: 1rem;
+}
+
+.reactLogoLink:hover {
+  background-color: var(--theme-color-3);
+}
