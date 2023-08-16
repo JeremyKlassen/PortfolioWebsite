@@ -9,22 +9,22 @@ const Home = () => {
   return (
     <>
       <TextPictureLeft
-        heading="Shining Light on Pathways for Disadvantaged Youth, One Byte at a
-            Time"
+        heading="Data Solutions for Community Based Organizations"
         textBlock="In the realm of data, mine is an important mission – to empower and
-            uplift disadvantaged youth. I'm Jeremy, a Youth Worker, Programmer,
+            uplift disadvantaged communities. I'm Jeremy, a Youth Worker, Programmer,
             and Data Enthusiast, and this website is where my passion for
             positive change takes center stage."
         picUrl={lineChart}
       />
       <section className={styles.guided}>
         <div className={styles.tiltedBackground}>
-          <h1>Guided by Compassionate Data Exploration</h1>
+          <h1>Guided by Ethics-Based Data Exploration</h1>
           <p>
-            Amidst the vast expanse of data, my compass is pointed towards a
-            profound purpose – to uncover stories of transformation and
-            translate them into opportunities. Each dataset holds a potential
-            chapter of change, and I am committed to scripting those narratives.
+            Amidst the vast expanse of data, my compass is pointed towards the
+            benefit of those who are disadvantaged, to uncover stories of
+            transformation and translate them into opportunities. Each dataset
+            holds a potential chapter of change, and I am committed to scripting
+            those narratives.
           </p>
         </div>
       </section>

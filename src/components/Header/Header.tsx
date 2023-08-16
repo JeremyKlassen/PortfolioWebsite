@@ -9,7 +9,7 @@ const Header = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setShowBanner(window.innerWidth > 700);
+      setShowBanner(window.innerWidth > 768);
     };
 
     handleResize();

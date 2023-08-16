@@ -11,3 +11,9 @@
   flex: 0 0 auto;
   margin: 5px;
 }
+
+@media (max-width: 768px) {
+  .socialMediaContainer {
+    flex-direction: column;
+  }
+}

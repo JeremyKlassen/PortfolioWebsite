@@ -9,11 +9,9 @@ interface Props {
 const TextPictureLeft = ({ heading, textBlock, picUrl }: Props) => {
   return (
     <>
-      <section className={styles.section}>
-        <div>
-          <h1>{heading}</h1>
-          <p>{textBlock}</p>
-        </div>
+      <section className={styles.sectionContent}>
+        <h1 className={styles.sectionHeader}>{heading}</h1>
+        <p className={styles.sectionP}>{textBlock}</p>
         <img className={styles.pic} src={picUrl} alt={heading} />
       </section>
     </>

@@ -72,15 +72,16 @@ h1 {
   margin: 0px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   .headContainer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     height: auto;
     background-image: url("../../assets/plantHeader.jpg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    width: auto;
   }
 
   .logo {

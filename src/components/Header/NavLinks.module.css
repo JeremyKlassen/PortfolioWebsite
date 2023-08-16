@@ -52,14 +52,15 @@ ul {
     display: flex;
     flex-direction: column;
     margin-left: 0;
-    align-items: flex-start;
-    width: 5rem;
+    align-items: center;
+    width: 25rem;
     flex-grow: 0;
+    text-align: center;
   }
 
   .navLinks {
     margin: 0;
-    width: 10rem;
+    width: 25rem;
     flex-grow: 1;
   }
 }
