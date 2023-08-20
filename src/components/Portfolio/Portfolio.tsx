@@ -4,8 +4,23 @@ import styles from "./Portfolio.module.css";
 import { Link } from "react-router-dom";
 import { BsFillFileBarGraphFill } from "react-icons/bs";
 import ReactLogo from "../SocialMedia/ReactLogo";
+import Youtube from "./Youtube";
+import { useEffect, useState } from "react";
 
 const Portfolio = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <>
       <section className="portfolioHeading">
@@ -59,19 +74,18 @@ const Portfolio = () => {
         <h2>
           Here is a youtube video that goes over several parts of my portfolio
         </h2>
-        <div className={styles.youtubeVideo}>
-          <iframe
-            width="560"
-            height="315"
-            // width="480"
-            // height="360"
-            src="https://www.youtube.com/embed/C2pgh6bj2Nc"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-          ></iframe>
-        </div>
+        {windowWidth > 768 ? (
+          <Youtube />
+        ) : (
+          <>
+            <a href="https://www.youtube.com/embed/C2pgh6bj2Nc">
+              <h2>
+                Link to Portfolio Project Video (for an embeded video, use
+                landscape mode).
+              </h2>
+            </a>
+          </>
+        )}
 
         <ul>
           <li>
