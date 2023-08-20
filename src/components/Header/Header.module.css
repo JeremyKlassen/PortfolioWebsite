@@ -13,6 +13,17 @@
   border-top-right-radius: 20px;
 }
 
+.mobileH1 {
+  padding-bottom: 0;
+  color: var(--theme-color-6);
+  text-shadow: 1px 1px 0px #000000;
+}
+
+.mobileH2 {
+  color: var(--theme-color-6);
+  text-shadow: 1px 1px 0px #000000;
+}
+
 .headBannerContainer {
   margin: 1rem;
 }

@@ -12,7 +12,7 @@ const Home = () => {
         heading="Data Solutions for Community Based Organizations"
         textBlock="In the realm of data, mine is an important mission – to empower and
             uplift disadvantaged communities. I'm Jeremy, a Youth Worker, Programmer,
-            and Data Enthusiast, and this website is where my passion for
+            and Data Enthusiast. This website is where my passion for
             positive change takes center stage."
         picUrl={lineChart}
       />

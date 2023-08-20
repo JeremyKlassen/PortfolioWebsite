@@ -29,6 +29,14 @@ const Header = () => {
           <NavLinks />
         </section>
         {showBanner && <Banner />}
+        {!showBanner ? (
+          <>
+            <h1 className={styles.mobileH1}>Jeremy Klassen</h1>
+            <h2 className={styles.mobileH2}> Data Specialist</h2>
+          </>
+        ) : (
+          <></>
+        )}
       </div>
     </>
   );

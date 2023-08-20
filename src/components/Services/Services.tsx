@@ -12,7 +12,7 @@ const Services = () => {
         heading="Data Strategy Analysis"
         textBlock={
           <div>
-            The first step for a project is often figuring out a Data Strategy.
+            The first step for most projects is to figure out a Data Strategy.
             Important questions need to be answered:
             <ul className={styles.dsList}>
               <li className={styles.dsListItem}>
@@ -26,13 +26,14 @@ const Services = () => {
                 tracking?
               </li>
               <li className={styles.dsListItem}>
-                What are the Key Performance Indicators that should be used to
-                gauge progress?
+                What are the Key Performance Indicators (kpi's) that should be
+                used to gauge progress?
               </li>
             </ul>
-            To put together a Data Strategy many methods can be employed, from
-            connecting with Managers and Frontline Staff, to going over program
-            schedules and documents.
+            To put together a Data Strategy, many methods can be employed.
+            Connecting with Managers and Frontline Staff, going over program
+            schedules and documents, analyzing maps, developing questionnaires
+            and more.
           </div>
         }
         picUrl={jeremy8}
@@ -57,7 +58,7 @@ const Services = () => {
         textBlock="When it comes to the software needed to meet your data needs, 
         a variety of tools can be leveraged that encompass the full data stack. 
         Whether it's data collection, processing, analysis, or visualization, my 
-        expertise spans the spectrum. I typically harness the power of Python, 
+        expertise spans the spectrum. I typically harness the power of programming languages like Python, 
         and JavaScript in order to craft customized systems to meet your unique 
         needs."
         picUrl={chi}
@@ -65,23 +66,23 @@ const Services = () => {
 
       <section className={styles.section3}>
         <div className={styles.Background2}>
-          <h1>Data Consolidation</h1>
+          <h1>Data Consolidation and Migration</h1>
           <p>
-            Centralizing an organizations data is a good idea. Having more of it
-            in one spot reduces security threats, reduces costs, allows for more
-            accurate analysis, and data can be produced quickly when needed.
-            Sadly there are usually practical hurdles. Social Service
+            Centralized data in an organizations is a good idea. Having more
+            data in one spot reduces security risks, reduces costs, allows for
+            more accurate analysis, and data can be produced quickly when
+            needed. Sadly there are usually practical hurdles. Social Service
             organizations can have a lot of indepently operating programs, with
-            their own systems and methods to track data. Sometimes programs are
-            brought into the organization with different systems. Efforts to
-            centralize their data and processes can result in significant
-            friction between people. A solution the data community has developed
-            for this type of problem is called:
+            their own systems and methods to track data. Migrating these varied
+            systems to a central server is usually a good idea. Sometimes though
+            programs are brought into the organization and efforts to centralize
+            their data can result in friction between people. A solution the
+            data community has developed for this type of problem is called:
           </p>
           <h2>Data Pipelines!</h2>
           <p>
             The idea is to look at the independent program’s systems, and find a
-            way to pipe the data in it into the central system of your
+            way to pipe the data in it to the central system of your
             organization. This strategy allows the program to operate how it’s
             used to with minimal change, and it allows the larger organization
             access to the data it needs to support it’s programs.

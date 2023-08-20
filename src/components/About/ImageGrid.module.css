@@ -9,4 +9,5 @@
   height: 20rem;
   object-fit: cover;
   cursor: pointer;
+  margin: 0.25em;
 }

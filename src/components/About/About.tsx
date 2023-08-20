@@ -17,7 +17,6 @@ const About = () => {
           <h1>
             Hello, I'm Jeremy, a Youth Worker, Programmer, and Data Enthusiast!
           </h1>
-
           <p>
             Welcome to my corner of the digital world! With 17 years of youth
             work experience and a passion for data-driven solutions, I'm
@@ -26,6 +25,7 @@ const About = () => {
         </div>
       </section>
       <section className={styles.Background1}>
+        <h2>Two decades of Youthwork</h2>
         <p>
           Throughout my career as a youth worker, I've witnessed the
           transformative power of mentorship and guidance. Working with diverse
@@ -35,19 +35,23 @@ const About = () => {
         </p>
       </section>
       <section className={styles.about3}>
-        <p>
+        <h2 className={styles.about3h2}>
+          Applied Computer Science at University of Winnipeg
+        </h2>
+        <p className={styles.about3p}>
           Beyond my work with youth, I'm an aspiring programmer currently
           pursuing a degree in Applied Computer Science at The University of
           Winnipeg. I'm eager to channel my technical skills into meaningful
           projects that benefit youth and their families.
         </p>
         <img
-          className={styles.pic2}
+          className={styles.pic2 + " " + styles.about3img}
           src={pic2}
           alt="Jeremy with his partner."
         />
       </section>
       <section className={styles.Background2}>
+        <h2>What Makes Me Unique</h2>
         <p>
           What sets me apart is my interest in using data to support and enhance
           youth work initiatives. I'm fascinated by data-driven insights and
@@ -56,25 +60,28 @@ const About = () => {
           research skills.
         </p>
       </section>
-      <section className={styles.about5}>
-        <div className={styles.aboutLakeContainer}>
-          <img
-            className={styles.aboutLake}
-            src={lake}
-            alt="Drone shot of the Whiteshell"
-          />
+      <section>
+        <h2>Drone Photography</h2>
+        <div className={styles.about5}>
+          <div className={styles.aboutLakeContainer}>
+            <img
+              className={styles.aboutLake}
+              src={lake}
+              alt="Drone shot of the Whiteshell"
+            />
+          </div>
+          <p>
+            When I'm not programming or engaged in youth work, you'll likely
+            find me exploring the world through my drone's lens or enjoying some
+            gaming as a creative escape.
+          </p>
         </div>
-        <p>
-          When I'm not programming or engaged in youth work, you'll likely find
-          me exploring the world through my drone's lens or enjoying some gaming
-          as a creative escape.
-        </p>
       </section>
       <section className={styles.Background3}>
-        <p>
+        <h2>
           Thank you for joining me on this journey of innovation and impact.
           Together, let's build a brighter future!
-        </p>
+        </h2>
       </section>
       <div className={styles.pics}>
         <ImageGrid />

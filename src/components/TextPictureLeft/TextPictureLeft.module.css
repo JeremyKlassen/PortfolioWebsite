@@ -1,7 +1,7 @@
 .sectionContent {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr 2fr;
+  grid-template-rows: 0.5fr 2fr;
   margin-top: 3rem;
   margin-bottom: var(--margin-b);
 }
@@ -14,7 +14,9 @@
 .sectionHeader {
   grid-row: 1/2;
   grid-column: 1/5;
-  padding-bottom: 0;
+  padding: 0;
+  margin-bottom: 1rem;
+  align-self: center;
 }
 
 .pic {
@@ -23,6 +25,7 @@
   margin-right: 2rem;
   grid-row: 2/3;
   grid-column: 1/2;
+  align-self: center;
 }
 
 @media (max-width: 768px) {

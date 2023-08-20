@@ -14,6 +14,8 @@ h1 {
 .collaborate {
   padding: 2em;
   margin-bottom: var(--margin-b);
+  margin-top: 10rem;
+  margin-bottom: 10rem;
 }
 
 .empower {
@@ -24,6 +26,8 @@ h1 {
 .guided {
   padding: 2em;
   margin-bottom: var(--margin-b);
+  margin-top: 10rem;
+  margin-bottom: 10rem;
 }
 
 .tiltedBackground {
