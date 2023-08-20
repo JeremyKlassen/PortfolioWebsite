@@ -65,7 +65,7 @@ h1 {
 .tableauContainer {
   display: flex;
   flex-direction: column;
-  background-color: var(--theme-color-5);
+  background-color: var(--theme-color-7);
   margin-bottom: calc(var(--margin-b) + 2rem);
   padding-top: 2rem;
   border-radius: 20px;
@@ -90,7 +90,7 @@ h1 {
   grid-template-rows: repeat(3, 1fr);
   margin-top: calc(var(--margin-b) + 2rem);
   margin-bottom: calc(var(--margin-b) + 2rem);
-  background-color: var(--theme-color-5);
+  background-color: var(--theme-color-7);
   border-radius: 20px;
 }
 

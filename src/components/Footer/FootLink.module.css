@@ -3,10 +3,10 @@
   text-decoration: none;
   font-weight: 600;
   display: inline-block;
-  background-color: var(--theme-color-1);
+  background-color: var(--theme-color-2);
   color: white;
   padding: 5px 10px;
-  font-size: 10px;
+  font-size: 1rem;
   cursor: pointer;
   text-decoration: none;
   border: none;

@@ -3,7 +3,7 @@
   flex-direction: row-reverse;
   justify-content: flex-start;
   padding: 0.5rem;
-  background-color: var(--background-color);
+  background-color: var(--theme-color-2);
   width: fit-content;
 }
 

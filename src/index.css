@@ -4,12 +4,13 @@
   --background-color: var(--theme-color-1);
   --header-footer: var(--theme-color-5);
   --base-color: #000000;
-  --theme-color-1: #26a9ca;
-  --theme-color-2: #0b8985;
+  --theme-color-2: #219ebc;
+  --theme-color-1: #8ecae6;
   --theme-color-3: #000000;
-  --theme-color-4: #000088;
-  --theme-color-5: #dddddd;
-  --theme-color-6: #85680a;
+  --theme-color-4: #023047;
+  --theme-color-5: #ffb703;
+  --theme-color-6: #fb8500;
+  --theme-color-7: #95a2b9;
   --margin-b: 6rem;
   font-size: var(--base-font-size-desktop);
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;

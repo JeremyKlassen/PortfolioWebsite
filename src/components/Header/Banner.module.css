@@ -20,14 +20,14 @@
 
 .centeredText h1 {
   color: var(--theme-color-6);
-  -webkit-text-stroke: 2px #000000;
+  text-shadow: 1px 1px 0px #000000;
   font-size: 5rem;
   padding: 0px;
 }
 
 .centeredText h2 {
   color: var(--theme-color-6);
-  -webkit-text-stroke: 1px #000000;
+  text-shadow: 1px 1px 0px #000000;
   font-size: 3.5rem;
   padding: 0px;
   margin: 0px;

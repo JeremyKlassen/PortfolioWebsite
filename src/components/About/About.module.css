@@ -45,7 +45,7 @@ section {
 }
 
 .Background2 {
-  background-color: var(--theme-color-5);
+  background-color: var(--theme-color-7);
   margin-top: calc(var(--margin-b) + 5rem);
   margin-bottom: calc(var(--margin-b) + 5rem);
   border-radius: 20px;
