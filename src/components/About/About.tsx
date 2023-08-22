@@ -24,8 +24,8 @@ const About = () => {
           </p>
         </div>
       </section>
-      <section className={styles.Background1}>
-        <h2>Two decades of Youthwork</h2>
+      <section className={styles.background1}>
+        <h1>Two decades of Youthwork</h1>
         <p>
           Throughout my career as a youth worker, I've witnessed the
           transformative power of mentorship and guidance. Working with diverse
@@ -35,9 +35,9 @@ const About = () => {
         </p>
       </section>
       <section className={styles.about3}>
-        <h2 className={styles.about3h2}>
+        <h1 className={styles.about3h2}>
           Applied Computer Science at University of Winnipeg
-        </h2>
+        </h1>
         <p className={styles.about3p}>
           Beyond my work with youth, I'm an aspiring programmer currently
           pursuing a degree in Applied Computer Science at The University of
@@ -51,7 +51,7 @@ const About = () => {
         />
       </section>
       <section className={styles.Background2}>
-        <h2>What Makes Me Unique</h2>
+        <h1>What Makes Me Unique</h1>
         <p>
           What sets me apart is my interest in using data to support and enhance
           youth work initiatives. I'm fascinated by data-driven insights and
@@ -61,7 +61,7 @@ const About = () => {
         </p>
       </section>
       <section>
-        <h2>Drone Photography</h2>
+        <h1>Drone Photography</h1>
         <div className={styles.about5}>
           <div className={styles.aboutLakeContainer}>
             <img
@@ -77,11 +77,11 @@ const About = () => {
           </p>
         </div>
       </section>
-      <section className={styles.Background3}>
-        <h2>
+      <section className={styles.background3}>
+        <h1>
           Thank you for joining me on this journey of innovation and impact.
           Together, let's build a brighter future!
-        </h2>
+        </h1>
       </section>
       <div className={styles.pics}>
         <ImageGrid />

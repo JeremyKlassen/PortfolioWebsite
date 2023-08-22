@@ -14,7 +14,7 @@ const Instagram = ({ size }: Props) => {
 
   return (
     <a
-      href="https://github.com/JeremyKlassen"
+      href="https://www.instagram.com/j_c_klassen/"
       target="_blank"
       rel="noopener noreferrer"
       title="Visit my GitHub Profile"

@@ -1,7 +1,9 @@
 .sectionContent {
   display: grid;
+  margin: 0px;
+  padding: 0px;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr 2fr;
+  grid-template-rows: 1.25fr 2fr;
   margin-top: 3rem;
   margin-bottom: var(--margin-b);
 }
@@ -9,6 +11,7 @@
 .sectionP {
   grid-row: 2/3;
   grid-column: 1/4;
+  align-self: center;
 }
 
 .sectionHeader {

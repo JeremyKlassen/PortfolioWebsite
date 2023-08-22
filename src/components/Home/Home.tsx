@@ -4,20 +4,25 @@ import TextPictureLeft from "../TextPictureLeft/TextPictureLeft";
 import TextPictureRight from "../TextPictureRight/TextPictureRight";
 import bridge from "../../assets/bridge.jpg";
 import jeremy5 from "../../assets/selfies/jeremy5.jpeg";
+import DataIcons from "./DataIcons";
 
 const Home = () => {
   return (
     <>
-      <TextPictureLeft
-        heading="Data Solutions for Community Based Organizations"
-        textBlock="In the realm of data, mine is an important mission – to empower and
-            uplift disadvantaged communities. I'm Jeremy, a Youth Worker, Programmer,
-            and Data Enthusiast. This website is where my passion for
-            positive change takes center stage."
-        picUrl={lineChart}
-      />
+      <section className={styles.landing}>
+        <h1>Data Solutions for Community Based Organizations</h1>
+        <p>
+          In the realm of data, mine is an important mission – to empower and
+          uplift disadvantaged communities. I'm Jeremy, a Youth Worker,
+          Programmer, and Data Enthusiast. This website is where my passion for
+          positive change takes center stage.
+        </p>
+        <div className={styles.dataIconsContainer}>
+          <DataIcons />
+        </div>
+      </section>
       <section className={styles.guided}>
-        <div className={styles.tiltedBackground}>
+        <div className={styles.background1}>
           <h1>Guided by Ethics-Based Data Exploration</h1>
           <p>
             Amidst the vast expanse of data, my compass is pointed towards the
@@ -38,7 +43,7 @@ const Home = () => {
         picUrl={bridge}
       />
       <section className={styles.empower}>
-        <div className={styles.tiltedBackground2}>
+        <div className={styles.background2}>
           <h1>Empowering Youth with Insights</h1>
           <p>
             With 17 years as a Youth Worker, I've witnessed firsthand the
@@ -61,7 +66,7 @@ const Home = () => {
         picUrl={jeremy5}
       />
       <section className={styles.collaborate}>
-        <div className={styles.tiltedBackground3}>
+        <div className={styles.background3}>
           <h1>Connect and Collaborate</h1>
           <p>
             I invite you to reach out, whether you're a fellow enthusiast, a

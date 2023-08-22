@@ -1,5 +1,9 @@
 .contactFormContainer {
   justify-content: center;
+  margin: 0px;
+  padding: 0px;
+  background-color: var(--theme-color-1);
+  border-radius: 20px;
 }
 
 .contactFormContainer h1 {
@@ -8,13 +12,20 @@
 
 .contactForm {
   display: grid;
+  padding: 1rem;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 0.5fr;
   place-content: center;
+  background-color: var(--theme-color-1);
+  border-radius: 20px;
 }
 
 .contactName {
-  transform: scale(1.5);
+  padding: 0.5rem;
+}
+
+.contactEmail {
+  padding: 0.5rem;
 }
 
 .nameContainer {

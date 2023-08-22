@@ -38,7 +38,7 @@ const Portfolio = () => {
         </p>
       </section>
       <section id="bullyPortfolio" className={styles.bullyContainer}>
-        <h2>Bully Dataset Machine Learning Analysis</h2>
+        <h1>Bully Dataset Machine Learning Analysis</h1>
         <p>
           One of my proud accomplishments is my comprehensive data analysis
           project that delves into a bullying dataset. In this project, I

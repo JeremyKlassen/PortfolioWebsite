@@ -12,66 +12,44 @@ h1 {
 }
 
 .collaborate {
-  padding: 2em;
+  padding: 0px;
+  margin: 0px;
   margin-bottom: var(--margin-b);
   margin-top: 10rem;
   margin-bottom: 10rem;
 }
 
 .empower {
-  padding: 2em;
+  padding: 0px;
+  margin: 0px;
   margin-bottom: var(--margin-b);
 }
 
 .guided {
-  padding: 2em;
   margin-bottom: var(--margin-b);
   margin-top: 10rem;
   margin-bottom: 10rem;
 }
 
-.tiltedBackground {
-  position: relative;
-}
-
-.tiltedBackground::before {
-  content: "";
-  position: absolute;
-  padding-top: 2rem;
-  padding-bottom: 4rem;
-  top: -3rem;
-  left: 0;
-  width: 100%;
-  height: 120%;
+.background1 {
   background-color: var(--theme-color-7);
-  transform: skewY(-5deg);
-  z-index: -1;
-}
-
-.tiltedBackground2 {
-  background-color: var(--theme-color-2);
+  padding: 1rem;
   padding-bottom: 2rem;
-  padding-left: 5px;
-  padding-right: 5px;
   border-radius: 20px;
 }
 
-.tiltedBackground3 {
-  position: relative;
+.background2 {
+  background-color: var(--theme-color-2);
+  padding: 1rem;
+  padding-bottom: 2rem;
+  border-radius: 20px;
 }
 
-.tiltedBackground3::before {
-  content: "";
-  position: absolute;
-  top: -3rem;
-  left: 0;
-  padding-top: 1.5rem;
-  padding-bottom: 3rem;
-  width: 100%;
-  height: 120%;
+.background3 {
   background-color: var(--theme-color-7);
-  transform: skewY(5deg);
-  z-index: -1;
+  padding: 1rem;
+  padding-bottom: 2rem;
+  border-radius: 20px;
 }
 
 .bridge {
@@ -84,6 +62,43 @@ h1 {
 
 .forgeAhead {
   padding: 2em;
+}
+
+.landing {
+  padding: 0px;
+  margin: 0px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr 1fr;
+}
+
+.dataIconsContainer {
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+
+.landing h1 {
+  grid-row: 1/2;
+  grid-column: 1/7;
+}
+
+.landing p {
+  grid-row: 2/3;
+  grid-column: 2/7;
+  align-self: center;
+}
+
+@media (max-width: 800px) {
+  .landing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .landing p {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
 }
 
 .shining {

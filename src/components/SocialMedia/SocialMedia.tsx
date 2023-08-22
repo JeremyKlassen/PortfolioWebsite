@@ -10,16 +10,16 @@ const SocialMedia = () => {
     <>
       <div className={styles.socialMediaContainer}>
         <div className={styles.socialMediaItem}>
-          <LinkedIn size={lSize} />
+          <Instagram size={lSize} />
+        </div>
+        <div className={styles.socialMediaItem}>
+          <Github size={lSize} />
         </div>
         <div className={styles.socialMediaItem}>
           <Tableau size={lSize} />
         </div>
         <div className={styles.socialMediaItem}>
-          <Instagram size={lSize} />
-        </div>
-        <div className={styles.socialMediaItem}>
-          <Github size={lSize} />
+          <LinkedIn size={lSize} />
         </div>
       </div>
     </>

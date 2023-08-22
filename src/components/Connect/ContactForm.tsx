@@ -16,13 +16,13 @@ const ContactForm = () => {
           <label htmlFor="contactName" className={styles.formLabel}>
             Name:
           </label>
-          <input type="text" name="name" className="contactName" />
+          <input type="text" name="name" className={styles.contactName} />
         </div>
         <div className={styles.emailContainer}>
           <label htmlFor="contactEmail" className={styles.formLabel}>
             Email Address:
           </label>
-          <input type="email" name="email" className="contactEmail" />
+          <input type="email" name="email" className={styles.contactEmail} />
         </div>
         <div className={styles.messageContainer}>
           <label htmlFor="contactMessage" className={styles.formLabel}>

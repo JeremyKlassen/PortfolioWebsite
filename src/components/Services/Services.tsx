@@ -39,18 +39,16 @@ const Services = () => {
         picUrl={jeremy8}
       />
       <section className={styles.section1}>
-        <div className={styles.lBackground1}>
-          <div className={styles.rBackground1}>
-            <h1>Data Driven Storytelling</h1>
-            <p>
-              A positive recent trend in the data world has been on translating
-              raw data into compelling narratives that drive change. In Social
-              Services we deal with people, communities and organizations that
-              have stories. Using data we can better communicate the components
-              of their stories like plots, settings, characters, conflicts, and
-              actions.
-            </p>
-          </div>
+        <div className={styles.background1}>
+          <h1>Data Driven Storytelling</h1>
+          <p>
+            A positive recent trend in the data world has been on translating
+            raw data into compelling narratives that drive change. In Social
+            Services we deal with people, communities and organizations that
+            have stories. Using data we can better communicate the components of
+            their stories like plots, settings, characters, conflicts, and
+            actions.
+          </p>
         </div>
       </section>
       <TextPictureRight
@@ -65,7 +63,7 @@ const Services = () => {
       />
 
       <section className={styles.section3}>
-        <div className={styles.Background2}>
+        <div className={styles.background2}>
           <h1>Data Consolidation and Migration</h1>
           <p>
             Centralized data in an organizations is a good idea. Having more
@@ -99,18 +97,14 @@ const Services = () => {
         picUrl={features}
       />
       <section className={styles.background3}>
-        <div className={styles.lBackground3}>
-          <div className={styles.rBackground3}>
-            <h1>Ongoing Collaboration and Support</h1>
-            <p>
-              Data's impact is an ongoing journey. I'm here to provide continued
-              support, helping you adapt and evolve as your data needs grow.
-              Whether it's refining strategies, adding new layers of insight, or
-              scaling your data initiatives, I'm your dedicated partner in the
-              quest for positive change.
-            </p>
-          </div>
-        </div>
+        <h1>Ongoing Collaboration and Support</h1>
+        <p>
+          Data's impact is an ongoing journey. I'm here to provide continued
+          support, helping you adapt and evolve as your data needs grow. Whether
+          it's refining strategies, adding new layers of insight, or scaling
+          your data initiatives, I'm your dedicated partner in the quest for
+          positive change.
+        </p>
       </section>
       <section className={styles.sectionCollab}>
         <h1>Let's Collaborate for Change</h1>

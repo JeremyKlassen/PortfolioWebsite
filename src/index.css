@@ -1,7 +1,7 @@
 :root {
   --base-font-size-desktop: 16px;
   --base-font-size-mobile: 10px;
-  --background-color: var(--theme-color-1);
+  --background-color: #ffffff;
   --header-footer: var(--theme-color-5);
   --base-color: #000000;
   --theme-color-5: hwb(199 13% 24%);
@@ -29,6 +29,10 @@
     font-size: var(--base-font-size-mobile);
     width: 100%;
   }
+}
+
+ul {
+  font-size: var(--base-font-size-desktop);
 }
 
 p {

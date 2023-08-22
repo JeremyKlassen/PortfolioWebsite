@@ -2,7 +2,7 @@
   background: var(--header-footer);
   color: #a0c0ca;
   flex-grow: 1;
-  height: 5rem;
+  height: 7rem;
   display: flex;
   flex-direction: row;
   padding: 10px 20px;
@@ -81,6 +81,12 @@ h1 {
   font-size: 3rem;
   padding: 0px;
   margin: 0px;
+}
+
+@media (max-width: 800px) {
+  .headContainer {
+    height: 10rem;
+  }
 }
 
 @media (max-width: 768px) {
