@@ -7,7 +7,6 @@
   display: flex;
   flex-grow: 1;
   flex-direction: row;
-  /* width: max-content; */
   justify-content: end;
   justify-items: center;
   gap: 20px;
@@ -24,7 +23,6 @@
   color: var(--base-color);
   text-decoration: none;
   font-weight: 600;
-  display: inline-block;
   background-color: var(--theme-color-4);
   color: white;
   padding: 10px 20px;
@@ -43,6 +41,9 @@
 
 .connectButton {
   background-color: var(--theme-color-2);
+  color: #000000;
+  text-shadow: none;
+  font-weight: 800;
 }
 
 @media (max-width: 700px) {
@@ -54,6 +55,10 @@
     width: 25rem;
     flex-grow: 0;
     text-align: center;
+  }
+
+  .navList li {
+    margin: 1rem;
   }
 
   .navLinks {

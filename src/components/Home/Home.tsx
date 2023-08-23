@@ -1,5 +1,4 @@
 import styles from "./Home.module.css";
-import lineChart from "../../assets/charts/lineChart1.png";
 import TextPictureLeft from "../TextPictureLeft/TextPictureLeft";
 import TextPictureRight from "../TextPictureRight/TextPictureRight";
 import bridge from "../../assets/bridge.jpg";
