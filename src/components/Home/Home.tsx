@@ -35,7 +35,7 @@ const Home = () => {
             seriously.
           </p>
           <div className={styles.bg1Pic}>
-            <GiBeard size={100} />
+            <GiBeard size={100} color="#85680a" />
           </div>
         </div>
       </section>
