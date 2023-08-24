@@ -12,7 +12,7 @@ const NavLink = ({ name }: Props) => {
         className={styles.link + " " + styles.connectButton}
         to={"/" + name}
       >
-        Connect With Me
+        Connect
       </Link>
     );
   else

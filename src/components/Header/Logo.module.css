@@ -10,7 +10,7 @@
   text-decoration: none;
   border: none;
   transition: background-color 0.3s ease;
-  margin: 1rem;
+  margin: 0;
   text-align: center;
   display: grid;
   grid-template-rows: 1fr;
