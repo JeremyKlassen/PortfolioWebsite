@@ -133,6 +133,18 @@ h1 {
   align-self: center;
 }
 
+.tableauPlaceholder {
+  position: relative;
+}
+
+.tableauViz {
+  display: none;
+}
+
+.tableauImg {
+  border: none;
+}
+
 @media (max-width: 800px) {
   .landing {
     display: flex;

@@ -4,6 +4,7 @@ import pic7 from "../../assets/selfies/jeremy7.jpg";
 import pic2 from "../../assets/selfies/jeremy2.jpeg";
 import lake from "../../assets/lake.jpg";
 import ContactForm from "../Connect/ContactForm";
+import TextPictureLeft from "../TextPictureLeft/TextPictureLeft";
 
 const About = () => {
   console.log("ping");
@@ -63,23 +64,14 @@ const About = () => {
           research skills.
         </p>
       </section>
-      <section>
-        <h1>Drone Photography</h1>
-        <div className={styles.about5}>
-          <div className={styles.aboutLakeContainer}>
-            <img
-              className={styles.aboutLake}
-              src={lake}
-              alt="Drone shot of the Whiteshell"
-            />
-          </div>
-          <p>
-            When I'm not programming or engaged in youth work, you'll likely
+
+      <TextPictureLeft
+        heading="Drone Photography"
+        textBlock="When I'm not programming or engaged in youth work, you'll likely
             find me exploring the world through my drone's lens or enjoying some
-            gaming as a creative escape.
-          </p>
-        </div>
-      </section>
+            gaming as a creative escape."
+        picUrl={lake}
+      />
       <section className={styles.background3}>
         <h1>
           Thank you for joining me on this journey of innovation and impact.

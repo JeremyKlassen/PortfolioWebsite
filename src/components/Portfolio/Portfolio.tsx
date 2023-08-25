@@ -7,6 +7,7 @@ import ReactLogo from "../SocialMedia/ReactLogo";
 import Youtube from "./Youtube";
 import { useEffect, useState } from "react";
 import ContactForm from "../Connect/ContactForm";
+import ThreePointStoryTableau from "./Embeds/ThePointStoryTableau";
 
 const Portfolio = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -26,16 +27,9 @@ const Portfolio = () => {
     <>
       <section className="portfolioHeading">
         <h1>Jeremy's Portfolio Projects</h1>
-        <h2>
-          All logos on this page are clickable links that lead you to different
-          parts of my portfolio.
-        </h2>
         <p>
-          Welcome to my Data Specialist portfolio! Every section below has a
-          clickable icon or picture that will take you to a different section of
-          my portfolio. In addition to these sections, I also wrote this entire
-          website. It was written in using React, the library Facebook created
-          for making highly interactive websites.
+          Welcome to my Data Specialist portfolio! I'm especially proud of this
+          website
         </p>
       </section>
       <section id="bullyPortfolio" className={styles.bullyContainer}>
@@ -138,16 +132,21 @@ const Portfolio = () => {
           written in Python, and some are written in Javascript or Typescript.
         </p>
       </section>
-      <section id="tableauPortfolio" className={styles.tableauContainer}>
+      <section id={styles.tableauPortfolio} className={styles.tableauContainer}>
         <p>
           Discover my Tableau profile where I've crafted interactive data
           visualizations that bring data stories to life. From dashboards to
           exploratory analyses, my Tableau projects demonstrate my proficiency
           in creating engaging and informative visualizations.
         </p>
-        <div className={styles.tableauLogo}>
-          <Tableau size={3} />
-        </div>
+        {windowWidth > 1287 ? (
+          <ThreePointStoryTableau />
+        ) : (
+          <h2>
+            If you are using a phone, rotate into landscape mode to view this
+            DataViz
+          </h2>
+        )}
       </section>
       <section className={styles.getInTouch}>
         <p>

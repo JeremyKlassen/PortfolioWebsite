@@ -1,0 +1,12 @@
+.tps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+.tpsDiv {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}

@@ -11,13 +11,24 @@ const Home = () => {
     <>
       <section className={styles.landing}>
         <h1>Data Solutions for Business Questions</h1>
+        <h2>Do you: </h2>
+        <ul>
+          <li>
+            Have a Question about why something is happening with your
+            organization?
+          </li>
+          <li>
+            Have a bunch of spreadsheets or documents that you don’t know what
+            to do with?
+          </li>
+          <li>
+            Want to figure out where to start with this data stuff you've been
+            hearing about?
+          </li>
+        </ul>
         <p>
-          Do you have a Question about why something is happening with your
-          organization? Maybe you have a bunch of spreadsheets or documents that
-          you don’t know what to do with. Maybe you’ve heard about the benefits
-          of data tracking but have no idea where to start. If any of these
-          questions strikes a chord then I would love to hear more about your
-          organization’s story.
+          If any of these questions strikes a chord then I would love to hear
+          more about your organization’s story.
         </p>
         <div className={styles.dataIconsContainer}>
           <DataIcons />

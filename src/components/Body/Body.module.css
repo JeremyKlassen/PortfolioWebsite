@@ -8,3 +8,10 @@
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
+
+@media (max-width: 800px) {
+  .main section {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}

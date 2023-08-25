@@ -72,6 +72,11 @@ h1 {
   border-radius: 20px;
 }
 
+#tableauPortfolio {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
 .tableauLogo {
   align-items: center;
   margin: 1em;
