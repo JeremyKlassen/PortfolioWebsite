@@ -3,8 +3,11 @@ import styles from "./About.module.css";
 import pic7 from "../../assets/selfies/jeremy7.jpg";
 import pic2 from "../../assets/selfies/jeremy2.jpeg";
 import lake from "../../assets/lake.jpg";
+import ContactForm from "../Connect/ContactForm";
 
 const About = () => {
+  console.log("ping");
+
   return (
     <>
       <section className={styles.about1}>
@@ -86,6 +89,7 @@ const About = () => {
       <div className={styles.pics}>
         <ImageGrid />
       </div>
+      <ContactForm />
     </>
   );
 };

@@ -5,6 +5,10 @@
   height: 8em;
   align-items: center;
   justify-content: space-between;
+  margin: 10px;
+  margin-bottom: 0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .footContent {

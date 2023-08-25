@@ -6,6 +6,7 @@ import { BsFillFileBarGraphFill } from "react-icons/bs";
 import ReactLogo from "../SocialMedia/ReactLogo";
 import Youtube from "./Youtube";
 import { useEffect, useState } from "react";
+import ContactForm from "../Connect/ContactForm";
 
 const Portfolio = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -156,6 +157,7 @@ const Portfolio = () => {
           <Link to="/Contact">get in touch.</Link>
         </p>
       </section>
+      <ContactForm />
     </>
   );
 };

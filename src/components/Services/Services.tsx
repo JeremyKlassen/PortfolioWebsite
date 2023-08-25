@@ -4,6 +4,7 @@ import styles from "./Services.module.css";
 import features from "../../assets/charts/features.png";
 import chi from "../../assets/charts/chiSquare.png";
 import jeremy8 from "../../assets/selfies/jeremy8.jpg";
+import ContactForm from "../Connect/ContactForm";
 
 const Services = () => {
   return (
@@ -38,18 +39,15 @@ const Services = () => {
         }
         picUrl={jeremy8}
       />
-      <section className={styles.section1}>
-        <div className={styles.background1}>
-          <h1>Data Driven Storytelling</h1>
-          <p>
-            A positive recent trend in the data world has been on translating
-            raw data into compelling narratives that drive change. In Social
-            Services we deal with people, communities and organizations that
-            have stories. Using data we can better communicate the components of
-            their stories like plots, settings, characters, conflicts, and
-            actions.
-          </p>
-        </div>
+      <section className={styles.section1 + " " + styles.background1}>
+        <h1>Data Driven Storytelling</h1>
+        <p>
+          A positive recent trend in the data world has been on translating raw
+          data into compelling narratives that drive change. In Social Services
+          we deal with people, communities and organizations that have stories.
+          Using data we can better communicate the components of their stories
+          like plots, settings, characters, conflicts, and actions.
+        </p>
       </section>
       <TextPictureRight
         heading="Full Stack Data Solutions"
@@ -62,30 +60,28 @@ const Services = () => {
         picUrl={chi}
       />
 
-      <section className={styles.section3}>
-        <div className={styles.background2}>
-          <h1>Data Consolidation and Migration</h1>
-          <p>
-            Centralized data in an organizations is a good idea. Having more
-            data in one spot reduces security risks, reduces costs, allows for
-            more accurate analysis, and data can be produced quickly when
-            needed. Sadly there are usually practical hurdles. Social Service
-            organizations can have a lot of indepently operating programs, with
-            their own systems and methods to track data. Migrating these varied
-            systems to a central server is usually a good idea. Sometimes though
-            programs are brought into the organization and efforts to centralize
-            their data can result in friction between people. A solution the
-            data community has developed for this type of problem is called:
-          </p>
-          <h2>Data Pipelines!</h2>
-          <p>
-            The idea is to look at the independent program’s systems, and find a
-            way to pipe the data in it to the central system of your
-            organization. This strategy allows the program to operate how it’s
-            used to with minimal change, and it allows the larger organization
-            access to the data it needs to support it’s programs.
-          </p>
-        </div>
+      <section className={styles.section3 + " " + styles.background2}>
+        <h1>Data Consolidation and Migration</h1>
+        <p>
+          Centralized data in an organizations is a good idea. Having more data
+          in one spot reduces security risks, reduces costs, allows for more
+          accurate analysis, and data can be produced quickly when needed. Sadly
+          there are usually practical hurdles. Social Service organizations can
+          have a lot of indepently operating programs, with their own systems
+          and methods to track data. Migrating these varied systems to a central
+          server is usually a good idea. Sometimes though programs are brought
+          into the organization and efforts to centralize their data can result
+          in friction between people. A solution the data community has
+          developed for this type of problem is called:
+        </p>
+        <h2>Data Pipelines!</h2>
+        <p>
+          The idea is to look at the independent program’s systems, and find a
+          way to pipe the data in it to the central system of your organization.
+          This strategy allows the program to operate how it’s used to with
+          minimal change, and it allows the larger organization access to the
+          data it needs to support it’s programs.
+        </p>
       </section>
       <TextPictureLeft
         heading="Impactful Data Visualization"
@@ -120,6 +116,7 @@ const Services = () => {
           a brighter, more empowered future.
         </p>
       </section>
+      <ContactForm />
     </>
   );
 };

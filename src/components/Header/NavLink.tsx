@@ -1,26 +1,39 @@
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import styles from "./NavLinks.module.css";
+import { Context } from "../../App";
+import { useContext } from "react";
 
 interface Props {
   name: string;
 }
 
 const NavLink = ({ name }: Props) => {
+  const { page, setPage } = useContext(Context);
+
+  const handleClick = () => {
+    setPage(name);
+  };
+
+  let linkElement;
+
   if (name === "Contact")
-    return (
-      <Link
+    linkElement = (
+      <HashLink
         className={styles.link + " " + styles.connectButton}
-        to={"/" + name}
+        smooth
+        to={"/" + page + "#contact"}
       >
         Connect
-      </Link>
+      </HashLink>
     );
   else
-    return (
-      <Link className={styles.link} to={"/" + name}>
+    linkElement = (
+      <Link className={styles.link} to={"/" + name} onClick={handleClick}>
         {name}
       </Link>
     );
+  return linkElement;
 };
 
 export default NavLink;

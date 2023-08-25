@@ -1,11 +1,10 @@
 import styles from "./Home.module.css";
-import TextPictureLeft from "../TextPictureLeft/TextPictureLeft";
 import TextPictureRight from "../TextPictureRight/TextPictureRight";
-import bridge from "../../assets/bridge.jpg";
 import jeremy5 from "../../assets/selfies/jeremy5.jpeg";
 import DataIcons from "./DataIcons";
 import { GiBeard } from "react-icons/gi";
 import ChartIcons from "./ChartIcons";
+import ContactForm from "../Connect/ContactForm";
 
 const Home = () => {
   return (
@@ -24,19 +23,16 @@ const Home = () => {
           <DataIcons />
         </div>
       </section>
-      <section className={styles.guided}>
-        <div className={styles.background1}>
-          <h1 className={styles.bg1H1}>Ethics-Based Data Exploration</h1>
-          <p className={styles.bg1P}>
-            I’ve spent two decades in youthwork. One thing I’ve learned in that
-            time is how important and sensitive your information is. Figuring
-            out how to ethically use and manage the data your employees and
-            clients have entrusted to you is something to be taken very
-            seriously.
-          </p>
-          <div className={styles.bg1Pic}>
-            <GiBeard size={100} color="#85680a" />
-          </div>
+      <section className={styles.guided + " " + styles.background1}>
+        <h1 className={styles.bg1H1}>Ethics-Based Data Exploration</h1>
+        <p className={styles.bg1P}>
+          I’ve spent two decades in youthwork. One thing I’ve learned in that
+          time is how important and sensitive your information is. Figuring out
+          how to ethically use and manage the data your employees and clients
+          have entrusted to you is something to be taken very seriously.
+        </p>
+        <div className={styles.bg1Pic}>
+          <GiBeard size={100} color="#85680a" />
         </div>
       </section>
       <section className={styles.background2}>
@@ -61,6 +57,7 @@ const Home = () => {
           and let's work towards a brighter future together."
         picUrl={jeremy5}
       />
+      <ContactForm />
     </>
   );
 };

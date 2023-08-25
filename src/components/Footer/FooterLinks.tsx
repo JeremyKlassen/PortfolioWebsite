@@ -17,9 +17,6 @@ const FooterLinks = () => {
         <li>
           <FootLink name="Portfolio" />
         </li>
-        <li>
-          <FootLink name="Contact" />
-        </li>
       </ul>
     </nav>
   );

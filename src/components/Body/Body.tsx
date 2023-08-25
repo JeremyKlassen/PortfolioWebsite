@@ -4,7 +4,6 @@ import styles from "./Body.module.css";
 import About from "../About/About";
 import Services from "../Services/Services";
 import Portfolio from "../Portfolio/Portfolio";
-import Connect from "../Connect/Connect";
 import BullyAnalysis from "../BullyAnalysis/BullyAnalysis";
 import Thanks from "../Thanks/Thanks";
 
@@ -24,9 +23,6 @@ const Body: React.FC<Props> = ({ page }) => {
       break;
     case "Services":
       toRender = <Services />;
-      break;
-    case "Contact":
-      toRender = <Connect />;
       break;
     case "Portfolio":
       toRender = <Portfolio />;
