@@ -3,10 +3,10 @@ import styles from "./ContactForm.module.css";
 const ContactForm = () => {
   return (
     <section className={styles.contactFormContainer} id="contact">
-      <h1>
-        If you would like to get ahold of me, please leave a message and I will
-        get back to you.
-      </h1>
+      <h2>
+        Tell me your story! Leave a message with your Contact information, and I
+        will get back to you soon.
+      </h2>
       <form
         action="https://formsubmit.co/b1155fe82ce3ab72deef1b0dd9c0ee30"
         method="POST"

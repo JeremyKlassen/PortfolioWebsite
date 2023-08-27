@@ -1,5 +1,4 @@
 import Github from "../SocialMedia/Github";
-import Tableau from "../SocialMedia/Tableau";
 import styles from "./Portfolio.module.css";
 import { Link } from "react-router-dom";
 import { BsFillFileBarGraphFill } from "react-icons/bs";

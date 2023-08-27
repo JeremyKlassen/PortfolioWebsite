@@ -4,12 +4,19 @@ import Body from "./components/Body/Body";
 import styles from "./App.module.css";
 import Footer from "./components/Footer/Footer";
 import { Route, Routes } from "react-router-dom";
-import React, { useState } from "react";
+import React, { useState, Dispatch, SetStateAction } from "react";
 
-export const Context = React.createContext({
-  page: "",
-  setPage: (value: string) => {},
-});
+export interface PageContextInterface {
+  page: string;
+  setPage: Dispatch<SetStateAction<string>>;
+}
+
+const defaultState = {
+  page: "Home",
+  setPage: (_page: string) => {},
+} as PageContextInterface;
+
+export const Context = React.createContext(defaultState);
 
 function App() {
   const [page, setPage] = useState("Home");
