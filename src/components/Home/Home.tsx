@@ -10,16 +10,16 @@ const Home = () => {
   return (
     <>
       <section className={styles.landing}>
-        <h1>Data Solutions for Your Business</h1>
+        <h1>Web Solutions for Your Business</h1>
         <div className={styles.landingContent}>
           <h2>Do you: </h2>
           <ul className={styles.landingList}>
-            <li>Wonder why something is happening in your organization?</li>
+            <li>Have data related questions?</li>
+            <li>Need a website developed?</li>
+            <li>Need a web application developed?</li>
             <li>
-              Have a bunch of information that you don’t know what to do with?
-            </li>
-            <li>
-              Want to know more about this data stuff you've been hearing about?
+              Have a information sitting in storage cabinets or spreadsheets
+              that you don’t know what to do with?
             </li>
           </ul>
           <p>

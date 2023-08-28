@@ -155,6 +155,7 @@ h1 {
 
 .landingList li {
   align-self: flex-start;
+  text-align: left;
 }
 
 .tableauPlaceholder {
