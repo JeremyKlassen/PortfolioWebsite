@@ -9,6 +9,26 @@ import ContactForm from "../Connect/ContactForm";
 const Services = () => {
   return (
     <>
+      <section className={styles.section1 + " " + styles.background1}>
+        <h1>Data Driven Storytelling</h1>
+        <p>
+          A positive recent trend in the data world has been on translating raw
+          data into compelling narratives that drive change. In Social Services
+          we deal with people, communities and organizations that have stories.
+          Using data we can better communicate the components of their stories
+          like plots, settings, characters, conflicts, and actions.
+        </p>
+      </section>
+      <TextPictureRight
+        heading="Full Stack Data Solutions"
+        textBlock="When it comes to the software needed to meet your data needs, 
+        a variety of tools can be leveraged that encompass the full data stack. 
+        Whether it's data collection, processing, analysis, or visualization, my 
+        expertise spans the spectrum. I typically harness the power of programming languages like Python, 
+        and JavaScript in order to craft customized systems to meet your unique 
+        needs."
+        picUrl={chi}
+      />
       <TextPictureLeft
         heading="Data Strategy Analysis"
         textBlock={
@@ -39,27 +59,6 @@ const Services = () => {
         }
         picUrl={jeremy8}
       />
-      <section className={styles.section1 + " " + styles.background1}>
-        <h1>Data Driven Storytelling</h1>
-        <p>
-          A positive recent trend in the data world has been on translating raw
-          data into compelling narratives that drive change. In Social Services
-          we deal with people, communities and organizations that have stories.
-          Using data we can better communicate the components of their stories
-          like plots, settings, characters, conflicts, and actions.
-        </p>
-      </section>
-      <TextPictureRight
-        heading="Full Stack Data Solutions"
-        textBlock="When it comes to the software needed to meet your data needs, 
-        a variety of tools can be leveraged that encompass the full data stack. 
-        Whether it's data collection, processing, analysis, or visualization, my 
-        expertise spans the spectrum. I typically harness the power of programming languages like Python, 
-        and JavaScript in order to craft customized systems to meet your unique 
-        needs."
-        picUrl={chi}
-      />
-
       <section className={styles.section3 + " " + styles.background2}>
         <h1>Data Consolidation and Migration</h1>
         <p>
