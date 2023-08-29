@@ -5,7 +5,6 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1.25fr 2fr;
   margin-top: 3rem;
-  margin-bottom: var(--margin-b);
 }
 
 .sectionP {
