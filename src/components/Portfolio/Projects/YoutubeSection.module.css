@@ -1,6 +1,14 @@
 .youtubeContainer {
   margin-top: 2rem;
   margin-bottom: 5rem;
-  background: var(--theme-color-6);
+  background: var(--theme-color-1);
   border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.youtubeContainer ul {
+  margin-top: 2rem;
+  text-align: left;
 }

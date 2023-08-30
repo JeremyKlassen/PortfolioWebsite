@@ -1,28 +1,24 @@
 .bullyAnalysis {
-  display: flex;
   align-items: center;
   justify-content: center;
-  grid-column: 6/7;
-  grid-row: 2/4;
-}
-
-.bullyContainer {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 0.5fr 1fr 1fr;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: var(--theme-color-1);
+  font-weight: 600;
+  background-color: var(--theme-color-4);
+  padding: 1rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
   margin-top: 2rem;
-  margin-bottom: 5rem;
-  background-color: var(--theme-color-2);
+  margin-bottom: 2rem;
   border-radius: 20px;
 }
 
-.bullyContainer h1 {
-  grid-column: 1/7;
-  grid-row: 1/2;
-  padding: rem;
-}
-
-.bullyContainer p {
-  grid-column: 1/6;
-  grid-row: 2/4;
+.bullyContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  background-color: var(--theme-color-7);
+  border-radius: 20px;
 }

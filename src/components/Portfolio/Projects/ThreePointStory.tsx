@@ -17,22 +17,27 @@ const ThreePointStory = () => {
     };
   }, []);
   return (
-    <section id={styles.tableauPortfolio} className={styles.tableauContainer}>
-      <p>
-        Discover my Tableau profile where I've crafted interactive data
-        visualizations that bring data stories to life. From dashboards to
-        exploratory analyses, my Tableau projects demonstrate my proficiency in
-        creating engaging and informative visualizations.
-      </p>
-      {windowWidth > 1287 ? (
-        <ThreePointStoryTableau />
-      ) : (
-        <h2>
-          If you are using a phone, rotate into landscape mode to view this
-          DataViz
-        </h2>
-      )}
-    </section>
+    <>
+      <section id={styles.tableauPortfolio} className={styles.tableauContainer}>
+        <h2>Three Point Story</h2>
+        <p>
+          Discover my Tableau profile where I've crafted interactive data
+          visualizations that bring data stories to life. From dashboards to
+          exploratory analyses, my Tableau projects demonstrate my proficiency
+          in creating engaging and informative visualizations.
+        </p>
+      </section>
+      <section>
+        {windowWidth > 1287 ? (
+          <ThreePointStoryTableau />
+        ) : (
+          <h2>
+            Make your browser screen wider to view this visualization. If you
+            are using a phone, rotate it into landscape mode.
+          </h2>
+        )}
+      </section>
+    </>
   );
 };
 

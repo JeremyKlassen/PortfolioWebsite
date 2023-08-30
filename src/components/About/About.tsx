@@ -2,6 +2,7 @@ import ImageGrid from "./ImageGrid";
 import styles from "./About.module.css";
 import pic7 from "../../assets/selfies/jeremy7.jpg";
 import pic2 from "../../assets/selfies/jeremy2.jpeg";
+import pic8 from "../../assets/selfies/jeremy8.jpg";
 import lake from "../../assets/lake.jpg";
 import ContactForm from "../Connect/ContactForm";
 import TextPictureLeft from "../TextPictureLeft/TextPictureLeft";
@@ -17,19 +18,17 @@ const About = () => {
           src={pic7}
           alt="Jeremy in front of a lake."
         />
-        <div className="welcomeContent">
-          <h1>
-            Hello, I'm Jeremy, a Youth Worker, Programmer, and Data Enthusiast!
-          </h1>
-          <p>
-            Welcome to my corner of the digital world! With 17 years of youth
-            work experience and a passion for data-driven solutions, I'm
-            thrilled to share my journey with you.
-          </p>
-        </div>
+        <h1>
+          Hello, I'm Jeremy, a Youth Worker, Programmer, and Data Enthusiast!
+        </h1>
+        <p>
+          Welcome to my corner of the digital world! With 17 years of youth work
+          experience and a passion for data-driven solutions, I'm thrilled to
+          share my journey with you.
+        </p>
       </section>
       <section className={styles.background1}>
-        <h1>Two decades of Youthwork</h1>
+        <h2>Two decades of Youthwork</h2>
         <p>
           Throughout my career as a youth worker, I've witnessed the
           transformative power of mentorship and guidance. Working with diverse
@@ -39,9 +38,9 @@ const About = () => {
         </p>
       </section>
       <section className={styles.about3}>
-        <h1 className={styles.about3h2}>
+        <h2 className={styles.about3h2}>
           Applied Computer Science at University of Winnipeg
-        </h1>
+        </h2>
         <p className={styles.about3p}>
           Beyond my work with youth, I'm an aspiring programmer currently
           pursuing a degree in Applied Computer Science at The University of
@@ -50,12 +49,12 @@ const About = () => {
         </p>
         <img
           className={styles.pic2 + " " + styles.about3img}
-          src={pic2}
+          src={pic8}
           alt="Jeremy with his partner."
         />
       </section>
       <section className={styles.Background2}>
-        <h1>What Makes Me Unique</h1>
+        <h2>What Makes Me Unique</h2>
         <p>
           What sets me apart is my interest in using data to support and enhance
           youth work initiatives. I'm fascinated by data-driven insights and
@@ -73,10 +72,15 @@ const About = () => {
         picUrl={lake}
       />
       <section className={styles.background3}>
-        <h1>
+        <h2>
           Thank you for joining me on this journey of innovation and impact.
           Together, let's build a brighter future!
-        </h1>
+        </h2>
+        <img
+          className={styles.background3Img}
+          src={pic2}
+          alt="Jeremy with his partner."
+        />
       </section>
       <div className={styles.pics}>
         <ImageGrid />

@@ -1,7 +1,7 @@
 .tableauContainer {
   display: flex;
   flex-direction: column;
-  background-color: var(--theme-color-7);
+  background-color: var(--theme-color-1);
   margin-top: 2rem;
   margin-bottom: 5rem;
   padding-top: 2rem;
