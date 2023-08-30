@@ -10,9 +10,11 @@ const TextPictureLeft = ({ heading, textBlock, picUrl }: Props) => {
   return (
     <>
       <section className={styles.sectionContent}>
-        <h1 className={styles.sectionHeader}>{heading}</h1>
+        <h2 className={styles.sectionHeader}>{heading}</h2>
         <p className={styles.sectionP}>{textBlock}</p>
-        <img className={styles.pic} src={picUrl} alt={heading} />
+        <div className={styles.picDiv}>
+          <img className={styles.pic} src={picUrl} alt={heading} />
+        </div>
       </section>
     </>
   );

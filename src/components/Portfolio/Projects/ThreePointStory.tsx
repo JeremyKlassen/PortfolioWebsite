@@ -1,0 +1,39 @@
+import { useEffect, useState } from "react";
+import ThreePointStoryTableau from "../Embeds/ThePointStoryTableau";
+import styles from "./ThreePointStory.module.css";
+
+const ThreePointStory = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+  return (
+    <section id={styles.tableauPortfolio} className={styles.tableauContainer}>
+      <p>
+        Discover my Tableau profile where I've crafted interactive data
+        visualizations that bring data stories to life. From dashboards to
+        exploratory analyses, my Tableau projects demonstrate my proficiency in
+        creating engaging and informative visualizations.
+      </p>
+      {windowWidth > 1287 ? (
+        <ThreePointStoryTableau />
+      ) : (
+        <h2>
+          If you are using a phone, rotate into landscape mode to view this
+          DataViz
+        </h2>
+      )}
+    </section>
+  );
+};
+
+export default ThreePointStory;

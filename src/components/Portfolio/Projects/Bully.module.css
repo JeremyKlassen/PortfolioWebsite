@@ -1,0 +1,28 @@
+.bullyAnalysis {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: 6/7;
+  grid-row: 2/4;
+}
+
+.bullyContainer {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 0.5fr 1fr 1fr;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  background-color: var(--theme-color-2);
+  border-radius: 20px;
+}
+
+.bullyContainer h1 {
+  grid-column: 1/7;
+  grid-row: 1/2;
+  padding: rem;
+}
+
+.bullyContainer p {
+  grid-column: 1/6;
+  grid-row: 2/4;
+}

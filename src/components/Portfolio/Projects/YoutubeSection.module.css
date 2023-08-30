@@ -1,0 +1,6 @@
+.youtubeContainer {
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  background: var(--theme-color-6);
+  border-radius: 20px;
+}

@@ -1,0 +1,9 @@
+.tableauContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--theme-color-7);
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  padding-top: 2rem;
+  border-radius: 20px;
+}

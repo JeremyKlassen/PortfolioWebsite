@@ -1,27 +1,23 @@
-import Github from "../SocialMedia/Github";
 import styles from "./Portfolio.module.css";
 import { Link } from "react-router-dom";
-import { BsFillFileBarGraphFill } from "react-icons/bs";
-import ReactLogo from "../SocialMedia/ReactLogo";
-import Youtube from "./Youtube";
-import { useEffect, useState } from "react";
 import ContactForm from "../Connect/ContactForm";
-import ThreePointStoryTableau from "./Embeds/ThePointStoryTableau";
+import Website from "./Projects/Website";
+import ThreePointStory from "./Projects/ThreePointStory";
+import Bully from "./Projects/Bully";
+import YoutubeSection from "./Projects/YoutubeSection";
+import GithubSection from "./Projects/GithubSection";
+import ToggleProjects from "./ToggleProjects";
+import { useState } from "react";
 
 const Portfolio = () => {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [accordianBools, setBools] = useState([
+    false,
+    false,
+    false,
+    false,
+    false,
+  ]);
 
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
   return (
     <>
       <section className="portfolioHeading">
@@ -31,122 +27,43 @@ const Portfolio = () => {
           website
         </p>
       </section>
-      <section id="bullyPortfolio" className={styles.bullyContainer}>
-        <h1>Bully Dataset Machine Learning Analysis</h1>
-        <p>
-          One of my proud accomplishments is my comprehensive data analysis
-          project that delves into a bullying dataset. In this project, I
-          explored the data, identified trends, and performed statistical
-          analyses to uncover hidden patterns. I leveraged Python for data
-          manipulation and visualization, showcasing my skills in tools like
-          Pandas, Matplotlib, and Seaborn.
-        </p>
-        <Link className={styles.bullyAnalysis} to={"/Bully"}>
-          <BsFillFileBarGraphFill size={100} color={"white"} />
-        </Link>
-      </section>
-      <section className={styles.thisWebsiteContainer}>
-        <h2>This Website!</h2>
-        <p>
-          This website isn’t some template I found off Wordpress, it is a
-          project crafted from the ground up. It was{" "}
-          <strong>developed using React</strong>, the premiere coding library
-          developed by Facebook, for creating highly advanced web platforms.{" "}
-          <strong>
-            These platforms include Facebook, Instagram, Airbnb, Netflix,
-            WhatsApp, Twitter, Uber, Hulu… and many many more.
-          </strong>
-          It is also an excellent platform for building custom data web app
-          solutions.
-        </p>
-        <div className={styles.reactLogoContainer}>
-          <ReactLogo size={5} />
-        </div>
-      </section>
-
-      <section className={styles.youtubeContainer}>
-        <h2>
-          Here is a youtube video that goes over several parts of my portfolio
-        </h2>
-        {windowWidth > 768 ? (
-          <Youtube />
-        ) : (
-          <>
-            <a href="https://www.youtube.com/embed/C2pgh6bj2Nc">
-              <h2>
-                Link to Portfolio Project Video (for an embeded video, use
-                landscape mode).
-              </h2>
-            </a>
-          </>
-        )}
-
-        <ul>
-          <li>
-            I completed a Group Home Log Submission app. It was coded with
-            Python, and the contents of this can be iterated upon in
-            near-limitless ways. I will upload the code to a private GitHub
-            repository in the next few days. I can provide the link if there are
-            people interested in looking through the code.{" "}
-          </li>
-          <li>
-            I did a data analysis of a Bullying dataset that was put together by
-            the World Health Organization (through their GSHS program). The
-            attachments provided are outputs of the Notebooks. I go through it
-            in detail in the youtube video.
-            <ol>
-              <li>
-                This showcases the use of Jupyter Notebooks which is the
-                Industry Standard for Academic programming.
-              </li>
-              <li>
-                Showcases how data can be worked with in a safer, and more
-                transparent way than with spreadsheets.
-              </li>
-              <li>
-                Use of Artificial Intelligence to discover insights into data
-              </li>
-              <li>
-                Showcases the use of Python, Markdown, and HTML
-                programming/markup languages.
-              </li>
-            </ol>
-          </li>
-          <li>
-            I go through some of last year's Tableau dashboards that I made.
-            They show how data visualization in action.
-          </li>
-        </ul>
-      </section>
-      <section id="githubPortfolio" className={styles.githubContainer}>
-        <h2>Github Profile</h2>
-        <div className={styles.gitLogo}>
-          <Github size={5} />
-        </div>
-        <p>
-          Github is where I keep the code I write that I want to show to others.
-          Feel free to explore my Github Profile to view some of my projects.
-          I've developed a range of data-centric repositories, showcasing my
-          ability to clean, analyze, and visualize data effectively. Most are
-          written in Python, and some are written in Javascript or Typescript.
-        </p>
-      </section>
-      <section id={styles.tableauPortfolio} className={styles.tableauContainer}>
-        <p>
-          Discover my Tableau profile where I've crafted interactive data
-          visualizations that bring data stories to life. From dashboards to
-          exploratory analyses, my Tableau projects demonstrate my proficiency
-          in creating engaging and informative visualizations.
-        </p>
-        {windowWidth > 1287 ? (
-          <ThreePointStoryTableau />
-        ) : (
-          <h2>
-            If you are using a phone, rotate into landscape mode to view this
-            DataViz
-          </h2>
-        )}
-      </section>
+      <div className={styles.accordian}>
+        <ToggleProjects
+          accordianBools={accordianBools}
+          setBools={setBools}
+          slot={0}
+          label="This Website"
+        />
+        {accordianBools[0] ? <Website /> : <></>}
+        <ToggleProjects
+          accordianBools={accordianBools}
+          setBools={setBools}
+          slot={1}
+          label="Tableau Three Point Story"
+        />
+        {accordianBools[1] ? <ThreePointStory /> : <></>}
+        <ToggleProjects
+          accordianBools={accordianBools}
+          setBools={setBools}
+          slot={2}
+          label="Bully Dataset Analysis"
+        />
+        {accordianBools[2] ? <Bully /> : <></>}
+        <ToggleProjects
+          accordianBools={accordianBools}
+          setBools={setBools}
+          slot={3}
+          label="Youtube Overview of Various Projects"
+        />
+        {accordianBools[3] ? <YoutubeSection /> : <></>}
+        <ToggleProjects
+          accordianBools={accordianBools}
+          setBools={setBools}
+          slot={4}
+          label="Github Projects"
+        />
+        {accordianBools[4] ? <GithubSection /> : <></>}
+      </div>
       <section className={styles.getInTouch}>
         <p>
           Thank you for taking the time to explore my Data Specialist portfolio.

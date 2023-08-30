@@ -1,0 +1,9 @@
+.toggleText {
+  font-size: 1.5rem;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: fit-content;
+  padding: 0.5rem;
+}
