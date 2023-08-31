@@ -24,7 +24,7 @@ const ThreePointStory = () => {
         exploratory analyses, my Tableau projects demonstrate my proficiency in
         creating engaging and informative visualizations.
       </p>
-      {windowWidth > 1287 ? (
+      {windowWidth > 768 ? (
         <ThreePointStoryTableau />
       ) : (
         <h2>

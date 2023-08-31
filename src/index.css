@@ -24,7 +24,7 @@
   -webkit-text-size-adjust: 100%;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 815px) {
   :root {
     font-size: var(--base-font-size-mobile);
     width: 100%;

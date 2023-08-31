@@ -110,7 +110,7 @@
   box-shadow: 0 0 0.3125em #007bff;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 815px) {
   .messageContainer {
     width: 100%;
   }
@@ -130,7 +130,7 @@
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 415px) {
   .smallItem {
     width: 15rem;
   }

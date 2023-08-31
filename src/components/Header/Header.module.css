@@ -89,7 +89,7 @@ h1 {
   margin: 0px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 815px) {
   .headContainer {
     height: 10rem;
   }

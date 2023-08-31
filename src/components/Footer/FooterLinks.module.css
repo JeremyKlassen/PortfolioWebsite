@@ -14,7 +14,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 415px) {
   .navList {
     grid-template-columns: repeat(2, 1fr);
   }

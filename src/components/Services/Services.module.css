@@ -75,7 +75,7 @@
   margin-bottom: calc(var(--margin-b) + 5rem);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .servicesLists {
     display: flex;
     flex-direction: column;
