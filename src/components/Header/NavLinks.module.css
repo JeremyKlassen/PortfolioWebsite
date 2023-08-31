@@ -72,5 +72,10 @@
     margin: 0;
     width: 25rem;
     flex-grow: 1;
+    margin-bottom: 2rem;
+  }
+
+  .link {
+    margin-bottom: 1rem;
   }
 }

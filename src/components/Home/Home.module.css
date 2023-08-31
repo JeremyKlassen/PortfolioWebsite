@@ -11,6 +11,11 @@ h1 {
   padding: 0.6em;
 }
 
+.homeDiv section {
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
 .collaborate {
   padding: 0px;
   margin: 0px;
@@ -212,6 +217,12 @@ h1 {
 
   .background2 p {
     margin-bottom: 1rem;
+  }
+
+  .guided {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 

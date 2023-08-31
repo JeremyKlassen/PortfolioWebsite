@@ -11,7 +11,7 @@ const About = () => {
   console.log("ping");
 
   return (
-    <>
+    <div className={styles.aboutDiv}>
       <section className={styles.about1}>
         <img
           className={styles.pic7}
@@ -86,7 +86,7 @@ const About = () => {
         <ImageGrid />
       </div>
       <ContactForm />
-    </>
+    </div>
   );
 };
 

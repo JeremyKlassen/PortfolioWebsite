@@ -8,7 +8,7 @@ import ContactForm from "../Connect/ContactForm";
 
 const Home = () => {
   return (
-    <>
+    <div className={styles.homeDiv}>
       <section className={styles.landing}>
         <h1>Web Solutions for Your Business</h1>
         <div className={styles.landingContent}>
@@ -67,7 +67,7 @@ const Home = () => {
         />
       </div>
       <ContactForm />
-    </>
+    </div>
   );
 };
 

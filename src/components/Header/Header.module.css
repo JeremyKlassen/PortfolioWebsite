@@ -99,7 +99,7 @@ h1 {
   .headContainer {
     display: flex;
     flex-direction: column;
-    height: auto;
+    height: 45rem;
     background-image: url("../../assets/plantHeader.jpg");
     background-size: cover;
     background-position: center center;

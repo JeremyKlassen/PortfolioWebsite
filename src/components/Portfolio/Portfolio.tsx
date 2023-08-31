@@ -19,7 +19,7 @@ const Portfolio = () => {
   ]);
 
   return (
-    <>
+    <div className={styles.portfolioDiv}>
       <section className="portfolioHeading">
         <h1>Jeremy's Portfolio Projects</h1>
         <p>
@@ -73,7 +73,7 @@ const Portfolio = () => {
         </p>
       </section>
       <ContactForm />
-    </>
+    </div>
   );
 };
 
