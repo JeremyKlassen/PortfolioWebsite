@@ -1,10 +1,10 @@
 import React from "react";
-import Home from "../Home/Home";
+import Home from "../../pages/Home/Home";
 import styles from "./Body.module.css";
-import About from "../About/About";
-import Services from "../Services/Services";
-import Portfolio from "../Portfolio/Portfolio";
-import Thanks from "../Thanks/Thanks";
+import About from "../../pages/About/About";
+import Services from "../../pages/Services/Services";
+import Portfolio from "../../pages/Portfolio/Portfolio";
+import Thanks from "../../pages/Thanks/Thanks";
 
 interface Props {
   page: string;

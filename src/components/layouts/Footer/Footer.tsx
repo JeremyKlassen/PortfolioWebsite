@@ -1,4 +1,4 @@
-import SocialMedia from "../SocialMedia/SocialMedia";
+import SocialMedia from "../../ui/SocialMedia/SocialMedia";
 import styles from "./Footer.module.css";
 import FooterLinks from "./FooterLinks";
 

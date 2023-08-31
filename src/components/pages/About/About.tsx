@@ -1,11 +1,11 @@
-import ImageGrid from "./ImageGrid";
 import styles from "./About.module.css";
-import pic7 from "../../assets/selfies/jeremy7.jpg";
-import pic2 from "../../assets/selfies/jeremy2.jpeg";
-import pic8 from "../../assets/selfies/jeremy8.jpg";
-import lake from "../../assets/lake.jpg";
-import ContactForm from "../Connect/ContactForm";
-import TextPictureLeft from "../TextPictureLeft/TextPictureLeft";
+import pic7 from "../../../assets/selfies/jeremy7.jpg";
+import pic2 from "../../../assets/selfies/jeremy2.jpeg";
+import pic8 from "../../../assets/selfies/jeremy8.jpg";
+import lake from "../../../assets/lake.jpg";
+import ContactForm from "../../ui/Connect/ContactForm";
+import TextPictureLeft from "../../ui/TextPictureLeft/TextPictureLeft";
+import ImageGrid from "./ImageGrid";
 
 const About = () => {
   console.log("ping");

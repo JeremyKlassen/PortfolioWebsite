@@ -1,4 +1,4 @@
-import githubLogo from "../../assets/github-mark-white.svg";
+import githubLogo from "../../../assets/github-mark-white.svg";
 
 interface Props {
   size: number;

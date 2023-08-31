@@ -1,6 +1,6 @@
-import bully from "../../../assets/BullyingPrediction.pdf";
+import bully from "../../../../assets/BullyingPrediction.pdf";
 import styles from "./BullyAnalysis.module.css";
-import DownloadButton from "../../DownloadButton/DownloadButton";
+import DownloadButton from "../../../ui/DownloadButton/DownloadButton";
 
 const BullyAnalysis = () => {
   return (

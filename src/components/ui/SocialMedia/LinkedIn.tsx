@@ -1,4 +1,4 @@
-import linkedInLogo from "../../assets/linkedIn.png";
+import linkedInLogo from "../../../assets/linkedIn.png";
 
 interface Props {
   size: number;

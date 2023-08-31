@@ -1,4 +1,4 @@
-import reactLogo from "../../assets/React.svg";
+import reactLogo from "../../../assets/React.svg";
 import styles from "./ReactLogo.module.css";
 
 interface Props {

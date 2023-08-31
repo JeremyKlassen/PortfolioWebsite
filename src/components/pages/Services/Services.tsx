@@ -1,4 +1,4 @@
-import ContactForm from "../Connect/ContactForm";
+import ContactForm from "../../ui/Connect/ContactForm";
 import styles from "./Services.module.css";
 
 const Services = () => {

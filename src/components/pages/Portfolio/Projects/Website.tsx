@@ -1,5 +1,5 @@
 import styles from "./Website.module.css";
-import ReactLogo from "../../SocialMedia/ReactLogo";
+import ReactLogo from "../../../ui/SocialMedia/ReactLogo";
 
 const Website = () => {
   return (

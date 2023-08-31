@@ -1,6 +1,6 @@
 import styles from "./Portfolio.module.css";
 import { Link } from "react-router-dom";
-import ContactForm from "../Connect/ContactForm";
+import ContactForm from "../../ui/Connect/ContactForm";
 import Website from "./Projects/Website";
 import ThreePointStory from "./Projects/ThreePointStory";
 import Bully from "./Projects/Bully";

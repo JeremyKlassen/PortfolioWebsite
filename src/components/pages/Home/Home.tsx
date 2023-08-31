@@ -1,10 +1,10 @@
 import styles from "./Home.module.css";
-import TextPictureRight from "../TextPictureRight/TextPictureRight";
-import jeremy5 from "../../assets/selfies/jeremy5.jpeg";
-import DataIcons from "./DataIcons";
+import TextPictureRight from "../../ui/TextPictureRight/TextPictureRight";
+import jeremy5 from "../../../assets/selfies/jeremy5.jpeg";
 import { HashLink } from "react-router-hash-link";
+import ContactForm from "../../ui/Connect/ContactForm";
+import DataIcons from "./DataIcons";
 import ChartIcons from "./ChartIcons";
-import ContactForm from "../Connect/ContactForm";
 
 const Home = () => {
   return (

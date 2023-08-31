@@ -1,8 +1,8 @@
-import bird from "../../assets/bird.jpg";
-import bridge from "../../assets/bridge.jpg";
-import powerPlant from "../../assets/powerPlant.jpg";
+import bird from "../../../assets/bird.jpg";
+import bridge from "../../../assets/bridge.jpg";
+import powerPlant from "../../../assets/powerPlant.jpg";
 import styles from "./ImageGrid.module.css";
-import jeremy6 from "../../assets/selfies/jeremy6.jpeg";
+import jeremy6 from "../../../assets/selfies/jeremy6.jpeg";
 
 const ImageGrid = () => {
   const imageUrls = [bird, bridge, jeremy6, powerPlant];

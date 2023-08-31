@@ -1,4 +1,4 @@
-import instaLogo from "../../assets/Instagram.svg";
+import instaLogo from "../../../assets/Instagram.svg";
 
 interface Props {
   size: number;

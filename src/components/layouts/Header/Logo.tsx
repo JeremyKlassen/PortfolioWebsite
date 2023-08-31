@@ -1,7 +1,7 @@
 import { GiBeard } from "react-icons/gi";
 import { Link } from "react-router-dom";
 import styles from "./Logo.module.css";
-import { Context } from "../../App";
+import { Context } from "../../../App";
 import { useContext } from "react";
 
 interface Props {

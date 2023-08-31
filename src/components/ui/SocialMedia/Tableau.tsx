@@ -1,4 +1,4 @@
-import tabLogo from "../../assets/TableauLogo.png";
+import tabLogo from "../../../assets/TableauLogo.png";
 
 interface Props {
   size: number;

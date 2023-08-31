@@ -1,5 +1,5 @@
 import styles from "./Banner.module.css";
-import headBanner from "../../assets/plantHeader.jpg";
+import headBanner from "../../../assets/plantHeader.jpg";
 
 const Banner = () => {
   return (

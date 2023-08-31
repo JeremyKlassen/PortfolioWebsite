@@ -1,5 +1,5 @@
 import styles from "./GithubSection.module.css";
-import Github from "../../SocialMedia/Github";
+import Github from "../../../ui/SocialMedia/Github";
 
 const GithubSection = () => {
   return (
