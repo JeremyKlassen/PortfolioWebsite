@@ -21,12 +21,12 @@ const ToggleProjects = ({ label, accordianBools, setBools, slot }: Props) => {
     <>
       {accordianBools[slot] ? (
         <Link className={styles.toggleText} onClick={handleClick} to={""}>
-          <AiOutlineMinusCircle size={size} />
+          <AiOutlineMinusCircle color="orange" size={size} />
           <p>{label}</p>
         </Link>
       ) : (
         <Link className={styles.toggleText} onClick={handleClick} to={""}>
-          <AiOutlinePlusCircle size={size} />
+          <AiOutlinePlusCircle color="green" size={size} />
           <p>{label}</p>
         </Link>
       )}

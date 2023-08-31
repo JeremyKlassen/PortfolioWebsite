@@ -4,7 +4,6 @@ import styles from "./Body.module.css";
 import About from "../About/About";
 import Services from "../Services/Services";
 import Portfolio from "../Portfolio/Portfolio";
-import BullyAnalysis from "../BullyAnalysis/BullyAnalysis";
 import Thanks from "../Thanks/Thanks";
 
 interface Props {
@@ -26,9 +25,6 @@ const Body: React.FC<Props> = ({ page }) => {
       break;
     case "Portfolio":
       toRender = <Portfolio />;
-      break;
-    case "Bully":
-      toRender = <BullyAnalysis />;
       break;
     case "Thanks":
       toRender = <Thanks />;

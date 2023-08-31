@@ -31,7 +31,7 @@ const ContactForm = () => {
           <textarea
             name="contactMessage"
             className={styles.contactMessage}
-            rows={4}
+            rows={10}
           />
         </div>
         <input

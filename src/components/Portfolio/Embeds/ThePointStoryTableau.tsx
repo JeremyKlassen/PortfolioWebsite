@@ -23,7 +23,6 @@ const ThreePointStoryTableau = () => {
 
   return (
     <div className={styles.tps}>
-      <h1>Three Point Story</h1>
       <div className={styles.tpsDiv} ref={ref}></div>
     </div>
   );

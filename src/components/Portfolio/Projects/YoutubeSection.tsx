@@ -18,9 +18,7 @@ const YoutubeSection = () => {
   }, []);
   return (
     <section className={styles.youtubeContainer}>
-      <h2>
-        Here is a youtube video that goes over several parts of my portfolio
-      </h2>
+      <h2>This video goes over several parts of my portfolio</h2>
       {windowWidth > 768 ? (
         <Youtube />
       ) : (
