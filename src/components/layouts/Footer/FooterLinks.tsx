@@ -1,10 +1,10 @@
-import styles from "./FooterLinks.module.css";
 import FootLink from "./FootLink";
+import styles from "./FooterLinks.module.css";
 
 const FooterLinks = () => {
   return (
     <nav className={styles.navTag}>
-      <ul className={styles.navList}>
+      <ul className={styles.footNavList}>
         <li>
           <FootLink name="Home" />
         </li>

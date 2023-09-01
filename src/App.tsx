@@ -35,7 +35,7 @@ function App() {
           <Route path="/Bully" element={<Body page={page} />} />
           <Route path="/Thanks" element={<Body page={page} />} />
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
       </Context.Provider>
     </div>
   );
