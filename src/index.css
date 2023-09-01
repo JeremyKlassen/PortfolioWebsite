@@ -12,7 +12,7 @@
   --theme-color-6: #fb8500;
   --theme-color-7: #95a2b9;
   --margin-b: 6rem;
-  font-size: var(--base-font-size-desktop);
+  font-size: var(--base-font-size-mobile);
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 
   color: var(--base-color);
@@ -24,15 +24,15 @@
   -webkit-text-size-adjust: 100%;
 }
 
-@media (max-width: 815px) {
+/* @media (max-width: 815px) {
   :root {
     font-size: var(--base-font-size-mobile);
     width: 100%;
   }
-}
+} */
 
 ul {
-  font-size: var(--base-font-size-desktop);
+  font-size: var(--base-font-size-mobile);
 }
 
 p {

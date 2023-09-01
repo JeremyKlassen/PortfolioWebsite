@@ -31,7 +31,7 @@
   align-self: center;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .sectionContent {
     display: grid;
     grid-template-columns: 1fr;
@@ -57,4 +57,4 @@
     grid-column: 1/2;
     justify-self: center;
   }
-}
+} */

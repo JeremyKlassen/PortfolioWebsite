@@ -10,7 +10,7 @@ interface Props {
 
 const Logo = ({ isMobile }: Props) => {
   const { setPage } = useContext(Context);
-  const iconSize = isMobile ? 50 : 70;
+  const iconSize = isMobile ? 50 : 30;
   const handleClick = () => {
     setPage("Home");
   };

@@ -6,13 +6,19 @@ import { useContext } from "react";
 
 interface Props {
   name: string;
+  setMenuShown: (bool: boolean) => void;
 }
 
-const NavLink = ({ name }: Props) => {
+const NavLink = ({ name, setMenuShown }: Props) => {
   const { page, setPage } = useContext(Context);
 
   const handleClick = () => {
     setPage(name);
+    setMenuShown(false);
+  };
+
+  const minMenu = () => {
+    setMenuShown(false);
   };
 
   let linkElement;
@@ -22,6 +28,7 @@ const NavLink = ({ name }: Props) => {
       <HashLink
         className={styles.link + " " + styles.connectButton}
         smooth
+        onClick={minMenu}
         to={"/" + page + "#contact"}
       >
         Connect

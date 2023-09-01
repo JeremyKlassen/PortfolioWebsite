@@ -1,21 +1,25 @@
 import NavLink from "./NavLink";
 import styles from "./NavLinks.module.css";
 
-const NavLinks = () => {
+interface Props {
+  setMenuShown: (bool: boolean) => void;
+}
+
+const NavLinks = ({ setMenuShown }: Props) => {
   return (
     <nav className={styles.navLinks}>
       <ul className={styles.navList}>
         <li>
-          <NavLink name="Services" />
+          <NavLink setMenuShown={setMenuShown} name="Services" />
         </li>
         <li>
-          <NavLink name="About" />
+          <NavLink setMenuShown={setMenuShown} name="About" />
         </li>
         <li>
-          <NavLink name="Portfolio" />
+          <NavLink setMenuShown={setMenuShown} name="Portfolio" />
         </li>
         <li>
-          <NavLink name="Contact" />
+          <NavLink setMenuShown={setMenuShown} name="Contact" />
         </li>
       </ul>
     </nav>

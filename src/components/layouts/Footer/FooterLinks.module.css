@@ -8,7 +8,7 @@
   justify-content: left;
 }
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   .navList {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -18,4 +18,4 @@
   .navList {
     grid-template-columns: repeat(2, 1fr);
   }
-}
+} */

@@ -2,15 +2,41 @@
   background: var(--header-footer);
   color: #a0c0ca;
   flex-grow: 1;
-  height: 7rem;
   display: flex;
   flex-direction: row;
   padding: 10px 20px;
   align-items: center;
   justify-content: space-between;
   padding: 0;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+}
+
+.headContainerExp {
+  height: 45rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.headContainerExp ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.headContainerMin {
+  height: 7rem;
+}
+
+.hamburgerDiv {
+  margin-right: 2rem;
+}
+
+.arrowDiv {
+  margin: 0rem;
+  margin-top: 2rem;
 }
 
 .nameSection {
@@ -28,10 +54,6 @@
 
 .mobileH2 {
   color: var(--theme-color-4);
-}
-
-.headBannerContainer {
-  margin: 1rem;
 }
 
 .logo {
@@ -89,13 +111,13 @@ h1 {
   margin: 0px;
 }
 
-@media (max-width: 815px) {
+/* @media (max-width: 815px) {
   .headContainer {
     height: 10rem;
   }
-}
+} */
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .headContainer {
     display: flex;
     flex-direction: column;
@@ -125,4 +147,4 @@ h1 {
     border-bottom-right-radius: 20px;
     padding-bottom: 1rem;
   }
-}
+} */

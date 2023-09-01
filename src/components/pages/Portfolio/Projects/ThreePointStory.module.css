@@ -9,7 +9,7 @@
   border-radius: 20px;
 }
 
-@media (max-width: 1297px) {
+/* @media (max-width: 1297px) {
   .tableauContainer {
     padding-left: 0;
     padding-right: 0;
@@ -21,4 +21,4 @@
       padding-right: 0;
     }
   }
-}
+} */

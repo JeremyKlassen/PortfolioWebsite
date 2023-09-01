@@ -1,8 +1,8 @@
-import Header from "./components/Layouts/Header/Header";
+import Header from "./components/layouts/Header/Header";
 import "./App.css";
-import Body from "./components/Layouts/Body/Body";
+import Body from "./components/layouts/Body/Body";
 import styles from "./App.module.css";
-import Footer from "./components/Layouts/Footer/Footer";
+import Footer from "./components/layouts/Footer/Footer";
 import { Route, Routes } from "react-router-dom";
 import React, { useState, Dispatch, SetStateAction } from "react";
 
@@ -35,7 +35,7 @@ function App() {
           <Route path="/Bully" element={<Body page={page} />} />
           <Route path="/Thanks" element={<Body page={page} />} />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </Context.Provider>
     </div>
   );

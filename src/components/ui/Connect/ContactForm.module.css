@@ -110,7 +110,7 @@
   box-shadow: 0 0 0.3125em #007bff;
 }
 
-@media (max-width: 815px) {
+/* @media (max-width: 815px) {
   .messageContainer {
     width: 100%;
   }
@@ -138,4 +138,4 @@
   .contactMessage {
     width: 35rem;
   }
-}
+} */
