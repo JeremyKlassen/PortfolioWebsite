@@ -3,13 +3,14 @@
   flex-direction: column;
   align-items: flex-end;
   margin-left: 0;
-  margin-bottom: 2rem;
+  margin-top: 2rem;
   text-decoration: none;
   align-items: center;
-  gap: 4rem;
+  gap: 5rem;
   list-style-type: none;
   flex-grow: 0;
   text-align: center;
+  padding: 0;
 }
 
 .navLinks {

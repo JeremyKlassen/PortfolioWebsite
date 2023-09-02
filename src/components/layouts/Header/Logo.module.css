@@ -3,7 +3,6 @@
   text-decoration: none;
   display: inline-block;
   background-color: var(--theme-color-4);
-
   padding: 10px 20px;
   border-radius: 8px;
   cursor: pointer;
@@ -17,6 +16,8 @@
   grid-template-columns: 1fr 1.5fr;
   align-items: center;
   justify-items: center;
+  min-width: 9.5rem;
+  max-width: 10rem;
 }
 
 .logoContainer:hover {
