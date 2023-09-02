@@ -5,11 +5,21 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 0;
+  gap: 5rem;
+}
+
+.footerLinksDiv {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
 }
 
 .footContent {
-  margin: 1em;
+  margin-left: 10vw;
   float: right;
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-start;
 }
 
 /* @media (max-width: 815px) {

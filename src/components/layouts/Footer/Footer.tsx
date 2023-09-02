@@ -5,7 +5,9 @@ import FooterLinks from "./FooterLinks";
 const Footer = () => {
   return (
     <div className={styles.footContainer}>
-      <FooterLinks />
+      <div className={styles.footerLinksDiv}>
+        <FooterLinks />
+      </div>
       <div className={styles.footContent}>
         <SocialMedia />
       </div>

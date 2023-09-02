@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <div className={styles.homeDiv}>
       <section className={styles.landing}>
-        <h1>Web Solutions for Your Business</h1>
+        <h2>Web Solutions for Your Business</h2>
         <div className={styles.landingContent}>
           <h2>Do you: </h2>
           <ul className={styles.landingList}>

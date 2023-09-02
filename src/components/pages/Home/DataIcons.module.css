@@ -1,6 +1,6 @@
 .iconGrid {
-  width: 10rem;
-  height: 10rem;
+  width: fit-content;
+  height: fit-content;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;

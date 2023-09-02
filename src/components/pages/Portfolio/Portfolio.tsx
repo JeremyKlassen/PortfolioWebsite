@@ -1,13 +1,15 @@
 import styles from "./Portfolio.module.css";
 import { Link } from "react-router-dom";
 import ContactForm from "../../ui/Connect/ContactForm";
+
+import { useState } from "react";
+import ToggleProjects from "./ToggleProjects";
 import Website from "./Projects/Website";
 import ThreePointStory from "./Projects/ThreePointStory";
 import Bully from "./Projects/Bully";
 import YoutubeSection from "./Projects/YoutubeSection";
 import GithubSection from "./Projects/GithubSection";
-import ToggleProjects from "./ToggleProjects";
-import { useState } from "react";
+import { HashLink } from "react-router-hash-link";
 
 const Portfolio = () => {
   const [accordianBools, setBools] = useState([
@@ -21,10 +23,14 @@ const Portfolio = () => {
   return (
     <div className={styles.portfolioDiv}>
       <section className="portfolioHeading">
-        <h1>Jeremy's Portfolio Projects</h1>
+        <h1>Portfolio Projects</h1>
         <p>
-          Welcome to my Data Specialist portfolio! I'm especially proud of this
-          website
+          Welcome to my Data Specialist portfolio! If you have questions about a
+          project, or think you could use something similar to one of my
+          creations,{" "}
+          <HashLink smooth to={"/Portfolio#contact"}>
+            then please get in touch with me.
+          </HashLink>
         </p>
       </section>
       <div className={styles.accordian}>

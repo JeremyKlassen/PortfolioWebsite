@@ -2,9 +2,10 @@
   justify-content: center;
   margin: 0px;
   padding: 0px;
-  background-color: var(--theme-color-6);
+  background-color: var(--theme-color-1);
   border-radius: 20px;
   flex-grow: 1;
+  padding-top: 2rem;
 }
 
 .contactFormContainer h1 {
@@ -12,6 +13,13 @@
 }
 
 .contactForm {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  background-color: var(--theme-color-1);
+}
+
+/* .contactForm {
   display: grid;
   padding: 1rem;
   margin: 0;
@@ -20,7 +28,7 @@
   place-content: center;
   background-color: var(--theme-color-1);
   border-radius: 20px;
-}
+} */
 
 .contactName {
   padding: 0.5rem;

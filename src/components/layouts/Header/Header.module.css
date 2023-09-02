@@ -1,5 +1,6 @@
 .headContainer {
-  background: var(--header-footer);
+  background-image: url("../../../assets/clouds.jpg");
+  z-index: 1;
   color: #a0c0ca;
   flex-grow: 1;
   display: flex;
@@ -40,10 +41,11 @@
 }
 
 .nameSection {
-  margin: 0;
-  padding: 0;
   display: flex;
   justify-content: center;
+  background: var(--theme-color-1);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .mobileH1 {
@@ -54,6 +56,8 @@
 
 .mobileH2 {
   color: var(--theme-color-4);
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .logo {

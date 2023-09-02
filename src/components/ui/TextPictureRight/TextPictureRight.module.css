@@ -1,29 +1,24 @@
 .sectionContent {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   margin: 0px;
   padding: 0px;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1.25fr 2fr;
-  margin-top: 3rem;
 }
 
 .sectionP {
-  grid-row: 2/3;
-  grid-column: 1/4;
   align-self: center;
-  margin-right: 1rem;
+  margin-bottom: 2rem;
 }
 
 .sectionHeader {
-  grid-row: 1/2;
-  grid-column: 1/5;
   padding-bottom: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .picDiv {
   display: flex;
-  align-items: center;
+  justify-content: center;
+  padding-bottom: 5rem;
 }
 
 .pic {

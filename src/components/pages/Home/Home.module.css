@@ -12,8 +12,8 @@ h1 {
 }
 
 .homeDiv section {
-  padding-left: 10rem;
-  padding-right: 10rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .collaborate {
@@ -35,52 +35,44 @@ h1 {
   margin-bottom: 15rem;
   background-color: var(--theme-color-7);
   border-radius: 20px;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 0.5fr 1fr;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5rem;
 }
 
 .bg1Pic {
-  grid-row: 2/3;
-  grid-column: 6/7;
   align-self: center;
   justify-self: center;
-  margin-left: 1rem;
+  width: 50vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2rem;
 }
 
 .bg1P {
-  grid-row: 2/3;
-  grid-column: 1/6;
-  margin-right: 1rem;
+  margin-bottom: 2rem;
 }
 
 .bg1H1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  grid-row: 1/2;
-  grid-column: 1/7;
-  padding: 0;
-  padding-bottom: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .background2 {
   background-color: var(--theme-color-2);
-  padding: 1rem;
-  padding-bottom: 2rem;
   border-radius: 20px;
-  display: grid;
-  grid-template-columns: repeat(6 1fr);
-  grid-template-rows: 0.5fr 1fr;
+  display: flex;
+  flex-direction: column;
   margin: 0;
   margin-bottom: 5rem;
+  padding-top: 5rem;
 }
 
 .background2 h2 {
-  grid-row: 1/2;
-  grid-column: 1/7;
   margin: 0;
+  margin-bottom: 2rem;
 }
 
 .background2P {
@@ -88,26 +80,17 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-.background2 p {
-  grid-row: 2/3;
-  grid-column: 2/7;
-  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .chartsContainer {
-  grid-row: 2/3;
-  grid-column: 1/2;
   align-self: center;
   justify-self: center;
-  margin-right: 1rem;
+  margin-bottom: 5rem;
 }
 
 .background3 {
   background-color: var(--theme-color-7);
-  padding: 1rem;
-  padding-bottom: 2rem;
   border-radius: 20px;
 }
 
@@ -186,7 +169,7 @@ h1 {
   border: none;
 }
 
-@media (max-width: 815px) {
+/* @media (max-width: 815px) {
   .landing {
     display: flex;
     flex-direction: column;
@@ -224,7 +207,7 @@ h1 {
     flex-direction: column;
     align-items: center;
   }
-}
+} */
 
 .shining {
   padding: 2em;
@@ -245,6 +228,6 @@ h1 {
 .differenceDiv {
   background: var(--theme-color-7);
   border-radius: 20px;
-  margin-bottom: 10rem;
   margin-top: 10rem;
+  padding-top: 5rem;
 }

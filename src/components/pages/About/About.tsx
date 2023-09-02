@@ -12,15 +12,15 @@ const About = () => {
 
   return (
     <div className={styles.aboutDiv}>
+      <h2 className={styles.h2Div}>
+        Hello, I'm Jeremy, a Youth Worker, Programmer, and Data Enthusiast!
+      </h2>
       <section className={styles.about1}>
         <img
           className={styles.pic7}
           src={pic7}
           alt="Jeremy in front of a lake."
         />
-        <h1>
-          Hello, I'm Jeremy, a Youth Worker, Programmer, and Data Enthusiast!
-        </h1>
         <p>
           Welcome to my corner of the digital world! With 17 years of youth work
           experience and a passion for data-driven solutions, I'm thrilled to
@@ -47,11 +47,7 @@ const About = () => {
           Winnipeg. I'm eager to channel my technical skills into meaningful
           projects that benefit youth and their families.
         </p>
-        <img
-          className={styles.pic2 + " " + styles.about3img}
-          src={pic8}
-          alt="Jeremy with his partner."
-        />
+        <img className={styles.about3img} src={pic8} alt="Headshot of Jeremy" />
       </section>
       <section className={styles.Background2}>
         <h2>What Makes Me Unique</h2>

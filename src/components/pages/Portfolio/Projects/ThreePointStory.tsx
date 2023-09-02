@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import ThreePointStoryTableau from "../Embeds/ThePointStoryTableau";
 import styles from "./ThreePointStory.module.css";
+import ThreePointStoryTableau from "../Embeds/ThePointStoryTableau";
 
 const ThreePointStory = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -24,14 +24,15 @@ const ThreePointStory = () => {
         exploratory analyses, my Tableau projects demonstrate my proficiency in
         creating engaging and informative visualizations.
       </p>
-      {windowWidth > 768 ? (
+      {/* {windowWidth > 768 ? (
         <ThreePointStoryTableau />
       ) : (
         <h2>
           If you are using a phone, rotate into landscape mode to view this
           DataViz
         </h2>
-      )}
+      )} */}
+      <ThreePointStoryTableau />
     </section>
   );
 };

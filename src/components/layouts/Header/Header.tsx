@@ -51,7 +51,7 @@ const Header = () => {
     };
   }, []);
   return (
-    <div className={styles.headBannerContainer}>
+    <>
       <section
         className={`${styles.headContainer}  ${
           menuShown ? styles.headContainerExp : styles.headContainerMin
@@ -77,13 +77,15 @@ const Header = () => {
         <section className={styles.nameSection}>
           <div className={styles.nameContainer}>
             <h1 className={styles.mobileH1}>Jeremy Klassen</h1>
-            <h2 className={styles.mobileH2}> Data Specialist</h2>
+            <h2 className={styles.mobileH2}>
+              Web Development & Information Systems
+            </h2>
           </div>
         </section>
       ) : (
         <></>
       )}
-    </div>
+    </>
   );
 };
 

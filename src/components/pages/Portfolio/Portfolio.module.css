@@ -7,11 +7,6 @@ h1 {
   margin-bottom: 2rem;
 }
 
-#tableauPortfolio {
-  padding-left: 5rem;
-  padding-right: 5rem;
-}
-
 .tableauLogo {
   align-items: center;
   margin: 1em;
@@ -40,7 +35,7 @@ h1 {
   width: 560px;
 }
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   .githubContainer {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(7, 1fr);
@@ -60,4 +55,4 @@ h1 {
     grid-column: 1/2;
     grid-row: 6/7;
   }
-}
+} */

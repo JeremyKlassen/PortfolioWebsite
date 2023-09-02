@@ -5,8 +5,10 @@
   background-color: var(--theme-color-7);
   margin-top: 2rem;
   margin-bottom: 5rem;
+  padding: 0;
   padding-top: 2rem;
   border-radius: 20px;
+  max-width: 95vw;
 }
 
 /* @media (max-width: 1297px) {
