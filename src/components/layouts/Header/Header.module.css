@@ -18,6 +18,15 @@
   justify-content: center;
 }
 
+.headExpDiv {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-grow: 1;
+  width: 97vw;
+
+  gap: 10vw;
+}
+
 .headContainerExp ul {
   list-style-type: none;
   display: flex;
@@ -25,6 +34,7 @@
   justify-content: center;
   margin: 0;
   padding: 0;
+  align-self: center;
 }
 
 .headContainerMin {
@@ -36,8 +46,12 @@
 }
 
 .arrowDiv {
+  display: flex;
+  justify-self: flex-start;
+  flex-grow: 1;
   margin: 0rem;
   margin-top: 2rem;
+  margin-right: 2rem;
 }
 
 .nameSection {

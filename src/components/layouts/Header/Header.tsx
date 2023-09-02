@@ -58,13 +58,15 @@ const Header = () => {
         }`}
       >
         {menuShown ? (
-          <ul>
-            <li>{arrow()}</li>
-            <li>{logo()}</li>
-            <li>
-              <NavLinks setMenuShown={setMenuShown} />
-            </li>
-          </ul>
+          <div className={styles.headExpDiv}>
+            <div className={styles.arrowExpDiv}>{arrow()}</div>
+            <ul>
+              <li>{logo()}</li>
+              <li>
+                <NavLinks setMenuShown={setMenuShown} />
+              </li>
+            </ul>
+          </div>
         ) : (
           <>
             {logo()}
