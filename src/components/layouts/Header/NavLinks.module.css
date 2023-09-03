@@ -13,6 +13,27 @@
   padding: 0;
 }
 
+@media (min-width: 768px) {
+  .navLinks {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    gap: 0;
+    max-width: 80rem;
+  }
+  .navList {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-grow: 1;
+    gap: 0;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
 .navLinks {
   margin: 1em;
 }
@@ -36,6 +57,13 @@
 
 .link:hover {
   background-color: var(--theme-color-3);
+}
+
+@media (min-width: 768px) {
+  .link {
+    margin: 0;
+    padding: 10px 3vw;
+  }
 }
 
 .connectButton {

@@ -19,16 +19,13 @@
   background-color: var(--theme-color-1);
 }
 
-/* .contactForm {
-  display: grid;
-  padding: 1rem;
-  margin: 0;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 0.5fr;
-  place-content: center;
-  background-color: var(--theme-color-1);
-  border-radius: 20px;
-} */
+@media (min-width: 992px) {
+  .contactForm {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 0.5fr;
+  }
+}
 
 .contactName {
   padding: 0.5rem;
@@ -117,33 +114,3 @@
   outline: none;
   box-shadow: 0 0 0.3125em #007bff;
 }
-
-/* @media (max-width: 815px) {
-  .messageContainer {
-    width: 100%;
-  }
-  .contactMessage {
-    width: 100%;
-    justify-content: center;
-  }
-
-  .contactForm {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .smallItem {
-    width: 25rem;
-  }
-}
-
-@media (max-width: 415px) {
-  .smallItem {
-    width: 15rem;
-  }
-
-  .contactMessage {
-    width: 35rem;
-  }
-} */
