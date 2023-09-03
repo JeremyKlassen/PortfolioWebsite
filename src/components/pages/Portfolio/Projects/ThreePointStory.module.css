@@ -11,16 +11,18 @@
   max-width: 95vw;
 }
 
-/* @media (max-width: 1297px) {
-  .tableauContainer {
-    padding-left: 0;
-    padding-right: 0;
-  }
+.tableauContainer h2 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
 
-  @media (max-width: 1297px) {
-    .tableauContainer {
-      padding-left: 0;
-      padding-right: 0;
-    }
+.tableauContainer p {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+@media (min-width: 992px) {
+  .tableauContainer {
+    height: 70rem;
   }
-} */
+}

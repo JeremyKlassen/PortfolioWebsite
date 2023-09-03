@@ -16,3 +16,25 @@
   justify-content: center;
   margin-top: 3rem;
 }
+
+@media (min-width: 992px) {
+  .githubContainer {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 0.5fr 1fr;
+  }
+
+  .githubContainer h2 {
+    grid-column: 1/7;
+    grid-row: 1/2;
+  }
+  .githubContainer p {
+    grid-row: 2/3;
+    grid-column: 1/6;
+  }
+
+  .gitLogo {
+    grid-column: 6/7;
+    grid-row: 1/3;
+  }
+}

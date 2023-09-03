@@ -23,10 +23,15 @@ const YoutubeSection = () => {
         <Youtube />
       ) : (
         <>
-          <a href="https://www.youtube.com/embed/C2pgh6bj2Nc">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Youtube video of some of Jeremy's projects"
+            href="https://www.youtube.com/embed/C2pgh6bj2Nc"
+          >
             <h2>
-              Link to Portfolio Project Video (for an embeded video, use
-              landscape mode).
+              Your screen is not wide enough for the embeded video. Please
+              rotate if using a phone or table.
             </h2>
           </a>
         </>

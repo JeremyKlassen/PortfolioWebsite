@@ -18,20 +18,13 @@ const ThreePointStory = () => {
   }, []);
   return (
     <section id={styles.tableauPortfolio} className={styles.tableauContainer}>
+      <h2>Three Point Story</h2>
       <p>
         Discover my Tableau profile where I've crafted interactive data
         visualizations that bring data stories to life. From dashboards to
         exploratory analyses, my Tableau projects demonstrate my proficiency in
         creating engaging and informative visualizations.
       </p>
-      {/* {windowWidth > 768 ? (
-        <ThreePointStoryTableau />
-      ) : (
-        <h2>
-          If you are using a phone, rotate into landscape mode to view this
-          DataViz
-        </h2>
-      )} */}
       <ThreePointStoryTableau />
     </section>
   );

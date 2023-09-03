@@ -19,22 +19,22 @@
   top: -90rem;
 }
 
-/* @media (max-width: 1297px) {
+@media (min-width: 768px) {
   .tpsDiv {
-    transform: scale(0.7);
+    transform: scale(0.6);
   }
 
-  .tps {
-    max-width: 900px;
+  .tpsDiv iframe {
+    top: -15rem;
   }
 }
 
-@media (max-width: 920px) {
+@media (min-width: 992px) {
   .tpsDiv {
-    transform: scale(0.5);
+    transform: scale(0.8);
   }
 
-  .tps {
-    max-width: 700px;
+  .tpsDiv iframe {
+    top: 0rem;
   }
-} */
+}
