@@ -14,6 +14,12 @@
   margin: 0.5em;
 }
 
+@media (min-width: 992px) {
+  .footLink {
+    margin: 0;
+  }
+}
+
 .footLink:hover {
   background-color: var(--theme-color-3);
 }

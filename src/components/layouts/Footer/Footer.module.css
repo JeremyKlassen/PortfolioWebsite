@@ -8,10 +8,10 @@
   gap: 5rem;
 }
 
-.footerLinksDiv {
-  display: flex;
-  flex-grow: 1;
-  justify-content: flex-end;
+@media (min-width: 992px) {
+  .footContainer {
+    gap: 0;
+  }
 }
 
 .footContent {
@@ -22,8 +22,13 @@
   justify-content: flex-start;
 }
 
-/* @media (max-width: 815px) {
-  .footContainer {
-    height: 15em;
+@media (min-width: 992px) {
+  .footContent {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    justify-content: right;
+    flex-grow: 0;
+    flex-shrink: 1;
+    overflow: hidden;
   }
-} */
+}
