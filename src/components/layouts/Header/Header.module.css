@@ -1,0 +1,118 @@
+.headContainer {
+  color: #a0c0ca;
+}
+
+.headContainerExp {
+  background-image: url("../../../assets/clouds.jpg");
+  height: fit-content;
+  display: grid;
+  grid-template-columns: 0.7fr 1fr 0.5fr;
+  justify-content: center;
+  align-self: start;
+  padding-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .headContainerExp {
+    grid-template-columns: 0.25fr 1fr;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+}
+
+.headContainerMin {
+  background-image: url("../../../assets/clouds.jpg");
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  height: 7rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hamburgerDiv {
+  margin-right: 2rem;
+}
+
+.arrowDiv {
+  display: flex;
+  justify-self: end;
+  margin: 0rem;
+  margin-top: 2rem;
+  margin-right: 2rem;
+}
+
+.nameSection {
+  display: flex;
+  justify-content: center;
+  background: var(--theme-color-1);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.mobileH1 {
+  padding-bottom: 0;
+  color: var(--theme-color-4);
+  text-shadow: 1px 1px 0px #000000;
+}
+
+.mobileH2 {
+  color: var(--theme-color-4);
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.logo {
+  margin: 1em;
+}
+
+.content {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.selectable {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1 {
+  margin: 0;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 12.5em;
+  object-fit: cover;
+  padding: 0;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centeredText {
+  position: absolute;
+  padding: 0;
+  text-align: center;
+
+  width: 100%;
+}
+
+.centeredText h1 {
+  color: var(--theme-color-1);
+  -webkit-text-stroke: 2px #000000;
+  font-size: 4.5rem;
+  padding: 0px;
+}
+
+.centeredText h2 {
+  color: var(--theme-color-1);
+  -webkit-text-stroke: 2px #000000;
+  font-size: 3rem;
+  padding: 0px;
+  margin: 0px;
+}

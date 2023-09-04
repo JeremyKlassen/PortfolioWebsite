@@ -1,0 +1,30 @@
+.footNavList {
+  display: grid;
+  grid-template-columns: 1fr;
+  list-style: none;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .footNavList {
+    grid-template-columns: 1fr 1fr;
+    flex-grow: 1;
+  }
+}
+
+@media (min-width: 992px) {
+  .footNavList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem;
+  }
+}
+
+.navTag {
+  justify-content: left;
+  justify-self: right;
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+}

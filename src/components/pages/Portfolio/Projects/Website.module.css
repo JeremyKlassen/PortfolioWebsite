@@ -1,0 +1,43 @@
+.thisWebsiteContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+  padding-top: 3rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  background-color: var(--theme-color-7);
+  border-radius: 20px;
+}
+
+.reactLogoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+@media (min-width: 992px) {
+  .thisWebsiteContainer {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 0.5fr 1fr;
+  }
+
+  .thisWebsiteContainer > h2 {
+    grid-row: 1/2;
+    grid-column: 1/7;
+  }
+
+  .thisWebsiteContainer > p {
+    grid-row: 2/3;
+    grid-column: 1/6;
+  }
+
+  .reactLogoContainer {
+    grid-row: 1/3;
+    grid-column: 6/7;
+    margin-left: 1rem;
+  }
+}

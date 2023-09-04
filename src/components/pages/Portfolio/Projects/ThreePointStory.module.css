@@ -1,0 +1,28 @@
+.tableauContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--theme-color-7);
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  padding: 0;
+  padding-top: 2rem;
+  border-radius: 20px;
+  max-width: 95vw;
+}
+
+.tableauContainer h2 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.tableauContainer p {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+@media (min-width: 992px) {
+  .tableauContainer {
+    height: 70rem;
+  }
+}

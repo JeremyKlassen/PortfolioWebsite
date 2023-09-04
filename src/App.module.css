@@ -1,4 +1,10 @@
 .appContainer {
   margin: 0;
   justify-content: center;
+  background-image: radial-gradient(#ddddff 65%, var(--theme-color-8));
+  /* background-image: radial-gradient(#ffffff 65%, blue); */
+  background-position: center;
+  background-position: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }

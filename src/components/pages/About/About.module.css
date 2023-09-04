@@ -1,0 +1,114 @@
+.aboutDiv section {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.aboutDiv {
+  margin-top: 10rem;
+}
+
+.h2Div {
+  margin-top: 5rem;
+}
+
+.about1 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.about1 p {
+  align-self: center;
+  margin-top: 2rem;
+}
+
+.pic7 {
+  height: 15rem;
+  width: 12em;
+  object-fit: cover;
+  align-self: center;
+}
+
+.about3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.about3p {
+  grid-column: 1/5;
+  grid-row: 2/3;
+  margin-right: 1rem;
+  align-self: center;
+}
+
+.about3img {
+  align-self: center;
+  height: 10em;
+  margin-left: 5px;
+  margin-top: 2rem;
+}
+
+.about3h2 {
+  grid-row: 1/2;
+  grid-column: 1/6;
+}
+
+.about5 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.aboutLake {
+  object-fit: cover;
+  width: 15em;
+  height: 10em;
+}
+
+.aboutLakeContainer {
+  width: 15em;
+  height: 10em;
+  margin-right: 5px;
+}
+
+.background1 {
+  padding: 1rem;
+  padding-bottom: 2rem;
+  border-radius: 20px;
+  margin-top: calc(var(--margin-b) + 5rem);
+  margin-bottom: calc(var(--margin-b) + 5rem);
+
+  background-color: var(--theme-color-2);
+}
+
+.Background2 {
+  background-color: var(--theme-color-7);
+  margin-top: 10rem;
+  padding-top: 5rem;
+  border-radius: 20px;
+  margin-bottom: 10rem;
+}
+
+.Background2 h2 {
+  margin-top: 0;
+}
+
+.background3 {
+  border-radius: 20px;
+  padding: 1rem;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  background-color: var(--theme-color-2);
+}
+
+.background3Img {
+  height: 15rem;
+}
+
+.pics {
+  margin-top: 2em;
+}
+
+.pic2 {
+}

@@ -1,0 +1,15 @@
+.pdfWrapper {
+  position: relative;
+  width: 100%;
+  height: 30rem;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+h1 {
+  color: var(--theme-color-4);
+}

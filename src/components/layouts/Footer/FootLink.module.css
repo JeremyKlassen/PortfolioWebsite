@@ -1,0 +1,25 @@
+.footLink {
+  color: var(--base-color);
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  background-color: var(--theme-color-4);
+  color: white;
+  padding: 5px 10px;
+  font-size: 2rem;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  transition: background-color 0.3s ease;
+  margin: 0.5em;
+}
+
+@media (min-width: 992px) {
+  .footLink {
+    margin: 0;
+  }
+}
+
+.footLink:hover {
+  background-color: var(--theme-color-3);
+}

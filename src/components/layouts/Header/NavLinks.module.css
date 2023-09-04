@@ -1,0 +1,109 @@
+.navList {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-left: 0;
+  margin-top: 2rem;
+  text-decoration: none;
+  align-items: center;
+  gap: 5rem;
+  list-style-type: none;
+  flex-grow: 0;
+  text-align: center;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .navLinks {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    gap: 0;
+    max-width: 80rem;
+  }
+  .navList {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-grow: 1;
+    gap: 0;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.navLinks {
+  margin: 1em;
+}
+
+.link {
+  color: var(--base-color);
+  text-decoration: none;
+  font-weight: 600;
+  background-color: var(--theme-color-4);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  transition: background-color 0.3s ease;
+  margin: 1rem;
+  margin-bottom: 10rem;
+}
+
+.link:hover {
+  background-color: var(--theme-color-3);
+}
+
+@media (min-width: 768px) {
+  .link {
+    margin: 0;
+    padding: 10px 3vw;
+  }
+}
+
+.connectButton {
+  background-color: var(--theme-color-2);
+  color: #000000;
+  text-shadow: none;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.connectButton:hover {
+  color: #ffffff;
+}
+
+/* @media (min-width: 700px) {
+  .navList {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  justify-content: end;
+  justify-items: center;
+  gap: 20px;
+  list-style-type: none;
+  padding: 0px;
+  text-shadow: 1px 1px 0 #000000;
+  margin: 0;
+  }
+
+  .navList li {
+    margin: 1rem;
+  }
+
+  .navLinks {
+    margin: 0;
+    width: 25rem;
+    flex-grow: 1;
+    margin-bottom: 2rem;
+  }
+
+  .link {
+    margin-bottom: 1rem;
+  }
+} */

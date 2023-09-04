@@ -1,0 +1,32 @@
+.logoContainer {
+  color: var(--base-color);
+  text-decoration: none;
+  display: inline-block;
+  background-color: var(--theme-color-4);
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  transition: background-color 0.3s ease;
+  margin: 0;
+  text-align: center;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1.5fr;
+  align-items: center;
+  justify-items: center;
+  min-width: 9.5rem;
+  max-width: 10rem;
+}
+
+.logoContainer:hover {
+  background: #000;
+}
+
+.logoContainer p {
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 1rem;
+}

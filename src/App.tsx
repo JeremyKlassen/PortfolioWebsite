@@ -1,8 +1,8 @@
-import Header from "./components/Header/Header";
+import Header from "./components/layouts/Header/Header";
 import "./App.css";
-import Body from "./components/Body/Body";
+import Body from "./components/layouts/Body/Body";
 import styles from "./App.module.css";
-import Footer from "./components/Footer/Footer";
+import Footer from "./components/layouts/Footer/Footer";
 import { Route, Routes } from "react-router-dom";
 import React, { useState, Dispatch, SetStateAction } from "react";
 

@@ -1,0 +1,34 @@
+.footContainer {
+  display: flex;
+  background: var(--header-footer);
+  height: fit-content;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0;
+  gap: 5rem;
+}
+
+@media (min-width: 992px) {
+  .footContainer {
+    gap: 0;
+  }
+}
+
+.footContent {
+  margin-left: 10vw;
+  float: right;
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-start;
+}
+
+@media (min-width: 992px) {
+  .footContent {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    justify-content: right;
+    flex-grow: 0;
+    flex-shrink: 1;
+    overflow: hidden;
+  }
+}

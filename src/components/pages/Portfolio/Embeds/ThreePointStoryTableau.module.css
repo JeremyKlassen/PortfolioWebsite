@@ -1,0 +1,40 @@
+.tps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  padding: 0;
+  max-height: 40rem;
+}
+
+.tpsDiv {
+  padding: 0;
+  align-items: center;
+  justify-items: center;
+  transform: scale(0.3);
+}
+
+.tpsDiv iframe {
+  position: relative;
+  top: -90rem;
+}
+
+@media (min-width: 768px) {
+  .tpsDiv {
+    transform: scale(0.6);
+  }
+
+  .tpsDiv iframe {
+    top: -15rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .tpsDiv {
+    transform: scale(0.8);
+  }
+
+  .tpsDiv iframe {
+    top: 0rem;
+  }
+}
