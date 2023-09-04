@@ -6,10 +6,10 @@
 .webDev {
   background: linear-gradient(
     to bottom,
-    black,
+    #444444,
     #eeeeee calc(0% + 30px),
     #eeeeee calc(100% - 30px),
-    black
+    #444444
   );
   margin: 0;
   margin-bottom: 1rem;
@@ -31,10 +31,10 @@
 .data {
   background: linear-gradient(
     to bottom,
-    black,
+    #444444,
     #eeeeee calc(0% + 30px),
     #eeeeee calc(100% - 30px),
-    black
+    #444444
   );
 
   margin: 0;
@@ -74,14 +74,3 @@
   padding: 0px;
   margin-bottom: calc(var(--margin-b) + 5rem);
 }
-
-/* @media (max-width: 768px) {
-  .servicesLists {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .servicesLists ul {
-    margin: 0;
-  }
-} */

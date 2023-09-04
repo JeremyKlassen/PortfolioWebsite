@@ -28,13 +28,12 @@
 //   const logo = () => {
 //     return (
 //       <div className={styles.logo}>
-//         <Logo isMobile={showBanner} />
+//         <Logo isMobile={!isDesktop} />
 //       </div>
 //     );
 //   };
 
 //   //state
-//   const [showBanner, setShowBanner] = useState(window.innerWidth > 768);
 //   const [menuShown, setMenuShown] = useState(window.innerWidth > 768);
 //   const [isDesktop, setIsDesktop] = useState(window.innerWidth > 768);
 
@@ -45,14 +44,13 @@
 //   //changes the banner depending on screenwidth
 //   useEffect(() => {
 //     const handleResize = () => {
-//       setIsDesktop(window.innerWidth > 768);
-//       setShowBanner(isDesktop);
+//       const newIsDesktop = window.innerWidth > 768;
+//       setIsDesktop(newIsDesktop);
 //     };
 
 //     const initialSize = () => {
-//       setIsDesktop(window.innerWidth > 768);
-//       setShowBanner(isDesktop);
-//       setMenuShown(isDesktop);
+//       const newIsDesktop = window.innerWidth > 768;
+//       setIsDesktop(newIsDesktop);
 //     };
 
 //     initialSize();
@@ -62,7 +60,7 @@
 //     return () => {
 //       window.removeEventListener("resize", handleResize);
 //     };
-//   }, [showBanner]);
+//   }, []);
 
 //   return (
 //     <>
@@ -84,8 +82,8 @@
 //           </>
 //         )}
 //       </section>
-//       {showBanner && <Banner />}
-//       {!showBanner ? (
+//       {isDesktop && <Banner />}
+//       {!isDesktop ? (
 //         <section className={styles.nameSection}>
 //           <div className={styles.nameContainer}>
 //             <h1 className={styles.mobileH1}>Jeremy Klassen</h1>
@@ -102,7 +100,6 @@
 // };
 
 // export default Header;
-
 import styles from "./Header.module.css";
 import { useEffect, useState } from "react";
 import Logo from "./Logo";
@@ -113,7 +110,7 @@ import { Link } from "react-router-dom";
 import { BiSolidRightArrow } from "react-icons/bi";
 
 const Header = () => {
-  // components to be used in ternary operators
+  //   // components to be used in ternary operators
   const burger = () => {
     return (
       <Link className={styles.hamburgerDiv} onClick={handleClick} to={""}>
@@ -137,16 +134,18 @@ const Header = () => {
       </div>
     );
   };
-
-  //state
-  const [menuShown, setMenuShown] = useState(window.innerWidth > 768);
+  // State to track screen width
   const [isDesktop, setIsDesktop] = useState(window.innerWidth > 768);
 
+  // Function to handle clicks on the menu
   const handleClick = () => {
-    setMenuShown(!menuShown);
+    if (!isDesktop) {
+      // Close the menu only if it's not a desktop screen
+      setIsMenuOpen(false);
+    }
   };
 
-  //changes the banner depending on screenwidth
+  // Effect to update screen width
   useEffect(() => {
     const handleResize = () => {
       const newIsDesktop = window.innerWidth > 768;
@@ -167,17 +166,20 @@ const Header = () => {
     };
   }, []);
 
+  // State to track whether the menu is open or closed
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <>
       <section
-        className={`${styles.headContainer}  ${
-          menuShown ? styles.headContainerExp : styles.headContainerMin
+        className={`${styles.headContainer} ${
+          isMenuOpen ? styles.headContainerExp : styles.headContainerMin
         }`}
       >
-        {menuShown ? (
+        {isMenuOpen || isDesktop ? (
           <>
             {logo()}
-            <NavLinks setMenuShown={setMenuShown} />
+            <NavLinks setMenuShown={setIsMenuOpen} />
             {isDesktop ? <></> : arrow()}
           </>
         ) : (
@@ -187,8 +189,9 @@ const Header = () => {
           </>
         )}
       </section>
-      {isDesktop && <Banner />}
-      {!isDesktop ? (
+      {isDesktop ? (
+        <Banner />
+      ) : (
         <section className={styles.nameSection}>
           <div className={styles.nameContainer}>
             <h1 className={styles.mobileH1}>Jeremy Klassen</h1>
@@ -197,8 +200,6 @@ const Header = () => {
             </h2>
           </div>
         </section>
-      ) : (
-        <></>
       )}
     </>
   );
