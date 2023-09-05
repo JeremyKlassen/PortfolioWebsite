@@ -10,7 +10,7 @@ interface Props {
 
 const Logo = ({ isMobile }: Props) => {
   const { setPage } = useContext(Context);
-  const iconSize = isMobile ? 50 : 30;
+  const iconSize = isMobile ? 50 : 40;
   const handleClick = () => {
     setPage("Home");
   };
@@ -18,7 +18,7 @@ const Logo = ({ isMobile }: Props) => {
   return (
     <Link to="/Home" className={styles.logoContainer} onClick={handleClick}>
       <GiBeard size={iconSize} color="#85680a" />
-      <p>Home</p>
+      <p className={styles.logoP}>Home</p>
     </Link>
   );
 };

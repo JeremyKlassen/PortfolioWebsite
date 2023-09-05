@@ -13,7 +13,7 @@ const DownloadButton = ({ downloadUrl, downloadName }: Props) => {
         href={downloadUrl}
         download={downloadName}
       >
-        Download
+        Download PDF
       </a>
     </>
   );

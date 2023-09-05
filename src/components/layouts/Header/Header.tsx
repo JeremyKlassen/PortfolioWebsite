@@ -141,7 +141,7 @@ const Header = () => {
   const handleClick = () => {
     if (!isDesktop) {
       // Close the menu only if it's not a desktop screen
-      setIsMenuOpen(false);
+      setIsMenuOpen(!isMenuOpen);
     }
   };
 

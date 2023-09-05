@@ -11,16 +11,23 @@
   flex-grow: 0;
   text-align: center;
   padding: 0;
+  max-width: 50rem;
+}
+
+.navLinks {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  justify-content: center;
 }
 
 @media (min-width: 768px) {
   .navLinks {
-    display: flex;
-    flex-direction: row;
-    flex-grow: 1;
     gap: 0;
     max-width: 80rem;
+    justify-content: end;
   }
+
   .navList {
     justify-content: space-between;
     align-items: center;

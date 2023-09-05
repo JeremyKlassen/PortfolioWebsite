@@ -17,16 +17,22 @@
   align-items: center;
   justify-items: center;
   min-width: 9.5rem;
-  max-width: 10rem;
+  max-width: fit-content;
 }
 
-.logoContainer:hover {
+.logoP {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-left: 1rem;
+  color: white;
+  padding-right: 1rem;
+}
+
+.logoP:hover {
+  color: white;
   background: #000;
 }
 
-.logoContainer p {
+.logoContainer:hover {
   color: white;
-  font-size: 16px;
-  font-weight: 600;
-  margin-left: 1rem;
 }
