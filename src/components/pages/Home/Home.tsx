@@ -5,31 +5,41 @@ import { HashLink } from "react-router-hash-link";
 import ContactForm from "../../ui/Connect/ContactForm";
 import DataIcons from "./DataIcons";
 import ChartIcons from "./ChartIcons";
+import hero from "../../../assets/hero.jpg";
+import LandAcknowledgement from "../../ui/LandAcknowldement/LandAcknowledgement";
 
 const Home = () => {
   return (
     <div className={styles.homeDiv}>
-      <section className={styles.landing}>
-        <h2>Web Solutions for Your Business</h2>
-        <div className={styles.landingContent}>
-          <h2>Do you: </h2>
-          <ul className={styles.landingList}>
-            <li>Have data related questions?</li>
-            <li>Need a website developed?</li>
-            <li>Need a web application developed?</li>
-            <li>
-              Have information sitting in storage cabinets or spreadsheets that
-              you don’t know what to do with?
-            </li>
-          </ul>
-          <p>
-            If any of these questions strike a chord, then{" "}
-            <HashLink smooth to={"/Home#contact"}>
-              tell me more about your organization’s story.
-            </HashLink>
-          </p>
-        </div>
-      </section>
+      <div className={styles.heroContainer}>
+        <img
+          className={styles.heroImg}
+          src={hero}
+          alt="desktop code hero banner"
+        />
+        <section className={styles.landing}>
+          <div className={styles.hero}></div>
+          <h2>Web Solutions for Your Business</h2>
+          <div className={styles.landingContent}>
+            <h2>Do you: </h2>
+            <ul className={styles.landingList}>
+              <li>Have data related questions?</li>
+              <li>Need a website developed?</li>
+              <li>Need a web application developed?</li>
+              <li>
+                Have information sitting in storage cabinets or spreadsheets
+                that you don’t know what to do with?
+              </li>
+            </ul>
+            <p>
+              If any of these questions strike a chord, then{" "}
+              <HashLink smooth to={"/Home#contact"}>
+                tell me more about your organization’s story.
+              </HashLink>
+            </p>
+          </div>
+        </section>
+      </div>
       <section className={styles.guided}>
         <h2 className={styles.bg1H1}>Ethics-Based Data Exploration</h2>
         <p className={styles.bg1P}>
@@ -67,6 +77,7 @@ const Home = () => {
         />
       </div>
       <ContactForm />
+      <LandAcknowledgement />
     </div>
   );
 };

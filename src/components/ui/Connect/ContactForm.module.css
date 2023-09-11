@@ -8,8 +8,9 @@
   padding-top: 2rem;
 }
 
-.contactFormContainer h1 {
-  margin-bottom: 3rem;
+.contactFormContainer h2 {
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 .contactForm {
@@ -17,6 +18,8 @@
   flex-direction: column;
   place-content: center;
   background-color: var(--theme-color-1);
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 @media (min-width: 992px) {
@@ -24,6 +27,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 2fr 0.5fr;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .contactFormContainer h2 {
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 }
 

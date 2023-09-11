@@ -38,6 +38,7 @@
     grid-row: 1/2;
     grid-column: 1/7;
     margin: 0;
+    margin-bottom: 1rem;
     align-self: center;
   }
 

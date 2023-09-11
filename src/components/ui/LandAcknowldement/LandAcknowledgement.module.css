@@ -1,0 +1,11 @@
+.acknowledgementSection {
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  color: var(--theme-color-4);
+  background-color: #ff8737;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}

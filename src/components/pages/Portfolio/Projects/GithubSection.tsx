@@ -6,11 +6,11 @@ const GithubSection = () => {
     <section id="githubPortfolio" className={styles.githubContainer}>
       <h2>Github Profile</h2>
       <p>
-        Github is where I keep the code I write that I want to show to others.
-        Feel free to explore my Github Profile to view some of my projects. I've
-        developed a range of data-centric repositories, showcasing my ability to
-        clean, analyze, and visualize data effectively. Most are written in
-        Python, and some are written in Javascript or Typescript.
+        Github is where I keep a lot of the code I write. Feel free to explore
+        my Profile and star some of my projects. I've developed a range of
+        data-centric repositories, showcasing my ability to clean, analyze, and
+        visualize data effectively. Most are written in Python, and
+        JavaScript/Typescript.
       </p>
       <div className={styles.gitLogo}>
         <Github size={5} />

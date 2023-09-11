@@ -6,10 +6,10 @@ const ThreePointStory = () => {
     <section id={styles.tableauPortfolio} className={styles.tableauContainer}>
       <h2>Three Point Story</h2>
       <p>
-        Discover my Tableau profile where I've crafted interactive data
-        visualizations that bring data stories to life. From dashboards to
-        exploratory analyses, my Tableau projects demonstrate my proficiency in
-        creating engaging and informative visualizations.
+        This interactive data story was developed using a system called Tableau.
+        This and other data-visualization systems like Microsoft's Power Bi can
+        turn your data into useful charts, stories and dashboards. For more of
+        my Tableau portfolio see my link in the footer.
       </p>
       <ThreePointStoryTableau />
     </section>

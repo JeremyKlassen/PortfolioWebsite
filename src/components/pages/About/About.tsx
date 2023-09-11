@@ -6,6 +6,7 @@ import lake from "../../../assets/lake.jpg";
 import ContactForm from "../../ui/Connect/ContactForm";
 import TextPictureLeft from "../../ui/TextPictureLeft/TextPictureLeft";
 import ImageGrid from "./ImageGrid";
+import LandAcknowledgement from "../../ui/LandAcknowldement/LandAcknowledgement";
 
 const About = () => {
   console.log("ping");
@@ -82,6 +83,7 @@ const About = () => {
         <ImageGrid />
       </div>
       <ContactForm />
+      <LandAcknowledgement />
     </div>
   );
 };

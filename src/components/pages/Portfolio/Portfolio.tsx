@@ -10,6 +10,7 @@ import Bully from "./Projects/Bully";
 import YoutubeSection from "./Projects/YoutubeSection";
 import GithubSection from "./Projects/GithubSection";
 import { HashLink } from "react-router-hash-link";
+import LandAcknowledgement from "../../ui/LandAcknowldement/LandAcknowledgement";
 
 const Portfolio = () => {
   const [accordianBools, setBools] = useState([
@@ -79,6 +80,7 @@ const Portfolio = () => {
         </p>
       </section>
       <ContactForm />
+      <LandAcknowledgement />
     </div>
   );
 };

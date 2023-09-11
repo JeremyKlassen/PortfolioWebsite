@@ -17,7 +17,7 @@ const Logo = ({ isMobile }: Props) => {
 
   return (
     <Link to="/Home" className={styles.logoContainer} onClick={handleClick}>
-      <GiBeard size={iconSize} color="#85680a" />
+      <GiBeard size={iconSize} color="#8f5c21" />
       <p className={styles.logoP}>Home</p>
     </Link>
   );

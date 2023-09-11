@@ -1,4 +1,5 @@
 import ContactForm from "../../ui/Connect/ContactForm";
+import LandAcknowledgement from "../../ui/LandAcknowldement/LandAcknowledgement";
 import styles from "./Services.module.css";
 
 const Services = () => {
@@ -10,14 +11,14 @@ const Services = () => {
         <h3>Full Stack Solutions for your digital needs</h3>
         <div className={styles.servicesLists}>
           <ul>
-            <li>- Website Construction</li>
+            <li>- Website Development</li>
             <li>- UI/UX Research and Design</li>
             <li>- Database Design</li>
-            <li>- Visualizations</li>
+            <li>- Visualizations and Graphs</li>
           </ul>
           <ul>
             <li>- Web Applications</li>
-            <li>- Dashboards</li>
+            <li>- Interactive Dashboards</li>
             <li>- User Logins and accounts</li>
           </ul>
         </div>
@@ -41,6 +42,7 @@ const Services = () => {
         </div>
       </div>
       <ContactForm />
+      <LandAcknowledgement />
     </>
   );
 };

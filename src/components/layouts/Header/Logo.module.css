@@ -27,12 +27,3 @@
   color: white;
   padding-right: 1rem;
 }
-
-.logoP:hover {
-  color: white;
-  background: #000;
-}
-
-.logoContainer:hover {
-  color: white;
-}

@@ -10,14 +10,17 @@ const Bully = () => {
   };
   return (
     <section id="bullyPortfolio" className={styles.bullyContainer}>
-      <h2>Bully Dataset Machine Learning Analysis</h2>
+      <h2>Python Machine Learning Data Analysis</h2>
       <p>
-        One of my proud accomplishments is my comprehensive data analysis
-        project that delves into a bullying dataset. In this project, I explored
-        the data, identified trends, and performed statistical analyses to
-        uncover hidden patterns. I leveraged Python for data manipulation and
-        visualization, showcasing my skills in tools like Pandas, Matplotlib,
-        and Seaborn.
+        This Analysis looks at school bullying data from the W.H.O's Global
+        Student Health Survey. It uses a variety of Statistical and Machine
+        Learning techniques to pull insights from the data.
+      </p>
+
+      <p>
+        Note how these kinds of reports give you clear graphs, conclusions, and
+        the code that was used to produce the results, nothing is hidden. These
+        reports can be produced with the code hidden as well if requested.
       </p>
       <Link className={styles.bullyAnalysis} onClick={handleClick} to={""}>
         {isBullyAnalysis
