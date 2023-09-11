@@ -32,8 +32,8 @@ function App() {
           <Route path="/About" element={<Body page={page} />} />
           <Route path="/Portfolio" element={<Body page={page} />} />
           <Route path="/Contact" element={<Body page={page} />} />
-          <Route path="/Bully" element={<Body page={page} />} />
-          <Route path="/Thanks" element={<Body page={page} />} />
+          <Route path="/Thanks" element={<Body page="Thanks" />} />
+          <Route path="/*" element={<Body page="Error" />} />
         </Routes>
         <Footer />
       </Context.Provider>

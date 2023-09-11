@@ -24,3 +24,6 @@ public/build/
 *.njsproj
 *.sln
 *.sw?
+
+#specific files
+dist.zip
