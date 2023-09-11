@@ -1,0 +1,15 @@
+.errorContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.errorContainer p {
+  margin-bottom: 2rem;
+}
+
+.errorContainer img {
+  margin: 2rem;
+}

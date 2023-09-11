@@ -60,7 +60,7 @@ const Portfolio = () => {
           accordianBools={accordianBools}
           setBools={setBools}
           slot={3}
-          label="Youtube Overview of Various Projects"
+          label="Youtube Projects Demo"
         />
         {accordianBools[3] ? <YoutubeSection /> : <></>}
         <ToggleProjects
