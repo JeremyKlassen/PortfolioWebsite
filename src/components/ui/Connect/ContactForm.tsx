@@ -8,7 +8,7 @@ const ContactForm = () => {
         will get back to you soon.
       </h2>
       <form
-        action="https://formsubmit.co/b1155fe82ce3ab72deef1b0dd9c0ee30"
+        action="https://formsubmit.co/klassendata@gmail.com"
         method="POST"
         className={styles.contactForm}
       >
