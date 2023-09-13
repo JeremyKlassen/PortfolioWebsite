@@ -23,13 +23,13 @@ const Home = () => {
           <div className={styles.landingContent}>
             <h2>Do you: </h2>
             <ul className={styles.landingList}>
+              <li>Need a website developed?</li>
+              <li>Need an application developed?</li>
               <li>Have data related questions?</li>
               <li>
-                Have a diverse group of stakeholders that need different
+                Have stakeholders in your company that need a range of different
                 questions answered?
               </li>
-              <li>Need a website developed?</li>
-              <li>Need a web application developed?</li>
               <li>
                 Have storage cabinets or spreadsheets of information that you
                 don’t know what to do with?

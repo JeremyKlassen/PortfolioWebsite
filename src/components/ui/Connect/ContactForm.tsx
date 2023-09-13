@@ -3,10 +3,13 @@ import styles from "./ContactForm.module.css";
 const ContactForm = () => {
   return (
     <section className={styles.contactFormContainer} id="contact">
-      <h2>
-        Tell me your story! Leave a message with your Contact information, and I
-        will get back to you soon.
-      </h2>
+      <h2>Tell me your story! </h2>
+      <h3>
+        Send me an email at{" "}
+        <a href={`mailto:klassendata@gmail.com`}>klassendata@gmail.com</a> or
+        leave a message with your Contact information below. I will get back to
+        you soon.
+      </h3>
       <form
         action="https://formsubmit.co/klassendata@gmail.com"
         method="POST"

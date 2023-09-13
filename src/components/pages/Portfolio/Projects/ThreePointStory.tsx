@@ -26,7 +26,7 @@ const ThreePointStory = () => {
         turn your data into useful charts, stories and dashboards. For more of
         my Tableau portfolio see my link in the footer.
       </p>
-      {windowWidth > 768 ? (
+      {windowWidth > 992 ? (
         <ThreePointStoryTableau />
       ) : (
         <h2>
