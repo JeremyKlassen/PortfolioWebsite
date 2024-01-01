@@ -11,9 +11,11 @@ import YoutubeSection from "./Projects/YoutubeSection";
 import GithubSection from "./Projects/GithubSection";
 import { HashLink } from "react-router-hash-link";
 import LandAcknowledgement from "../../ui/LandAcknowldement/LandAcknowledgement";
+import PWA from "./Projects/PWA";
 
 const Portfolio = () => {
   const [accordianBools, setBools] = useState([
+    false,
     false,
     false,
     false,
@@ -39,37 +41,44 @@ const Portfolio = () => {
           accordianBools={accordianBools}
           setBools={setBools}
           slot={0}
-          label="This Website"
+          label="Progressive Web Application"
         />
-        {accordianBools[0] ? <Website /> : <></>}
+        {accordianBools[0] ? <PWA /> : <></>}
         <ToggleProjects
           accordianBools={accordianBools}
           setBools={setBools}
           slot={1}
-          label="Tableau Three Point Story"
+          label="This Website"
         />
-        {accordianBools[1] ? <ThreePointStory /> : <></>}
+        {accordianBools[1] ? <Website /> : <></>}
         <ToggleProjects
           accordianBools={accordianBools}
           setBools={setBools}
           slot={2}
-          label="Bully Dataset Analysis"
+          label="Tableau Three Point Story"
         />
-        {accordianBools[2] ? <Bully /> : <></>}
+        {accordianBools[2] ? <ThreePointStory /> : <></>}
         <ToggleProjects
           accordianBools={accordianBools}
           setBools={setBools}
           slot={3}
-          label="Youtube Projects Demo"
+          label="Bully Dataset Analysis"
         />
-        {accordianBools[3] ? <YoutubeSection /> : <></>}
+        {accordianBools[3] ? <Bully /> : <></>}
         <ToggleProjects
           accordianBools={accordianBools}
           setBools={setBools}
           slot={4}
+          label="Youtube Projects Demo"
+        />
+        {accordianBools[4] ? <YoutubeSection /> : <></>}
+        <ToggleProjects
+          accordianBools={accordianBools}
+          setBools={setBools}
+          slot={5}
           label="Github Projects"
         />
-        {accordianBools[4] ? <GithubSection /> : <></>}
+        {accordianBools[5] ? <GithubSection /> : <></>}
       </div>
       <section className={styles.getInTouch}>
         <p>

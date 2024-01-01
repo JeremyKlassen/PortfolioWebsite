@@ -19,20 +19,23 @@ const Home = () => {
         />
         <section className={styles.landing}>
           <div className={styles.hero}></div>
-          <h2>Web Solutions for Your Business</h2>
+          <div className={styles.tagline}>
+            <h2>Automate Boring and Tedious Tasks.</h2>
+            <h3>They Cost You Money, and Steal Time From Frontline Staff</h3>
+          </div>
           <div className={styles.landingContent}>
             <h2>Do you: </h2>
             <ul className={styles.landingList}>
-              <li>Need a website developed?</li>
               <li>Need an application developed?</li>
+              <li>
+                Have a boring repetitive task that you or your staff do every
+                day?
+              </li>
+              <li>Need a website developed?</li>
               <li>Have data related questions?</li>
               <li>
                 Have stakeholders in your company that need a range of different
                 questions answered?
-              </li>
-              <li>
-                Have storage cabinets or spreadsheets of information that you
-                don’t know what to do with?
               </li>
             </ul>
             <p>

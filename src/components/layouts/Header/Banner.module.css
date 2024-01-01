@@ -8,8 +8,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--theme-color-1);
-  border-radius: 20px;
+  background: #3a51d6;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 @media (min-width: 992px) {
@@ -28,8 +29,6 @@
 
 .centeredText h1 {
   color: var(--theme-color-4);
-  /* text-shadow: 1px 1px 0px #000000; */
-  font-size: 5rem;
   padding: 0px;
   z-index: 1;
 }

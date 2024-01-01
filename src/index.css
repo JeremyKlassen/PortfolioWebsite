@@ -70,4 +70,10 @@ li {
   ul {
     font-size: var(--base-font-size-desktop);
   }
+
+  h1 {
+    line-height: 1.1;
+    font-size: 4rem;
+    color: var(--theme-color-4);
+  }
 }

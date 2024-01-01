@@ -4,13 +4,9 @@ import styles from "./Logo.module.css";
 import { Context } from "../../../App";
 import { useContext } from "react";
 
-interface Props {
-  isMobile: boolean;
-}
-
-const Logo = ({ isMobile }: Props) => {
+const Logo = () => {
   const { setPage } = useContext(Context);
-  const iconSize = isMobile ? 50 : 40;
+  const iconSize = 50;
   const handleClick = () => {
     setPage("Home");
   };
