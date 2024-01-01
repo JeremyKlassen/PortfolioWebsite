@@ -1,23 +1,23 @@
 .logoContainer {
   color: var(--base-color);
   text-decoration: none;
-  display: inline-block;
-  background-color: var(--theme-color-4);
-  padding: 10px 20px;
+  display: flex;
+  flex-direction: row;
   border-radius: 8px;
   cursor: pointer;
   text-decoration: none;
   border: none;
   transition: background-color 0.3s ease;
-  margin: 0;
+  padding: 0.5rem;
   text-align: center;
-  display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1.5fr;
+  grid-template-columns: 1fr;
   align-items: center;
-  justify-items: center;
-  min-width: 9.5rem;
-  max-width: fit-content;
+  justify-items: flex-start;
+}
+
+.logoContainer:hover {
+  background-color: var(--theme-color-3);
 }
 
 .logoP {

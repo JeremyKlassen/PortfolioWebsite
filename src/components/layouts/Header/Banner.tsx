@@ -5,7 +5,7 @@ const Banner = () => {
     <div className={styles.banner}>
       <div className={styles.centeredText}>
         <h1>Jeremy Klassen</h1>
-        <h2>Web Development & Information Systems</h2>
+        <h2>Web Technology & Information Systems</h2>
       </div>
     </div>
   );

@@ -1,27 +1,21 @@
 .headContainer {
   color: #a0c0ca;
+  max-width: 100vw;
 }
 
 .headContainerExp {
-  background-image: url("../../../assets/clouds.jpg");
+  background-color: var(--theme-color-4);
   height: fit-content;
   display: grid;
-  grid-template-columns: 0.7fr 1fr 0.5fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   justify-content: center;
   align-self: start;
   padding-bottom: 2rem;
 }
 
-@media (min-width: 768px) {
-  .headContainerExp {
-    grid-template-columns: 0.25fr 1fr;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
-  }
-}
-
 .headContainerMin {
-  background-image: url("../../../assets/clouds.jpg");
+  background-color: var(--theme-color-4);
   flex-grow: 1;
   display: flex;
   flex-direction: row;
@@ -30,8 +24,24 @@
   justify-content: space-between;
 }
 
+@media (min-width: 768px) {
+  .headContainerMin {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr;
+  }
+  .headContainerExp {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr;
+  }
+}
+
 .hamburgerDiv {
   margin-right: 2rem;
+  justify-self: flex-end;
 }
 
 .arrowDiv {
@@ -64,6 +74,8 @@
 
 .logo {
   margin: 1em;
+  display: flex;
+  align-items: center;
 }
 
 .content {
